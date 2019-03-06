@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
@@ -152,51 +151,58 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabDisplaySalesRecord = new System.Windows.Forms.TabPage();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
             this.tabUpdateInventory = new System.Windows.Forms.TabPage();
+            this.dataGridViewModifyInventory = new System.Windows.Forms.DataGridView();
+            this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbGrahamShakeDataSet = new WindowsFormsApplication1.dbGrahamShakeDataSet();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.label89 = new System.Windows.Forms.Label();
             this.numModBlackPearl = new System.Windows.Forms.NumericUpDown();
             this.numModWhippedCream = new System.Windows.Forms.NumericUpDown();
             this.numModLecheFlan = new System.Windows.Forms.NumericUpDown();
             this.numModCaramel = new System.Windows.Forms.NumericUpDown();
+            this.numModSugar = new System.Windows.Forms.NumericUpDown();
+            this.numModStraw = new System.Windows.Forms.NumericUpDown();
             this.numModMarshmallows = new System.Windows.Forms.NumericUpDown();
+            this.numModCups16 = new System.Windows.Forms.NumericUpDown();
             this.numModGrahamPowder = new System.Windows.Forms.NumericUpDown();
+            this.numModCups22 = new System.Windows.Forms.NumericUpDown();
             this.numModAvocado = new System.Windows.Forms.NumericUpDown();
+            this.numModCups12 = new System.Windows.Forms.NumericUpDown();
             this.numModCondensedMilk = new System.Windows.Forms.NumericUpDown();
+            this.numModDomeLid = new System.Windows.Forms.NumericUpDown();
             this.numModMango = new System.Windows.Forms.NumericUpDown();
             this.numModCrushedIce = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.numModDomeLid = new System.Windows.Forms.NumericUpDown();
-            this.numModCups12 = new System.Windows.Forms.NumericUpDown();
-            this.numModCups22 = new System.Windows.Forms.NumericUpDown();
-            this.numModCups16 = new System.Windows.Forms.NumericUpDown();
-            this.numModStraw = new System.Windows.Forms.NumericUpDown();
-            this.numModSugar = new System.Windows.Forms.NumericUpDown();
-            this.label89 = new System.Windows.Forms.Label();
-            this.dataGridViewModifyInventory = new System.Windows.Forms.DataGridView();
+            this.tabDisplaySalesRecord = new System.Windows.Forms.TabPage();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.tblIngredientStocksBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblIngredientStocksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblIngredientStocksTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblIngredientStocksTableAdapter();
+            this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.Date_updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnUpdate = new System.Windows.Forms.Button();
+            this.Crushed_ice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mangoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.avocadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.condensedmilkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -211,11 +217,6 @@
             this.cups22ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.strawDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbGrahamShakeDataSet = new WindowsFormsApplication1.dbGrahamShakeDataSet();
-            this.tblIngredientStocksBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblIngredientStocksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblIngredientStocksTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblIngredientStocksTableAdapter();
             this.pieChartLatestInventory = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl1.SuspendLayout();
             this.tabAddDailySalesRecord.SuspendLayout();
@@ -239,28 +240,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMango)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCrushedIce)).BeginInit();
             this.tabUpdateInventory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numModBlackPearl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModWhippedCream)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModLecheFlan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCaramel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModSugar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModStraw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModMarshmallows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModCups16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModGrahamPowder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModCups22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModAvocado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModCups12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCondensedMilk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModDomeLid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModMango)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCrushedIce)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModDomeLid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModCups12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModCups22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModCups16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModStraw)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModSugar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -273,7 +275,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 32);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(700, 384);
+            this.tabControl1.Size = new System.Drawing.Size(952, 535);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -1408,35 +1410,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Crushed ice:";
             // 
-            // tabDisplaySalesRecord
-            // 
-            this.tabDisplaySalesRecord.Location = new System.Drawing.Point(4, 22);
-            this.tabDisplaySalesRecord.Name = "tabDisplaySalesRecord";
-            this.tabDisplaySalesRecord.Size = new System.Drawing.Size(692, 358);
-            this.tabDisplaySalesRecord.TabIndex = 3;
-            this.tabDisplaySalesRecord.Text = "Display Sales Record";
-            this.tabDisplaySalesRecord.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(688, 5);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(24, 23);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "button1";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Location = new System.Drawing.Point(658, 5);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(24, 23);
-            this.btnMinimize.TabIndex = 1;
-            this.btnMinimize.Text = "button1";
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            this.btnMinimize.Click += new System.EventHandler(this.button2_Click);
-            // 
             // tabUpdateInventory
             // 
             this.tabUpdateInventory.Controls.Add(this.pieChartLatestInventory);
@@ -1444,10 +1417,50 @@
             this.tabUpdateInventory.Controls.Add(this.groupBox3);
             this.tabUpdateInventory.Location = new System.Drawing.Point(4, 22);
             this.tabUpdateInventory.Name = "tabUpdateInventory";
-            this.tabUpdateInventory.Size = new System.Drawing.Size(692, 358);
+            this.tabUpdateInventory.Size = new System.Drawing.Size(944, 509);
             this.tabUpdateInventory.TabIndex = 2;
             this.tabUpdateInventory.Text = "Update Inventory";
             this.tabUpdateInventory.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewModifyInventory
+            // 
+            this.dataGridViewModifyInventory.AllowUserToAddRows = false;
+            this.dataGridViewModifyInventory.AllowUserToDeleteRows = false;
+            this.dataGridViewModifyInventory.AutoGenerateColumns = false;
+            this.dataGridViewModifyInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewModifyInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Date_updated,
+            this.Crushed_ice,
+            this.mangoDataGridViewTextBoxColumn,
+            this.avocadoDataGridViewTextBoxColumn,
+            this.condensedmilkDataGridViewTextBoxColumn,
+            this.grahampowderDataGridViewTextBoxColumn,
+            this.marshmallowDataGridViewTextBoxColumn,
+            this.caramelDataGridViewTextBoxColumn,
+            this.lecheflanDataGridViewTextBoxColumn,
+            this.whippedcreamDataGridViewTextBoxColumn,
+            this.domelidDataGridViewTextBoxColumn,
+            this.cups12ozDataGridViewTextBoxColumn,
+            this.cups16ozDataGridViewTextBoxColumn,
+            this.cups22ozDataGridViewTextBoxColumn,
+            this.strawDataGridViewTextBoxColumn,
+            this.sugarDataGridViewTextBoxColumn});
+            this.dataGridViewModifyInventory.DataSource = this.tblIngredientStocksBindingSource3;
+            this.dataGridViewModifyInventory.Location = new System.Drawing.Point(299, 16);
+            this.dataGridViewModifyInventory.Name = "dataGridViewModifyInventory";
+            this.dataGridViewModifyInventory.ReadOnly = true;
+            this.dataGridViewModifyInventory.Size = new System.Drawing.Size(385, 183);
+            this.dataGridViewModifyInventory.TabIndex = 2;
+            // 
+            // tblIngredientStocksBindingSource
+            // 
+            this.tblIngredientStocksBindingSource.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource.DataSource = this.dbGrahamShakeDataSet;
+            // 
+            // dbGrahamShakeDataSet
+            // 
+            this.dbGrahamShakeDataSet.DataSetName = "dbGrahamShakeDataSet";
+            this.dbGrahamShakeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox3
             // 
@@ -1496,6 +1509,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update Inventory";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(181, 308);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // label89
+            // 
+            this.label89.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label89.Location = new System.Drawing.Point(151, 20);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(2, 308);
+            this.label89.TabIndex = 4;
+            // 
             // numModBlackPearl
             // 
             this.numModBlackPearl.Location = new System.Drawing.Point(101, 285);
@@ -1524,12 +1555,33 @@
             this.numModCaramel.Size = new System.Drawing.Size(33, 20);
             this.numModCaramel.TabIndex = 1;
             // 
+            // numModSugar
+            // 
+            this.numModSugar.Location = new System.Drawing.Point(101, 311);
+            this.numModSugar.Name = "numModSugar";
+            this.numModSugar.Size = new System.Drawing.Size(33, 20);
+            this.numModSugar.TabIndex = 1;
+            // 
+            // numModStraw
+            // 
+            this.numModStraw.Location = new System.Drawing.Point(237, 151);
+            this.numModStraw.Name = "numModStraw";
+            this.numModStraw.Size = new System.Drawing.Size(33, 20);
+            this.numModStraw.TabIndex = 1;
+            // 
             // numModMarshmallows
             // 
             this.numModMarshmallows.Location = new System.Drawing.Point(101, 181);
             this.numModMarshmallows.Name = "numModMarshmallows";
             this.numModMarshmallows.Size = new System.Drawing.Size(33, 20);
             this.numModMarshmallows.TabIndex = 1;
+            // 
+            // numModCups16
+            // 
+            this.numModCups16.Location = new System.Drawing.Point(237, 99);
+            this.numModCups16.Name = "numModCups16";
+            this.numModCups16.Size = new System.Drawing.Size(33, 20);
+            this.numModCups16.TabIndex = 1;
             // 
             // numModGrahamPowder
             // 
@@ -1538,6 +1590,13 @@
             this.numModGrahamPowder.Size = new System.Drawing.Size(33, 20);
             this.numModGrahamPowder.TabIndex = 1;
             // 
+            // numModCups22
+            // 
+            this.numModCups22.Location = new System.Drawing.Point(237, 125);
+            this.numModCups22.Name = "numModCups22";
+            this.numModCups22.Size = new System.Drawing.Size(33, 20);
+            this.numModCups22.TabIndex = 1;
+            // 
             // numModAvocado
             // 
             this.numModAvocado.Location = new System.Drawing.Point(101, 103);
@@ -1545,12 +1604,26 @@
             this.numModAvocado.Size = new System.Drawing.Size(33, 20);
             this.numModAvocado.TabIndex = 1;
             // 
+            // numModCups12
+            // 
+            this.numModCups12.Location = new System.Drawing.Point(237, 73);
+            this.numModCups12.Name = "numModCups12";
+            this.numModCups12.Size = new System.Drawing.Size(33, 20);
+            this.numModCups12.TabIndex = 1;
+            // 
             // numModCondensedMilk
             // 
             this.numModCondensedMilk.Location = new System.Drawing.Point(101, 129);
             this.numModCondensedMilk.Name = "numModCondensedMilk";
             this.numModCondensedMilk.Size = new System.Drawing.Size(33, 20);
             this.numModCondensedMilk.TabIndex = 1;
+            // 
+            // numModDomeLid
+            // 
+            this.numModDomeLid.Location = new System.Drawing.Point(237, 47);
+            this.numModDomeLid.Name = "numModDomeLid";
+            this.numModDomeLid.Size = new System.Drawing.Size(33, 20);
+            this.numModDomeLid.TabIndex = 1;
             // 
             // numModMango
             // 
@@ -1593,6 +1666,24 @@
             this.label30.TabIndex = 0;
             this.label30.Text = "Leche flan:";
             // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(8, 313);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(38, 13);
+            this.label87.TabIndex = 0;
+            this.label87.Text = "Sugar:";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(166, 154);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(37, 13);
+            this.label86.TabIndex = 0;
+            this.label86.Text = "Straw:";
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -1601,6 +1692,15 @@
             this.label32.Size = new System.Drawing.Size(48, 13);
             this.label32.TabIndex = 0;
             this.label32.Text = "Caramel:";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(166, 102);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(60, 13);
+            this.label84.TabIndex = 0;
+            this.label84.Text = "Cups 16oz:";
             // 
             // label73
             // 
@@ -1611,6 +1711,15 @@
             this.label73.TabIndex = 0;
             this.label73.Text = "Marshmallows:";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(166, 128);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(60, 13);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "Cups 22oz:";
+            // 
             // label75
             // 
             this.label75.AutoSize = true;
@@ -1619,6 +1728,15 @@
             this.label75.Size = new System.Drawing.Size(85, 13);
             this.label75.TabIndex = 0;
             this.label75.Text = "Graham powder:";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(166, 76);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(60, 13);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Cups 12oz:";
             // 
             // label77
             // 
@@ -1629,6 +1747,15 @@
             this.label77.TabIndex = 0;
             this.label77.Text = "Avocado:";
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(166, 16);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(49, 26);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "  Stock\r\nMaterials";
+            // 
             // label79
             // 
             this.label79.AutoSize = true;
@@ -1637,6 +1764,15 @@
             this.label79.Size = new System.Drawing.Size(85, 13);
             this.label79.TabIndex = 0;
             this.label79.Text = "Condensed milk:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(234, 18);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(43, 26);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Update\r\nAmount";
             // 
             // label81
             // 
@@ -1656,6 +1792,15 @@
             this.label83.TabIndex = 0;
             this.label83.Text = "   Stock\r\nIngredients";
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(166, 50);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(51, 13);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Dome lid:";
+            // 
             // label85
             // 
             this.label85.AutoSize = true;
@@ -1674,156 +1819,53 @@
             this.label90.TabIndex = 0;
             this.label90.Text = "Crushed ice:";
             // 
-            // label23
+            // tabDisplaySalesRecord
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(166, 50);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 13);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Dome lid:";
+            this.tabDisplaySalesRecord.Location = new System.Drawing.Point(4, 22);
+            this.tabDisplaySalesRecord.Name = "tabDisplaySalesRecord";
+            this.tabDisplaySalesRecord.Size = new System.Drawing.Size(692, 358);
+            this.tabDisplaySalesRecord.TabIndex = 3;
+            this.tabDisplaySalesRecord.Text = "Display Sales Record";
+            this.tabDisplaySalesRecord.UseVisualStyleBackColor = true;
             // 
-            // label24
+            // btnExit
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(234, 18);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(43, 26);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Update\r\nAmount";
+            this.btnExit.Location = new System.Drawing.Point(688, 5);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(24, 23);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "button1";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label25
+            // btnMinimize
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(166, 16);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(49, 26);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "  Stock\r\nMaterials";
+            this.btnMinimize.Location = new System.Drawing.Point(658, 5);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(24, 23);
+            this.btnMinimize.TabIndex = 1;
+            this.btnMinimize.Text = "button1";
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label26
+            // tblIngredientStocksBindingSource2
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(166, 76);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 13);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Cups 12oz:";
+            this.tblIngredientStocksBindingSource2.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource2.DataSource = this.dbGrahamShakeDataSet;
             // 
-            // label27
+            // tblIngredientStocksBindingSource1
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(166, 128);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 13);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Cups 22oz:";
+            this.tblIngredientStocksBindingSource1.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource1.DataSource = this.dbGrahamShakeDataSet;
             // 
-            // label84
+            // tblIngredientStocksTableAdapter
             // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(166, 102);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(60, 13);
-            this.label84.TabIndex = 0;
-            this.label84.Text = "Cups 16oz:";
+            this.tblIngredientStocksTableAdapter.ClearBeforeFill = true;
             // 
-            // label86
+            // tblIngredientStocksBindingSource3
             // 
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(166, 154);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(37, 13);
-            this.label86.TabIndex = 0;
-            this.label86.Text = "Straw:";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(8, 313);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(38, 13);
-            this.label87.TabIndex = 0;
-            this.label87.Text = "Sugar:";
-            // 
-            // numModDomeLid
-            // 
-            this.numModDomeLid.Location = new System.Drawing.Point(237, 47);
-            this.numModDomeLid.Name = "numModDomeLid";
-            this.numModDomeLid.Size = new System.Drawing.Size(33, 20);
-            this.numModDomeLid.TabIndex = 1;
-            // 
-            // numModCups12
-            // 
-            this.numModCups12.Location = new System.Drawing.Point(237, 73);
-            this.numModCups12.Name = "numModCups12";
-            this.numModCups12.Size = new System.Drawing.Size(33, 20);
-            this.numModCups12.TabIndex = 1;
-            // 
-            // numModCups22
-            // 
-            this.numModCups22.Location = new System.Drawing.Point(237, 125);
-            this.numModCups22.Name = "numModCups22";
-            this.numModCups22.Size = new System.Drawing.Size(33, 20);
-            this.numModCups22.TabIndex = 1;
-            // 
-            // numModCups16
-            // 
-            this.numModCups16.Location = new System.Drawing.Point(237, 99);
-            this.numModCups16.Name = "numModCups16";
-            this.numModCups16.Size = new System.Drawing.Size(33, 20);
-            this.numModCups16.TabIndex = 1;
-            // 
-            // numModStraw
-            // 
-            this.numModStraw.Location = new System.Drawing.Point(237, 151);
-            this.numModStraw.Name = "numModStraw";
-            this.numModStraw.Size = new System.Drawing.Size(33, 20);
-            this.numModStraw.TabIndex = 1;
-            // 
-            // numModSugar
-            // 
-            this.numModSugar.Location = new System.Drawing.Point(101, 311);
-            this.numModSugar.Name = "numModSugar";
-            this.numModSugar.Size = new System.Drawing.Size(33, 20);
-            this.numModSugar.TabIndex = 1;
-            // 
-            // label89
-            // 
-            this.label89.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label89.Location = new System.Drawing.Point(151, 20);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(2, 308);
-            this.label89.TabIndex = 4;
-            // 
-            // dataGridViewModifyInventory
-            // 
-            this.dataGridViewModifyInventory.AllowUserToAddRows = false;
-            this.dataGridViewModifyInventory.AllowUserToDeleteRows = false;
-            this.dataGridViewModifyInventory.AutoGenerateColumns = false;
-            this.dataGridViewModifyInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewModifyInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Date_updated,
-            this.mangoDataGridViewTextBoxColumn,
-            this.avocadoDataGridViewTextBoxColumn,
-            this.condensedmilkDataGridViewTextBoxColumn,
-            this.grahampowderDataGridViewTextBoxColumn,
-            this.marshmallowDataGridViewTextBoxColumn,
-            this.caramelDataGridViewTextBoxColumn,
-            this.lecheflanDataGridViewTextBoxColumn,
-            this.whippedcreamDataGridViewTextBoxColumn,
-            this.domelidDataGridViewTextBoxColumn,
-            this.cups12ozDataGridViewTextBoxColumn,
-            this.cups16ozDataGridViewTextBoxColumn,
-            this.cups22ozDataGridViewTextBoxColumn,
-            this.strawDataGridViewTextBoxColumn,
-            this.sugarDataGridViewTextBoxColumn});
-            this.dataGridViewModifyInventory.DataSource = this.tblIngredientStocksBindingSource;
-            this.dataGridViewModifyInventory.Location = new System.Drawing.Point(299, 16);
-            this.dataGridViewModifyInventory.Name = "dataGridViewModifyInventory";
-            this.dataGridViewModifyInventory.ReadOnly = true;
-            this.dataGridViewModifyInventory.Size = new System.Drawing.Size(385, 183);
-            this.dataGridViewModifyInventory.TabIndex = 2;
+            this.tblIngredientStocksBindingSource3.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource3.DataSource = this.dbGrahamShakeDataSet;
             // 
             // Date_updated
             // 
@@ -1831,16 +1873,14 @@
             this.Date_updated.HeaderText = "Date_updated";
             this.Date_updated.Name = "Date_updated";
             this.Date_updated.ReadOnly = true;
+            this.Date_updated.Width = 50;
             // 
-            // btnUpdate
+            // Crushed_ice
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(181, 308);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.Crushed_ice.DataPropertyName = "Crushed_ice";
+            this.Crushed_ice.HeaderText = "Crushed_ice";
+            this.Crushed_ice.Name = "Crushed_ice";
+            this.Crushed_ice.ReadOnly = true;
             // 
             // mangoDataGridViewTextBoxColumn
             // 
@@ -1954,30 +1994,6 @@
             this.sugarDataGridViewTextBoxColumn.ReadOnly = true;
             this.sugarDataGridViewTextBoxColumn.Width = 50;
             // 
-            // tblIngredientStocksBindingSource
-            // 
-            this.tblIngredientStocksBindingSource.DataMember = "tblIngredientStocks";
-            this.tblIngredientStocksBindingSource.DataSource = this.dbGrahamShakeDataSet;
-            // 
-            // dbGrahamShakeDataSet
-            // 
-            this.dbGrahamShakeDataSet.DataSetName = "dbGrahamShakeDataSet";
-            this.dbGrahamShakeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblIngredientStocksBindingSource2
-            // 
-            this.tblIngredientStocksBindingSource2.DataMember = "tblIngredientStocks";
-            this.tblIngredientStocksBindingSource2.DataSource = this.dbGrahamShakeDataSet;
-            // 
-            // tblIngredientStocksBindingSource1
-            // 
-            this.tblIngredientStocksBindingSource1.DataMember = "tblIngredientStocks";
-            this.tblIngredientStocksBindingSource1.DataSource = this.dbGrahamShakeDataSet;
-            // 
-            // tblIngredientStocksTableAdapter
-            // 
-            this.tblIngredientStocksTableAdapter.ClearBeforeFill = true;
-            // 
             // pieChartLatestInventory
             // 
             chartArea1.Name = "ChartArea1";
@@ -1986,11 +2002,7 @@
             this.pieChartLatestInventory.Legends.Add(legend1);
             this.pieChartLatestInventory.Location = new System.Drawing.Point(299, 215);
             this.pieChartLatestInventory.Name = "pieChartLatestInventory";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.pieChartLatestInventory.Series.Add(series1);
-            this.pieChartLatestInventory.Size = new System.Drawing.Size(385, 133);
+            this.pieChartLatestInventory.Size = new System.Drawing.Size(614, 278);
             this.pieChartLatestInventory.TabIndex = 3;
             this.pieChartLatestInventory.Text = "chart1";
             title1.Name = "Latest Stock Report";
@@ -2001,7 +2013,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(724, 427);
+            this.ClientSize = new System.Drawing.Size(976, 607);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl1);
@@ -2034,29 +2046,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMango)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCrushedIce)).EndInit();
             this.tabUpdateInventory.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numModBlackPearl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModWhippedCream)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModLecheFlan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCaramel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModSugar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModStraw)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModMarshmallows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModCups16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModGrahamPowder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModCups22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModAvocado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModCups12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCondensedMilk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numModDomeLid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModMango)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCrushedIce)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModDomeLid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModCups12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModCups22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModCups16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModStraw)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numModSugar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).EndInit();
             this.ResumeLayout(false);
 
@@ -2232,7 +2245,9 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.DataGridView dataGridViewModifyInventory;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date_updated;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Crushed_ice;
         private System.Windows.Forms.DataGridViewTextBoxColumn mangoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn avocadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn condensedmilkDataGridViewTextBoxColumn;
@@ -2247,7 +2262,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cups22ozDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn strawDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sugarDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.BindingSource tblIngredientStocksBindingSource3;
         private System.Windows.Forms.DataVisualization.Charting.Chart pieChartLatestInventory;
 
     }

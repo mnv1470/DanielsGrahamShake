@@ -9,12 +9,13 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Windows.Forms.DataVisualization.Charting;
 
+
+
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        List<int> listOfStockAmountForStock = new List<int>();
-        List<string> listOfStockNameForStock = new List<string>();
+        
 
         int crushedIceBawasan, mangoBawasan, avocadoBawasan, condensedMilkBawasan, grahamPowderBawasan, marshmallowBawasan, caramelBawasan, lecheFlanBawasan, whippedCreamBawasan, blackPearlBawasan , domeLidBawasan, cups12Bawasan, cups16Bawasan, cups22Bawasan, strawBawasan, sugarBawasan;  
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\dbGrahamShake.accdb");
@@ -780,6 +781,8 @@ namespace WindowsFormsApplication1
 
         public void latestStockReportChart()
         {
+            List<int> listOfStockAmountForStock = new List<int>();
+            List<string> listOfStockNameForStock = new List<string>();
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -804,6 +807,9 @@ namespace WindowsFormsApplication1
                 cups22Bawasan = Convert.ToInt32(dr["Cups_22oz"]);
                 strawBawasan = Convert.ToInt32(dr["Straw"]);
                 sugarBawasan = Convert.ToInt32(dr["Sugar"]);
+
+
+                
             }
 
             con.Close();
@@ -843,23 +849,25 @@ namespace WindowsFormsApplication1
                 listOfStockNameForStock.Add("Cups 22oz");
                 listOfStockNameForStock.Add("Straw");
                 listOfStockNameForStock.Add("Sugar");
-                
 
             //Pie chart summary
             pieChartLatestInventory.Titles.Add("Latest Stock Report");
             pieChartLatestInventory.Series.Add("s1");
-            pieChartLatestInventory.Series["s1"].ChartType = SeriesChartType.Column;
-            pieChartLatestInventory.Series["s1"].Color = Color.FromArgb(0, 120, 215);
-
-            for (int i = 0; i > 17; i++)
+            pieChartLatestInventory.Series["s1"].ChartType = SeriesChartType.Bar;
+            pieChartLatestInventory.Palette = ChartColorPalette.BrightPastel;
+            pieChartLatestInventory.Series["s1"].Color = Color.FromArgb(5, 100, 146);
+            //pieChartLatestInventory.Series["s1"].Font = new System.Drawing.Font("Microsoft Sans Serif", 8f);
+            int i;
+            for (i = 0; i < listOfStockNameForStock.Count; i++ )
             {
                 pieChartLatestInventory.Series["s1"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
                 pieChartLatestInventory.Series["s1"].IsValueShownAsLabel = true;
                 pieChartLatestInventory.Series["s1"].LabelBackColor = Color.FromArgb(255, 255, 255);
+                pieChartLatestInventory.Series["s1"].Points[i].Font = new System.Drawing.Font("Microsoft Sans Serif", 8f); //FIX CHART FONT TOO BIG WONT FIT TO GUI!!
             }
 
 
-            //Fix pie
+            
         }
 
        
