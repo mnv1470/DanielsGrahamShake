@@ -1,0 +1,9 @@
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\bin\Debug\GrahamShakeSystem.exe
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\bin\Debug\GrahamShakeSystem.pdb
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\GrahamShakeSystem.csproj.GenerateResource.Cache
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\GrahamShakeSystem.exe
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\GrahamShakeSystem.pdb
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\bin\Debug\dbGrahamShake.accdb
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\bin\Debug\GrahamShakeSystem.exe.config
