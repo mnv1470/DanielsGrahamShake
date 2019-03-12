@@ -7,3 +7,4 @@ C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\Graham
 C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\GrahamShakeSystem.pdb
 C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\bin\Debug\dbGrahamShake.accdb
 C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\bin\Debug\GrahamShakeSystem.exe.config
+C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\GrahamShakeSystem.csprojResolveAssemblyReference.cache

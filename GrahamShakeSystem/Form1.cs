@@ -11,12 +11,13 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 
 
+
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        
 
+        string dateTimeLatestInventory;
         int crushedIceBawasan, mangoBawasan, avocadoBawasan, condensedMilkBawasan, grahamPowderBawasan, marshmallowBawasan, caramelBawasan, lecheFlanBawasan, whippedCreamBawasan, blackPearlBawasan , domeLidBawasan, cups12Bawasan, cups16Bawasan, cups22Bawasan, strawBawasan, sugarBawasan;  
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\dbGrahamShake.accdb");
         public Form1()
@@ -791,6 +792,7 @@ namespace WindowsFormsApplication1
             while (dr.Read())
             {
                 //Retrieve value from inventory table
+                dateTimeLatestInventory = Convert.ToString(dr["Date_updated"]);
                 crushedIceBawasan = Convert.ToInt32(dr["Crushed_ice"]);
                 mangoBawasan = Convert.ToInt32(dr["Mango"]);
                 avocadoBawasan = Convert.ToInt32(dr["Avocado"]);
@@ -807,66 +809,98 @@ namespace WindowsFormsApplication1
                 cups22Bawasan = Convert.ToInt32(dr["Cups_22oz"]);
                 strawBawasan = Convert.ToInt32(dr["Straw"]);
                 sugarBawasan = Convert.ToInt32(dr["Sugar"]);
-
-
-                
             }
 
             con.Close();
 
            
-                //Lagay sa listOfStockAmountForStock yung retrieved data
+                //Main Ingredients
                 listOfStockAmountForStock.Add(crushedIceBawasan);
                 listOfStockAmountForStock.Add(mangoBawasan);
                 listOfStockAmountForStock.Add(avocadoBawasan);
                 listOfStockAmountForStock.Add(condensedMilkBawasan);
+                //Secondary Ingredients AMOUNT
                 listOfStockAmountForStock.Add(grahamPowderBawasan);
                 listOfStockAmountForStock.Add(marshmallowBawasan);
                 listOfStockAmountForStock.Add(caramelBawasan);
                 listOfStockAmountForStock.Add(lecheFlanBawasan);
                 listOfStockAmountForStock.Add(whippedCreamBawasan);
                 listOfStockAmountForStock.Add(blackPearlBawasan);
+                listOfStockAmountForStock.Add(sugarBawasan);
+                //Materials
                 listOfStockAmountForStock.Add(domeLidBawasan);
                 listOfStockAmountForStock.Add(cups12Bawasan);
                 listOfStockAmountForStock.Add(cups16Bawasan);
                 listOfStockAmountForStock.Add(cups22Bawasan);
                 listOfStockAmountForStock.Add(strawBawasan);
-                listOfStockAmountForStock.Add(sugarBawasan);
-                //Lagay sa listOfStockNameForStock yung retrieved data
+               
+                //Main Ingredients
                 listOfStockNameForStock.Add("Crushed Ice");
                 listOfStockNameForStock.Add("Mango");
                 listOfStockNameForStock.Add("Avocado");
                 listOfStockNameForStock.Add("Condensed Milk");
+                //Secondary Ingredients
                 listOfStockNameForStock.Add("Graham Powder");
                 listOfStockNameForStock.Add("Marshmallow");
                 listOfStockNameForStock.Add("Caramel");
                 listOfStockNameForStock.Add("Leche Flan");
                 listOfStockNameForStock.Add("Whipped Cream");
                 listOfStockNameForStock.Add("Black Pearl");
+                listOfStockNameForStock.Add("Sugar");
+                //Materials
                 listOfStockNameForStock.Add("Dome Lid");
                 listOfStockNameForStock.Add("Cups 12oz");
                 listOfStockNameForStock.Add("Cups 16oz");
                 listOfStockNameForStock.Add("Cups 22oz");
                 listOfStockNameForStock.Add("Straw");
-                listOfStockNameForStock.Add("Sugar");
+            //Headings DISPLAY
+                lblDateLatestInventoryReport.Text = "As of "+dateTimeLatestInventory;
 
-            //Pie chart summary
-            pieChartLatestInventory.Titles.Add("Latest Stock Report");
-            pieChartLatestInventory.Series.Add("s1");
-            pieChartLatestInventory.Series["s1"].ChartType = SeriesChartType.Bar;
-            pieChartLatestInventory.Palette = ChartColorPalette.BrightPastel;
-            pieChartLatestInventory.Series["s1"].Color = Color.FromArgb(5, 100, 146);
-            //pieChartLatestInventory.Series["s1"].Font = new System.Drawing.Font("Microsoft Sans Serif", 8f);
+            //Pie chart PRIMARY INGREDIENTS
+                pieChartLatestInventory.Series["s1"].Palette = ChartColorPalette.BrightPastel;
+                //pieChartLatestInventory.Series["s1"].Color = Color.FromArgb(5, 100, 146);
             int i;
-            for (i = 0; i < listOfStockNameForStock.Count; i++ )
+            //pieChartLatestInventory.Series["s1"]["PointWidth"] = "0.3";
+            //pieChartLatestInventory.Series["s1"]["PixelPointWidth"] = "4";
+            pieChartLatestInventory.AlignDataPointsByAxisLabel();  
+            for (i = 3; i >= 0; i-- )
             {
                 pieChartLatestInventory.Series["s1"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
                 pieChartLatestInventory.Series["s1"].IsValueShownAsLabel = true;
                 pieChartLatestInventory.Series["s1"].LabelBackColor = Color.FromArgb(255, 255, 255);
-                pieChartLatestInventory.Series["s1"].Points[i].Font = new System.Drawing.Font("Microsoft Sans Serif", 8f); //FIX CHART FONT TOO BIG WONT FIT TO GUI!!
             }
 
 
+            //Pie SECONDARY MATERIALS
+            chartSecondaryIngredients.Series["s2"].Palette = ChartColorPalette.BrightPastel;
+            //chartSecondaryIngredients.Series["s2"].Color = Color.FromArgb(5, 100, 146);
+            //chartSecondaryIngredients.Series["s2"]["PointWidth"] = "0.3";
+            //chartSecondaryIngredients.Series["s2"]["PixelPointWidth"] = "4";
+            chartSecondaryIngredients.AlignDataPointsByAxisLabel();
+            for (i = 10; i >= 4; i--)
+            {
+                chartSecondaryIngredients.Series["s2"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
+                chartSecondaryIngredients.Series["s2"].IsValueShownAsLabel = true;
+                chartSecondaryIngredients.Series["s2"].LabelBackColor = Color.FromArgb(255, 255, 255);
+            }
+
+
+            //Pie chart MATERIALS
+            chartMaterials.Series["s3"].Palette = ChartColorPalette.BrightPastel;
+            //chartMaterials.Series["s3"].Color = Color.FromArgb(5, 100, 146);
+            //chartMaterials.Series["s3"]["PointWidth"] = "0.3";
+            //chartMaterials.Series["s3"]["PixelPointWidth"] = "4";
+            chartMaterials.AlignDataPointsByAxisLabel();
+            for (i = 15; i >= 11; i--)
+            {
+                chartMaterials.Series["s3"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
+                chartMaterials.Series["s3"].IsValueShownAsLabel = true;
+                chartMaterials.Series["s3"].LabelBackColor = Color.FromArgb(255, 255, 255);
+            }
+
+
+            
+       
             
         }
 

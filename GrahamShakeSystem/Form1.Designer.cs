@@ -29,9 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabAddDailySalesRecord = new System.Windows.Forms.TabPage();
@@ -152,8 +161,26 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabUpdateInventory = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewModifyInventory = new System.Windows.Forms.DataGridView();
-            this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Date_updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Crushed_ice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mangoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.avocadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.condensedmilkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grahampowderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marshmallowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caramelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecheflanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.whippedcreamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.domelidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cups12ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cups16ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cups22ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.strawDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dbGrahamShakeDataSet = new WindowsFormsApplication1.dbGrahamShakeDataSet();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -194,30 +221,20 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.tabDisplaySalesRecord = new System.Windows.Forms.TabPage();
+            this.tabDisplayInventoryReport = new System.Windows.Forms.TabPage();
+            this.pieChartLatestInventory = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnExit = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.tblIngredientStocksBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblIngredientStocksTableAdapter();
-            this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.Date_updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Crushed_ice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mangoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.avocadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.condensedmilkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grahampowderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marshmallowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caramelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lecheflanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.whippedcreamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.domelidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cups12ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cups16ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cups22ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.strawDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pieChartLatestInventory = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartSecondaryIngredients = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartMaterials = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label18 = new System.Windows.Forms.Label();
+            this.tblSalesPerformance = new System.Windows.Forms.TabPage();
+            this.chartWeeklySalesPerformance = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblDateLatestInventoryReport = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabAddDailySalesRecord.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -241,7 +258,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCrushedIce)).BeginInit();
             this.tabUpdateInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numModBlackPearl)).BeginInit();
@@ -260,10 +277,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numModDomeLid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModMango)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCrushedIce)).BeginInit();
+            this.tabDisplayInventoryReport.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSecondaryIngredients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMaterials)).BeginInit();
+            this.tblSalesPerformance.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartWeeklySalesPerformance)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -271,11 +293,12 @@
             this.tabControl1.Controls.Add(this.tabHome);
             this.tabControl1.Controls.Add(this.tabAddDailySalesRecord);
             this.tabControl1.Controls.Add(this.tabUpdateInventory);
-            this.tabControl1.Controls.Add(this.tabDisplaySalesRecord);
+            this.tabControl1.Controls.Add(this.tabDisplayInventoryReport);
+            this.tabControl1.Controls.Add(this.tblSalesPerformance);
             this.tabControl1.Location = new System.Drawing.Point(12, 32);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(952, 535);
+            this.tabControl1.Size = new System.Drawing.Size(700, 377);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -284,7 +307,7 @@
             this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(692, 358);
+            this.tabHome.Size = new System.Drawing.Size(692, 351);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
@@ -298,7 +321,7 @@
             this.tabAddDailySalesRecord.Location = new System.Drawing.Point(4, 22);
             this.tabAddDailySalesRecord.Name = "tabAddDailySalesRecord";
             this.tabAddDailySalesRecord.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAddDailySalesRecord.Size = new System.Drawing.Size(692, 358);
+            this.tabAddDailySalesRecord.Size = new System.Drawing.Size(692, 351);
             this.tabAddDailySalesRecord.TabIndex = 1;
             this.tabAddDailySalesRecord.Text = "Add Daily Sales Record";
             this.tabAddDailySalesRecord.UseVisualStyleBackColor = true;
@@ -1412,15 +1435,32 @@
             // 
             // tabUpdateInventory
             // 
-            this.tabUpdateInventory.Controls.Add(this.pieChartLatestInventory);
+            this.tabUpdateInventory.Controls.Add(this.textBox1);
+            this.tabUpdateInventory.Controls.Add(this.button1);
             this.tabUpdateInventory.Controls.Add(this.dataGridViewModifyInventory);
             this.tabUpdateInventory.Controls.Add(this.groupBox3);
             this.tabUpdateInventory.Location = new System.Drawing.Point(4, 22);
             this.tabUpdateInventory.Name = "tabUpdateInventory";
-            this.tabUpdateInventory.Size = new System.Drawing.Size(944, 509);
+            this.tabUpdateInventory.Size = new System.Drawing.Size(692, 351);
             this.tabUpdateInventory.TabIndex = 2;
             this.tabUpdateInventory.Text = "Update Inventory";
             this.tabUpdateInventory.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(503, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(115, 20);
+            this.textBox1.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(624, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dataGridViewModifyInventory
             // 
@@ -1446,16 +1486,143 @@
             this.strawDataGridViewTextBoxColumn,
             this.sugarDataGridViewTextBoxColumn});
             this.dataGridViewModifyInventory.DataSource = this.tblIngredientStocksBindingSource3;
-            this.dataGridViewModifyInventory.Location = new System.Drawing.Point(299, 16);
+            this.dataGridViewModifyInventory.Location = new System.Drawing.Point(296, 45);
             this.dataGridViewModifyInventory.Name = "dataGridViewModifyInventory";
             this.dataGridViewModifyInventory.ReadOnly = true;
-            this.dataGridViewModifyInventory.Size = new System.Drawing.Size(385, 183);
+            this.dataGridViewModifyInventory.Size = new System.Drawing.Size(385, 301);
             this.dataGridViewModifyInventory.TabIndex = 2;
             // 
-            // tblIngredientStocksBindingSource
+            // Date_updated
             // 
-            this.tblIngredientStocksBindingSource.DataMember = "tblIngredientStocks";
-            this.tblIngredientStocksBindingSource.DataSource = this.dbGrahamShakeDataSet;
+            this.Date_updated.DataPropertyName = "Date_updated";
+            this.Date_updated.HeaderText = "Date_updated";
+            this.Date_updated.Name = "Date_updated";
+            this.Date_updated.ReadOnly = true;
+            this.Date_updated.Width = 50;
+            // 
+            // Crushed_ice
+            // 
+            this.Crushed_ice.DataPropertyName = "Crushed_ice";
+            this.Crushed_ice.HeaderText = "Crushed_ice";
+            this.Crushed_ice.Name = "Crushed_ice";
+            this.Crushed_ice.ReadOnly = true;
+            // 
+            // mangoDataGridViewTextBoxColumn
+            // 
+            this.mangoDataGridViewTextBoxColumn.DataPropertyName = "Mango";
+            this.mangoDataGridViewTextBoxColumn.HeaderText = "Mango";
+            this.mangoDataGridViewTextBoxColumn.Name = "mangoDataGridViewTextBoxColumn";
+            this.mangoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mangoDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // avocadoDataGridViewTextBoxColumn
+            // 
+            this.avocadoDataGridViewTextBoxColumn.DataPropertyName = "Avocado";
+            this.avocadoDataGridViewTextBoxColumn.HeaderText = "Avocado";
+            this.avocadoDataGridViewTextBoxColumn.Name = "avocadoDataGridViewTextBoxColumn";
+            this.avocadoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.avocadoDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // condensedmilkDataGridViewTextBoxColumn
+            // 
+            this.condensedmilkDataGridViewTextBoxColumn.DataPropertyName = "Condensed_milk";
+            this.condensedmilkDataGridViewTextBoxColumn.HeaderText = "Condensed_milk";
+            this.condensedmilkDataGridViewTextBoxColumn.Name = "condensedmilkDataGridViewTextBoxColumn";
+            this.condensedmilkDataGridViewTextBoxColumn.ReadOnly = true;
+            this.condensedmilkDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // grahampowderDataGridViewTextBoxColumn
+            // 
+            this.grahampowderDataGridViewTextBoxColumn.DataPropertyName = "Graham_powder";
+            this.grahampowderDataGridViewTextBoxColumn.HeaderText = "Graham_powder";
+            this.grahampowderDataGridViewTextBoxColumn.Name = "grahampowderDataGridViewTextBoxColumn";
+            this.grahampowderDataGridViewTextBoxColumn.ReadOnly = true;
+            this.grahampowderDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // marshmallowDataGridViewTextBoxColumn
+            // 
+            this.marshmallowDataGridViewTextBoxColumn.DataPropertyName = "Marshmallow";
+            this.marshmallowDataGridViewTextBoxColumn.HeaderText = "Marshmallow";
+            this.marshmallowDataGridViewTextBoxColumn.Name = "marshmallowDataGridViewTextBoxColumn";
+            this.marshmallowDataGridViewTextBoxColumn.ReadOnly = true;
+            this.marshmallowDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // caramelDataGridViewTextBoxColumn
+            // 
+            this.caramelDataGridViewTextBoxColumn.DataPropertyName = "Caramel";
+            this.caramelDataGridViewTextBoxColumn.HeaderText = "Caramel";
+            this.caramelDataGridViewTextBoxColumn.Name = "caramelDataGridViewTextBoxColumn";
+            this.caramelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.caramelDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // lecheflanDataGridViewTextBoxColumn
+            // 
+            this.lecheflanDataGridViewTextBoxColumn.DataPropertyName = "Leche_flan";
+            this.lecheflanDataGridViewTextBoxColumn.HeaderText = "Leche_flan";
+            this.lecheflanDataGridViewTextBoxColumn.Name = "lecheflanDataGridViewTextBoxColumn";
+            this.lecheflanDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lecheflanDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // whippedcreamDataGridViewTextBoxColumn
+            // 
+            this.whippedcreamDataGridViewTextBoxColumn.DataPropertyName = "Whipped_cream";
+            this.whippedcreamDataGridViewTextBoxColumn.HeaderText = "Whipped_cream";
+            this.whippedcreamDataGridViewTextBoxColumn.Name = "whippedcreamDataGridViewTextBoxColumn";
+            this.whippedcreamDataGridViewTextBoxColumn.ReadOnly = true;
+            this.whippedcreamDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // domelidDataGridViewTextBoxColumn
+            // 
+            this.domelidDataGridViewTextBoxColumn.DataPropertyName = "Dome_lid";
+            this.domelidDataGridViewTextBoxColumn.HeaderText = "Dome_lid";
+            this.domelidDataGridViewTextBoxColumn.Name = "domelidDataGridViewTextBoxColumn";
+            this.domelidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.domelidDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // cups12ozDataGridViewTextBoxColumn
+            // 
+            this.cups12ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_12oz";
+            this.cups12ozDataGridViewTextBoxColumn.HeaderText = "Cups_12oz";
+            this.cups12ozDataGridViewTextBoxColumn.Name = "cups12ozDataGridViewTextBoxColumn";
+            this.cups12ozDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cups12ozDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // cups16ozDataGridViewTextBoxColumn
+            // 
+            this.cups16ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_16oz";
+            this.cups16ozDataGridViewTextBoxColumn.HeaderText = "Cups_16oz";
+            this.cups16ozDataGridViewTextBoxColumn.Name = "cups16ozDataGridViewTextBoxColumn";
+            this.cups16ozDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cups16ozDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // cups22ozDataGridViewTextBoxColumn
+            // 
+            this.cups22ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_22oz";
+            this.cups22ozDataGridViewTextBoxColumn.HeaderText = "Cups_22oz";
+            this.cups22ozDataGridViewTextBoxColumn.Name = "cups22ozDataGridViewTextBoxColumn";
+            this.cups22ozDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cups22ozDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // strawDataGridViewTextBoxColumn
+            // 
+            this.strawDataGridViewTextBoxColumn.DataPropertyName = "Straw";
+            this.strawDataGridViewTextBoxColumn.HeaderText = "Straw";
+            this.strawDataGridViewTextBoxColumn.Name = "strawDataGridViewTextBoxColumn";
+            this.strawDataGridViewTextBoxColumn.ReadOnly = true;
+            this.strawDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // sugarDataGridViewTextBoxColumn
+            // 
+            this.sugarDataGridViewTextBoxColumn.DataPropertyName = "Sugar";
+            this.sugarDataGridViewTextBoxColumn.HeaderText = "Sugar";
+            this.sugarDataGridViewTextBoxColumn.Name = "sugarDataGridViewTextBoxColumn";
+            this.sugarDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sugarDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // tblIngredientStocksBindingSource3
+            // 
+            this.tblIngredientStocksBindingSource3.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource3.DataSource = this.dbGrahamShakeDataSet;
             // 
             // dbGrahamShakeDataSet
             // 
@@ -1819,14 +1986,43 @@
             this.label90.TabIndex = 0;
             this.label90.Text = "Crushed ice:";
             // 
-            // tabDisplaySalesRecord
+            // tabDisplayInventoryReport
             // 
-            this.tabDisplaySalesRecord.Location = new System.Drawing.Point(4, 22);
-            this.tabDisplaySalesRecord.Name = "tabDisplaySalesRecord";
-            this.tabDisplaySalesRecord.Size = new System.Drawing.Size(692, 358);
-            this.tabDisplaySalesRecord.TabIndex = 3;
-            this.tabDisplaySalesRecord.Text = "Display Sales Record";
-            this.tabDisplaySalesRecord.UseVisualStyleBackColor = true;
+            this.tabDisplayInventoryReport.Controls.Add(this.lblDateLatestInventoryReport);
+            this.tabDisplayInventoryReport.Controls.Add(this.label18);
+            this.tabDisplayInventoryReport.Controls.Add(this.chartMaterials);
+            this.tabDisplayInventoryReport.Controls.Add(this.chartSecondaryIngredients);
+            this.tabDisplayInventoryReport.Controls.Add(this.pieChartLatestInventory);
+            this.tabDisplayInventoryReport.Location = new System.Drawing.Point(4, 22);
+            this.tabDisplayInventoryReport.Name = "tabDisplayInventoryReport";
+            this.tabDisplayInventoryReport.Size = new System.Drawing.Size(692, 351);
+            this.tabDisplayInventoryReport.TabIndex = 3;
+            this.tabDisplayInventoryReport.Text = "Latest Inventory Report";
+            this.tabDisplayInventoryReport.UseVisualStyleBackColor = true;
+            // 
+            // pieChartLatestInventory
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.pieChartLatestInventory.ChartAreas.Add(chartArea3);
+            this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 32);
+            this.pieChartLatestInventory.Name = "pieChartLatestInventory";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.Name = "s1";
+            this.pieChartLatestInventory.Series.Add(series3);
+            this.pieChartLatestInventory.Size = new System.Drawing.Size(231, 282);
+            this.pieChartLatestInventory.TabIndex = 4;
+            this.pieChartLatestInventory.Text = "chart1";
+            title3.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title3.Name = "Main Ingredients";
+            title3.Text = "Primary Ingredients";
+            this.pieChartLatestInventory.Titles.Add(title3);
+            // 
+            // tblIngredientStocksBindingSource
+            // 
+            this.tblIngredientStocksBindingSource.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource.DataSource = this.dbGrahamShakeDataSet;
             // 
             // btnExit
             // 
@@ -1862,158 +2058,93 @@
             // 
             this.tblIngredientStocksTableAdapter.ClearBeforeFill = true;
             // 
-            // tblIngredientStocksBindingSource3
+            // chartSecondaryIngredients
             // 
-            this.tblIngredientStocksBindingSource3.DataMember = "tblIngredientStocks";
-            this.tblIngredientStocksBindingSource3.DataSource = this.dbGrahamShakeDataSet;
+            chartArea2.Name = "ChartArea1";
+            this.chartSecondaryIngredients.ChartAreas.Add(chartArea2);
+            this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 32);
+            this.chartSecondaryIngredients.Name = "chartSecondaryIngredients";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Name = "s2";
+            this.chartSecondaryIngredients.Series.Add(series2);
+            this.chartSecondaryIngredients.Size = new System.Drawing.Size(231, 282);
+            this.chartSecondaryIngredients.TabIndex = 4;
+            this.chartSecondaryIngredients.Text = "chart1";
+            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title2.Name = "Main Ingredients";
+            title2.Text = "Secondary Ingredients";
+            this.chartSecondaryIngredients.Titles.Add(title2);
             // 
-            // Date_updated
-            // 
-            this.Date_updated.DataPropertyName = "Date_updated";
-            this.Date_updated.HeaderText = "Date_updated";
-            this.Date_updated.Name = "Date_updated";
-            this.Date_updated.ReadOnly = true;
-            this.Date_updated.Width = 50;
-            // 
-            // Crushed_ice
-            // 
-            this.Crushed_ice.DataPropertyName = "Crushed_ice";
-            this.Crushed_ice.HeaderText = "Crushed_ice";
-            this.Crushed_ice.Name = "Crushed_ice";
-            this.Crushed_ice.ReadOnly = true;
-            // 
-            // mangoDataGridViewTextBoxColumn
-            // 
-            this.mangoDataGridViewTextBoxColumn.DataPropertyName = "Mango";
-            this.mangoDataGridViewTextBoxColumn.HeaderText = "Mango";
-            this.mangoDataGridViewTextBoxColumn.Name = "mangoDataGridViewTextBoxColumn";
-            this.mangoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mangoDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // avocadoDataGridViewTextBoxColumn
-            // 
-            this.avocadoDataGridViewTextBoxColumn.DataPropertyName = "Avocado";
-            this.avocadoDataGridViewTextBoxColumn.HeaderText = "Avocado";
-            this.avocadoDataGridViewTextBoxColumn.Name = "avocadoDataGridViewTextBoxColumn";
-            this.avocadoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.avocadoDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // condensedmilkDataGridViewTextBoxColumn
-            // 
-            this.condensedmilkDataGridViewTextBoxColumn.DataPropertyName = "Condensed_milk";
-            this.condensedmilkDataGridViewTextBoxColumn.HeaderText = "Condensed_milk";
-            this.condensedmilkDataGridViewTextBoxColumn.Name = "condensedmilkDataGridViewTextBoxColumn";
-            this.condensedmilkDataGridViewTextBoxColumn.ReadOnly = true;
-            this.condensedmilkDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // grahampowderDataGridViewTextBoxColumn
-            // 
-            this.grahampowderDataGridViewTextBoxColumn.DataPropertyName = "Graham_powder";
-            this.grahampowderDataGridViewTextBoxColumn.HeaderText = "Graham_powder";
-            this.grahampowderDataGridViewTextBoxColumn.Name = "grahampowderDataGridViewTextBoxColumn";
-            this.grahampowderDataGridViewTextBoxColumn.ReadOnly = true;
-            this.grahampowderDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // marshmallowDataGridViewTextBoxColumn
-            // 
-            this.marshmallowDataGridViewTextBoxColumn.DataPropertyName = "Marshmallow";
-            this.marshmallowDataGridViewTextBoxColumn.HeaderText = "Marshmallow";
-            this.marshmallowDataGridViewTextBoxColumn.Name = "marshmallowDataGridViewTextBoxColumn";
-            this.marshmallowDataGridViewTextBoxColumn.ReadOnly = true;
-            this.marshmallowDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // caramelDataGridViewTextBoxColumn
-            // 
-            this.caramelDataGridViewTextBoxColumn.DataPropertyName = "Caramel";
-            this.caramelDataGridViewTextBoxColumn.HeaderText = "Caramel";
-            this.caramelDataGridViewTextBoxColumn.Name = "caramelDataGridViewTextBoxColumn";
-            this.caramelDataGridViewTextBoxColumn.ReadOnly = true;
-            this.caramelDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // lecheflanDataGridViewTextBoxColumn
-            // 
-            this.lecheflanDataGridViewTextBoxColumn.DataPropertyName = "Leche_flan";
-            this.lecheflanDataGridViewTextBoxColumn.HeaderText = "Leche_flan";
-            this.lecheflanDataGridViewTextBoxColumn.Name = "lecheflanDataGridViewTextBoxColumn";
-            this.lecheflanDataGridViewTextBoxColumn.ReadOnly = true;
-            this.lecheflanDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // whippedcreamDataGridViewTextBoxColumn
-            // 
-            this.whippedcreamDataGridViewTextBoxColumn.DataPropertyName = "Whipped_cream";
-            this.whippedcreamDataGridViewTextBoxColumn.HeaderText = "Whipped_cream";
-            this.whippedcreamDataGridViewTextBoxColumn.Name = "whippedcreamDataGridViewTextBoxColumn";
-            this.whippedcreamDataGridViewTextBoxColumn.ReadOnly = true;
-            this.whippedcreamDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // domelidDataGridViewTextBoxColumn
-            // 
-            this.domelidDataGridViewTextBoxColumn.DataPropertyName = "Dome_lid";
-            this.domelidDataGridViewTextBoxColumn.HeaderText = "Dome_lid";
-            this.domelidDataGridViewTextBoxColumn.Name = "domelidDataGridViewTextBoxColumn";
-            this.domelidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.domelidDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // cups12ozDataGridViewTextBoxColumn
-            // 
-            this.cups12ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_12oz";
-            this.cups12ozDataGridViewTextBoxColumn.HeaderText = "Cups_12oz";
-            this.cups12ozDataGridViewTextBoxColumn.Name = "cups12ozDataGridViewTextBoxColumn";
-            this.cups12ozDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cups12ozDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // cups16ozDataGridViewTextBoxColumn
-            // 
-            this.cups16ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_16oz";
-            this.cups16ozDataGridViewTextBoxColumn.HeaderText = "Cups_16oz";
-            this.cups16ozDataGridViewTextBoxColumn.Name = "cups16ozDataGridViewTextBoxColumn";
-            this.cups16ozDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cups16ozDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // cups22ozDataGridViewTextBoxColumn
-            // 
-            this.cups22ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_22oz";
-            this.cups22ozDataGridViewTextBoxColumn.HeaderText = "Cups_22oz";
-            this.cups22ozDataGridViewTextBoxColumn.Name = "cups22ozDataGridViewTextBoxColumn";
-            this.cups22ozDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cups22ozDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // strawDataGridViewTextBoxColumn
-            // 
-            this.strawDataGridViewTextBoxColumn.DataPropertyName = "Straw";
-            this.strawDataGridViewTextBoxColumn.HeaderText = "Straw";
-            this.strawDataGridViewTextBoxColumn.Name = "strawDataGridViewTextBoxColumn";
-            this.strawDataGridViewTextBoxColumn.ReadOnly = true;
-            this.strawDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // sugarDataGridViewTextBoxColumn
-            // 
-            this.sugarDataGridViewTextBoxColumn.DataPropertyName = "Sugar";
-            this.sugarDataGridViewTextBoxColumn.HeaderText = "Sugar";
-            this.sugarDataGridViewTextBoxColumn.Name = "sugarDataGridViewTextBoxColumn";
-            this.sugarDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sugarDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // pieChartLatestInventory
+            // chartMaterials
             // 
             chartArea1.Name = "ChartArea1";
-            this.pieChartLatestInventory.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.pieChartLatestInventory.Legends.Add(legend1);
-            this.pieChartLatestInventory.Location = new System.Drawing.Point(299, 215);
-            this.pieChartLatestInventory.Name = "pieChartLatestInventory";
-            this.pieChartLatestInventory.Size = new System.Drawing.Size(614, 278);
-            this.pieChartLatestInventory.TabIndex = 3;
-            this.pieChartLatestInventory.Text = "chart1";
-            title1.Name = "Latest Stock Report";
-            this.pieChartLatestInventory.Titles.Add(title1);
+            this.chartMaterials.ChartAreas.Add(chartArea1);
+            this.chartMaterials.Location = new System.Drawing.Point(458, 32);
+            this.chartMaterials.Name = "chartMaterials";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Name = "s3";
+            this.chartMaterials.Series.Add(series1);
+            this.chartMaterials.Size = new System.Drawing.Size(231, 282);
+            this.chartMaterials.TabIndex = 4;
+            this.chartMaterials.Text = "chart1";
+            title1.Name = "Materials";
+            title1.Text = "Materials";
+            this.chartMaterials.Titles.Add(title1);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(279, 6);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(162, 13);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "LATEST INVENTORY REPORT";
+            // 
+            // tblSalesPerformance
+            // 
+            this.tblSalesPerformance.Controls.Add(this.chartWeeklySalesPerformance);
+            this.tblSalesPerformance.Location = new System.Drawing.Point(4, 22);
+            this.tblSalesPerformance.Name = "tblSalesPerformance";
+            this.tblSalesPerformance.Size = new System.Drawing.Size(692, 351);
+            this.tblSalesPerformance.TabIndex = 4;
+            this.tblSalesPerformance.Text = "Weekly Sales Performance";
+            this.tblSalesPerformance.UseVisualStyleBackColor = true;
+            // 
+            // chartWeeklySalesPerformance
+            // 
+            chartArea4.Name = "ChartArea1";
+            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea4);
+            this.chartWeeklySalesPerformance.Location = new System.Drawing.Point(26, 46);
+            this.chartWeeklySalesPerformance.Name = "chartWeeklySalesPerformance";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Name = "s1";
+            this.chartWeeklySalesPerformance.Series.Add(series4);
+            this.chartWeeklySalesPerformance.Size = new System.Drawing.Size(628, 282);
+            this.chartWeeklySalesPerformance.TabIndex = 0;
+            this.chartWeeklySalesPerformance.Text = "chart1";
+            title4.Name = "Title1";
+            this.chartWeeklySalesPerformance.Titles.Add(title4);
+            // 
+            // lblDateLatestInventoryReport
+            // 
+            this.lblDateLatestInventoryReport.AutoSize = true;
+            this.lblDateLatestInventoryReport.Location = new System.Drawing.Point(279, 21);
+            this.lblDateLatestInventoryReport.Name = "lblDateLatestInventoryReport";
+            this.lblDateLatestInventoryReport.Size = new System.Drawing.Size(30, 13);
+            this.lblDateLatestInventoryReport.TabIndex = 5;
+            this.lblDateLatestInventoryReport.Text = "Date";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(976, 607);
+            this.ClientSize = new System.Drawing.Size(724, 421);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl1);
@@ -2046,8 +2177,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMango)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCrushedIce)).EndInit();
             this.tabUpdateInventory.ResumeLayout(false);
+            this.tabUpdateInventory.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -2067,10 +2199,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.numModDomeLid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModMango)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numModCrushedIce)).EndInit();
+            this.tabDisplayInventoryReport.ResumeLayout(false);
+            this.tabDisplayInventoryReport.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartSecondaryIngredients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMaterials)).EndInit();
+            this.tblSalesPerformance.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartWeeklySalesPerformance)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2098,7 +2236,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabDisplaySalesRecord;
+        private System.Windows.Forms.TabPage tabDisplayInventoryReport;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.TextBox txtCPWhippedCream;
@@ -2264,6 +2402,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sugarDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource tblIngredientStocksBindingSource3;
         private System.Windows.Forms.DataVisualization.Charting.Chart pieChartLatestInventory;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartMaterials;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSecondaryIngredients;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblDateLatestInventoryReport;
+        private System.Windows.Forms.TabPage tblSalesPerformance;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartWeeklySalesPerformance;
 
     }
 }
