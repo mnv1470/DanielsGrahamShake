@@ -16,7 +16,8 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-
+        bool notificationFeatureAvailableDone;
+        bool IsSalesRecordBelow7;
         string dateTimeLatestInventory;
         int crushedIceBawasan, mangoBawasan, avocadoBawasan, condensedMilkBawasan, grahamPowderBawasan, marshmallowBawasan, caramelBawasan, lecheFlanBawasan, whippedCreamBawasan, blackPearlBawasan , domeLidBawasan, cups12Bawasan, cups16Bawasan, cups22Bawasan, strawBawasan, sugarBawasan;  
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\dbGrahamShake.accdb");
@@ -240,7 +241,7 @@ namespace WindowsFormsApplication1
                 txtCPSugar.Clear();
             }
         }
-
+      
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dbGrahamShakeDataSet.tblIngredientStocks' table. You can move, or remove it, as needed.
@@ -248,6 +249,11 @@ namespace WindowsFormsApplication1
             RetrieveValueFromTblIngredientStocks();
             latestStockReportChart();
             weeklySalesPerformance();
+            if (IsSalesRecordBelow7 == true)
+            {
+                ((Control)tabControl1.TabPages[4]).Enabled = false;
+                MessageBox.Show("Your sales record is below 7 days. Sales Performance feature will not be available", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             setToDefault(); //Disable and clear 
             updateDataGridInventoryModify();//Display to datagrid update inventory
             
@@ -448,13 +454,25 @@ namespace WindowsFormsApplication1
 
             con.Open();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now.Date + "','" + blackPearlUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
+            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now + "','" + crushedIceUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + blackPearlUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
 
             //Set to default and notify
-            updateDataGridInventoryModify();    
+            
+            updateDataGridInventoryModify();
+            clearWeeklySalesPerformanceChart();
+            weeklySalesPerformance();
+            if (notificationFeatureAvailableDone == false)
+            {
+                if (IsSalesRecordBelow7 == false)
+                {
+                    ((Control)tabControl1.TabPages[4]).Enabled = true;
+                    MessageBox.Show("Sales Performance feature is now available", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    notificationFeatureAvailableDone = true;
+                }
+            }
             MessageBox.Show("Successfully recorded!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             setToDefault();
         }
@@ -554,15 +572,17 @@ namespace WindowsFormsApplication1
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now.Date + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
+            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
             cmd.ExecuteNonQuery();
             con.Close(); //NAKALIMUTAN MO YUNG CRUSHED ICE AYUSIN MO DB AND ALL CODES DOUBLE CHECK KUNG NAINCLUDE CRUSHED ICE
 
             updateDataGridInventoryModify();//Display to datagrid update inventory
-
+            clearChartsInLatestStockReport();
+            latestStockReportChart();
             //set to default and notify
             setToDefault();
             MessageBox.Show("Successfully updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         public void updateDataGridInventoryModify()
@@ -582,7 +602,16 @@ namespace WindowsFormsApplication1
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             RetrieveValueFromTblIngredientStocks();
-            
+            if ((sender as TabControl).SelectedIndex == 3)
+            {
+                clearChartsInLatestStockReport();
+                latestStockReportChart();
+            }
+            if ((sender as TabControl).SelectedIndex == 4)
+            {
+                clearWeeklySalesPerformanceChart();
+                weeklySalesPerformance();
+            }
             if((sender as TabControl).SelectedIndex == 1)
             {
                 string itemsOutOfSupply = "";
@@ -808,7 +837,7 @@ namespace WindowsFormsApplication1
             }
 
             con.Close();
-
+            listOfStockAmountForStock.Clear();
            
                 //Main Ingredients
                 listOfStockAmountForStock.Add(crushedIceBawasan);
@@ -894,7 +923,8 @@ namespace WindowsFormsApplication1
 
         public void weeklySalesPerformance()
         {
-                
+            try
+            {
                 //retrieve dates and gross sales
                 List<string> dateSales = new List<string>();
                 List<int> grossSales = new List<int>();
@@ -917,15 +947,34 @@ namespace WindowsFormsApplication1
                 //chartWeeklySalesPerformance.Series["s1"].Color = Color.FromArgb(5, 100, 146);
                 //chartWeeklySalesPerformance.Series["s1"]["PointWidth"] = "0.3";
                 //chartWeeklySalesPerformance.Series["s1"]["PixelPointWidth"] = "4";
-                for (int i = 6 ; i >= 0; i--)
+                for (int i = 6; i >= 0; i--)
                 {
                     chartWeeklySalesPerformance.Series["ss"].Points.AddXY(dateSales[i], grossSales[i]);
                     chartWeeklySalesPerformance.Series["ss"].IsValueShownAsLabel = true;
                     chartWeeklySalesPerformance.Series["ss"].LabelBackColor = Color.FromArgb(255, 255, 255);
                 }
+                IsSalesRecordBelow7 = false;
+                dateSales.Clear();
+                grossSales.Clear();
+            }
+            catch(Exception e)
+            {
+                IsSalesRecordBelow7 = true;
+                notificationFeatureAvailableDone = false;
+                
+            }
             
-           
+        }
 
+        public void clearChartsInLatestStockReport()
+        {
+                chartMaterials.Series["s3"].Points.Clear();
+                chartSecondaryIngredients.Series["s2"].Points.Clear();
+                pieChartLatestInventory.Series["s1"].Points.Clear();
+                
+
+            
+              
         }
 
         private void btnSalesRecord_Click(object sender, EventArgs e)
@@ -938,11 +987,13 @@ namespace WindowsFormsApplication1
 
         private void btnSearchUpdate_Click(object sender, EventArgs e)
         {
-                DateTime dateKo = dateTimePickerSearchUpdate.Value
+                
                 con.Open();
                 OleDbCommand cmd1 = con.CreateCommand();
+                cmd1.Parameters.AddWithValue("@Datee ", DbType.DateTime).Value =
+                                             dateTimePickerSearchUpdate.Value;
                 cmd1.CommandType = CommandType.Text;
-                cmd1.CommandText = "select * from tblIngredientStocks where Date_updated = '" + dateKo + "'";
+                cmd1.CommandText = "select * from tblIngredientStocks where Date_updated = @Datee "; 
                 cmd1.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 OleDbDataAdapter da = new OleDbDataAdapter(cmd1);
@@ -951,13 +1002,17 @@ namespace WindowsFormsApplication1
                 con.Close();
 
             
-        }
+        }   
 
         private void txtSearchUpdate_TextChanged(object sender, EventArgs e)
         {
                 updateDataGridInventoryModify();
         }
 
+        public void clearWeeklySalesPerformanceChart()
+        {
+            chartWeeklySalesPerformance.Series["ss"].Points.Clear();
+        }
        
 
     }
