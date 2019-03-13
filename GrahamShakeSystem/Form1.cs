@@ -244,10 +244,11 @@ namespace WindowsFormsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dbGrahamShakeDataSet.tblIngredientStocks' table. You can move, or remove it, as needed.
-            this.tblIngredientStocksTableAdapter.Fill(this.dbGrahamShakeDataSet.tblIngredientStocks);   
-
-            setToDefault(); //Disable and clear everything
-
+            this.tblIngredientStocksTableAdapter.Fill(this.dbGrahamShakeDataSet.tblIngredientStocks);
+            RetrieveValueFromTblIngredientStocks();
+            latestStockReportChart();
+            weeklySalesPerformance();
+            setToDefault(); //Disable and clear 
             updateDataGridInventoryModify();//Display to datagrid update inventory
             
         }
@@ -395,7 +396,7 @@ namespace WindowsFormsApplication1
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblSalesRecord values('" + DateTime.Now + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
+            cmd.CommandText = "insert into tblSalesRecord values('" + DateTime.Now.Date + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -447,7 +448,7 @@ namespace WindowsFormsApplication1
 
             con.Open();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now + "','" + blackPearlUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
+            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now.Date + "','" + blackPearlUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -553,7 +554,7 @@ namespace WindowsFormsApplication1
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
+            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now.Date + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
             cmd.ExecuteNonQuery();
             con.Close(); //NAKALIMUTAN MO YUNG CRUSHED ICE AYUSIN MO DB AND ALL CODES DOUBLE CHECK KUNG NAINCLUDE CRUSHED ICE
 
@@ -580,13 +581,8 @@ namespace WindowsFormsApplication1
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            RetrieveValueFromTblIngredientStocks(); //EWAN KO LANG KUNG MAKUKUHA NYA YUNG MGA VALUE D2 NG BAWASAN VARIABLES FROM DB
-            if ((sender as TabControl).SelectedIndex == 2)
-            {
-                updateDataGridInventoryModify();
-                latestStockReportChart();
-            }
-
+            RetrieveValueFromTblIngredientStocks();
+            
             if((sender as TabControl).SelectedIndex == 1)
             {
                 string itemsOutOfSupply = "";
@@ -862,7 +858,6 @@ namespace WindowsFormsApplication1
             int i;
             //pieChartLatestInventory.Series["s1"]["PointWidth"] = "0.3";
             //pieChartLatestInventory.Series["s1"]["PixelPointWidth"] = "4";
-            pieChartLatestInventory.AlignDataPointsByAxisLabel();  
             for (i = 3; i >= 0; i-- )
             {
                 pieChartLatestInventory.Series["s1"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
@@ -876,7 +871,6 @@ namespace WindowsFormsApplication1
             //chartSecondaryIngredients.Series["s2"].Color = Color.FromArgb(5, 100, 146);
             //chartSecondaryIngredients.Series["s2"]["PointWidth"] = "0.3";
             //chartSecondaryIngredients.Series["s2"]["PixelPointWidth"] = "4";
-            chartSecondaryIngredients.AlignDataPointsByAxisLabel();
             for (i = 10; i >= 4; i--)
             {
                 chartSecondaryIngredients.Series["s2"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
@@ -890,18 +884,78 @@ namespace WindowsFormsApplication1
             //chartMaterials.Series["s3"].Color = Color.FromArgb(5, 100, 146);
             //chartMaterials.Series["s3"]["PointWidth"] = "0.3";
             //chartMaterials.Series["s3"]["PixelPointWidth"] = "4";
-            chartMaterials.AlignDataPointsByAxisLabel();
             for (i = 15; i >= 11; i--)
             {
                 chartMaterials.Series["s3"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
                 chartMaterials.Series["s3"].IsValueShownAsLabel = true;
                 chartMaterials.Series["s3"].LabelBackColor = Color.FromArgb(255, 255, 255);
-            }
+            }  
+        }
+
+        public void weeklySalesPerformance()
+        {
+                
+                //retrieve dates and gross sales
+                List<string> dateSales = new List<string>();
+                List<int> grossSales = new List<int>();
+                con.Open();
+                OleDbCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from tblSalesRecord where Date() >= Date() -7";
+                OleDbDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    //Retrieve value from inventory table
+                    dateSales.Add(Convert.ToString(dr["Date"]));
+                    grossSales.Add(Convert.ToInt32(dr["Gross_sales"]));
+                }
+                con.Close();
 
 
+                //Update weekly sales performance 
+                //chartWeeklySalesPerformance.Series["s1"].Palette = ChartColorPalette.BrightPastel;
+                //chartWeeklySalesPerformance.Series["s1"].Color = Color.FromArgb(5, 100, 146);
+                //chartWeeklySalesPerformance.Series["s1"]["PointWidth"] = "0.3";
+                //chartWeeklySalesPerformance.Series["s1"]["PixelPointWidth"] = "4";
+                for (int i = 6 ; i >= 0; i--)
+                {
+                    chartWeeklySalesPerformance.Series["ss"].Points.AddXY(dateSales[i], grossSales[i]);
+                    chartWeeklySalesPerformance.Series["ss"].IsValueShownAsLabel = true;
+                    chartWeeklySalesPerformance.Series["ss"].LabelBackColor = Color.FromArgb(255, 255, 255);
+                }
             
-       
+           
+
+        }
+
+        private void btnSalesRecord_Click(object sender, EventArgs e)
+        {
+            SalesRecordForm salesRecordFrm = new SalesRecordForm();
+            Form1 frm1 = new Form1();
+            frm1.Enabled = false;
+            salesRecordFrm.ShowDialog();
+        }
+
+        private void btnSearchUpdate_Click(object sender, EventArgs e)
+        {
+                DateTime dateKo = dateTimePickerSearchUpdate.Value
+                con.Open();
+                OleDbCommand cmd1 = con.CreateCommand();
+                cmd1.CommandType = CommandType.Text;
+                cmd1.CommandText = "select * from tblIngredientStocks where Date_updated = '" + dateKo + "'";
+                cmd1.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                OleDbDataAdapter da = new OleDbDataAdapter(cmd1);
+                da.Fill(dt);
+                dataGridViewModifyInventory.DataSource = dt;
+                con.Close();
+
             
+        }
+
+        private void txtSearchUpdate_TextChanged(object sender, EventArgs e)
+        {
+                updateDataGridInventoryModify();
         }
 
        
