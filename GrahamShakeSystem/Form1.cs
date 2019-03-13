@@ -402,7 +402,7 @@ namespace WindowsFormsApplication1
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblSalesRecord values('" + DateTime.Now.Date + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
+            cmd.CommandText = "insert into tblSalesRecord values('" + DateTime.Now + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -469,7 +469,7 @@ namespace WindowsFormsApplication1
                 if (IsSalesRecordBelow7 == false)
                 {
                     ((Control)tabControl1.TabPages[4]).Enabled = true;
-                    MessageBox.Show("Sales Performance feature is now available", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Take a look at your sales performance over the last 7 days, click the Sales Performance tab.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     notificationFeatureAvailableDone = true;
                 }
             }
@@ -931,7 +931,7 @@ namespace WindowsFormsApplication1
                 con.Open();
                 OleDbCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select * from tblSalesRecord where Date() >= Date() -7";
+                cmd.CommandText = "select * from tblSalesRecord where Date() >= Date() -7 order by Date desc";
                 OleDbDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
