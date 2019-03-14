@@ -987,21 +987,27 @@ namespace WindowsFormsApplication1
 
         private void btnSearchUpdate_Click(object sender, EventArgs e)
         {
-                
-                con.Open();
-                OleDbCommand cmd1 = con.CreateCommand();
-                cmd1.Parameters.AddWithValue("@Datee ", DbType.DateTime).Value =
-                                             dateTimePickerSearchUpdate.Value;
-                cmd1.CommandType = CommandType.Text;
-                cmd1.CommandText = "select * from tblIngredientStocks where Date_updated = @Datee "; 
-                cmd1.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                OleDbDataAdapter da = new OleDbDataAdapter(cmd1);
-                da.Fill(dt);
-                dataGridViewModifyInventory.DataSource = dt;
-                con.Close();
-
             
+            //dataGridViewModifyInventory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            /*
+                foreach (DataGridViewRow row in dataGridViewModifyInventory.Rows)
+                {
+                    if (Convert.ToString(row.Cells[]).Equals(txtSearchUpdate.Text))
+                    {
+                        MessageBox.Show("1 ce,ll found!");  ///HINDI NAG TUTRUE!!! UNG SEARCH NTIN LAGAY N LNG NTIN SA DATA GRID UNG QUERY
+                        row.Selected = true;
+                        break;
+                    }
+                }
+          */
+            
+            
+            BindingSource bindSource = new BindingSource();
+            DataTable dt = new DataTable();
+            bindSource.DataSource = dt;
+            bindSource.DataMember = 
+            bindSource.Position = bindSource.Find("Date_updated", txtSearchUpdate.Text);
+
         }   
 
         private void txtSearchUpdate_TextChanged(object sender, EventArgs e)
