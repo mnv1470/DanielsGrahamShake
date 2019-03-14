@@ -396,13 +396,25 @@ namespace WindowsFormsApplication1
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnRecord_Click(object sender, EventArgs e)
+        public DateTime dateNgayonFormatted()
         {
+            string stringDateNgayon = DateTime.Now.ToString("dddd, dd MMMM yyyy hh:mm tt");
+            DateTime dateNgayonConverted = Convert.ToDateTime(stringDateNgayon);
+            return dateNgayonConverted;
+        }
+
+        private void btnRecord_Click(object sender, EventArgs e)
+        {   /*
+            string stringDateNgayon = DateTime.Now.ToString("mm/dd/yyy hh:mm tt");
+            DateTime dateNgayonConverted = Convert.ToDateTime(stringDateNgayon);
+             * */
+            DateTime dateKo = dateNgayonFormatted();
+
             //Insert record to sales record
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblSalesRecord values('" + DateTime.Now + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
+            cmd.CommandText = "insert into tblSalesRecord values('" + dateKo + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -452,9 +464,10 @@ namespace WindowsFormsApplication1
             int sugarUpdated = sugarBawasan - Convert.ToInt32(numSugar.Value);
             int blackPearlUpdated = blackPearlBawasan - Convert.ToInt32(numBlackPearl.Value);
 
+            DateTime dateKo2 = dateNgayonFormatted();
             con.Open();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now + "','" + crushedIceUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + blackPearlUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
+            cmd.CommandText = "insert into tblIngredientStocks values('" + dateKo2 + "','" + crushedIceUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + blackPearlUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -563,16 +576,21 @@ namespace WindowsFormsApplication1
             numModWhippedCream.Value = 0;
             numModBlackPearl.Value = 0;
             
-           
+
+            //txt initial value
+            txtSearchUpdate.Text = "Search by date";
+            txtSearchUpdate.ForeColor = Color.FromArgb(145, 145, 145);
+            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            DateTime dateKoo = dateNgayonFormatted();
             //Update inventory
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into tblIngredientStocks values('" + DateTime.Now + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
+            cmd.CommandText = "insert into tblIngredientStocks values('" + dateKoo + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
             cmd.ExecuteNonQuery();
             con.Close(); //NAKALIMUTAN MO YUNG CRUSHED ICE AYUSIN MO DB AND ALL CODES DOUBLE CHECK KUNG NAINCLUDE CRUSHED ICE
 
@@ -976,6 +994,20 @@ namespace WindowsFormsApplication1
             
               
         }
+        public void updateSalesRecordDataGrid()
+        {
+            SalesRecordForm salesRecordForm = new SalesRecordForm();
+            con.Open();
+            OleDbCommand cmd1 = con.CreateCommand();
+            cmd1.CommandType = CommandType.Text;
+            cmd1.CommandText = "select * from tblSalesRecord";
+            cmd1.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd1);
+            da.Fill(dt);
+            salesRecordForm.dataGridViewSalesRecord.DataSource = dt;
+            con.Close();
+        }
 
         private void btnSalesRecord_Click(object sender, EventArgs e)
         {
@@ -983,31 +1015,41 @@ namespace WindowsFormsApplication1
             Form1 frm1 = new Form1();
             frm1.Enabled = false;
             salesRecordFrm.ShowDialog();
+            salesRecordFrm.updateDataGridSalesRecord();
         }
+
+        
 
         private void btnSearchUpdate_Click(object sender, EventArgs e)
         {
-            
-            //dataGridViewModifyInventory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            /*
-                foreach (DataGridViewRow row in dataGridViewModifyInventory.Rows)
+            try
+            {
+                if (string.IsNullOrEmpty(txtSearchUpdate.Text))
                 {
-                    if (Convert.ToString(row.Cells[]).Equals(txtSearchUpdate.Text))
-                    {
-                        MessageBox.Show("1 ce,ll found!");  ///HINDI NAG TUTRUE!!! UNG SEARCH NTIN LAGAY N LNG NTIN SA DATA GRID UNG QUERY
-                        row.Selected = true;
-                        break;
-                    }
+                    
                 }
-          */
-            
-            
-            BindingSource bindSource = new BindingSource();
-            DataTable dt = new DataTable();
-            bindSource.DataSource = dt;
-            bindSource.DataMember = 
-            bindSource.Position = bindSource.Find("Date_updated", txtSearchUpdate.Text);
+                else
+                {
 
+                    con.Open();
+                    OleDbCommand cmd1 = con.CreateCommand();
+                    cmd1.CommandType = CommandType.Text;
+                    cmd1.CommandText = "select * from tblIngredientStocks where Date_updated = @dateKo";
+                    cmd1.Parameters.Add("@dateKo", OleDbType.Date).Value = txtSearchUpdate.Text;
+                    cmd1.ExecuteNonQuery();
+                    DataTable dt = new DataTable();
+                    OleDbDataAdapter da = new OleDbDataAdapter(cmd1);
+                    da.Fill(dt);
+                    dataGridViewModifyInventory.DataSource = dt;
+                    con.Close();
+
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Invalid input", "Search Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+            }
         }   
 
         private void txtSearchUpdate_TextChanged(object sender, EventArgs e)
@@ -1018,6 +1060,38 @@ namespace WindowsFormsApplication1
         public void clearWeeklySalesPerformanceChart()
         {
             chartWeeklySalesPerformance.Series["ss"].Points.Clear();
+        }
+
+        private void txtSearchUpdate_Click(object sender, EventArgs e)
+        {
+            if (txtSearchUpdate.Text=="Search by date")
+            {
+                txtSearchUpdate.Clear();
+                txtSearchUpdate.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtSearchUpdate_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSearchUpdate.Text))
+            {
+                updateDataGridInventoryModify();
+            }
+        }
+
+        private void txtSearchUpdate_LostFocus_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtSearchUpdate_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtSearchUpdate.Text))
+            {
+                //txt initial value
+                txtSearchUpdate.Text = "Search by date";
+                txtSearchUpdate.ForeColor = Color.FromArgb(145, 145, 145);
+            }
         }
        
 

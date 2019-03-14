@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabAddDailySalesRecord = new System.Windows.Forms.TabPage();
@@ -181,7 +181,7 @@
             this.cups22ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.strawDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblIngredientStocksBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.dbGrahamShakeDataSet = new WindowsFormsApplication1.dbGrahamShakeDataSet();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -231,13 +231,13 @@
             this.tblSalesPerformance = new System.Windows.Forms.TabPage();
             this.btnSalesRecord = new System.Windows.Forms.Button();
             this.chartWeeklySalesPerformance = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnExit = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.tblIngredientStocksBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblIngredientStocksTableAdapter();
-            this.tblIngredientStocksBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabAddDailySalesRecord.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -262,7 +262,7 @@
             this.tabUpdateInventory.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numModBlackPearl)).BeginInit();
@@ -287,10 +287,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).BeginInit();
             this.tblSalesPerformance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartWeeklySalesPerformance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1467,6 +1467,9 @@
             this.txtSearchUpdate.Name = "txtSearchUpdate";
             this.txtSearchUpdate.Size = new System.Drawing.Size(100, 20);
             this.txtSearchUpdate.TabIndex = 7;
+            this.txtSearchUpdate.Click += new System.EventHandler(this.txtSearchUpdate_Click);
+            this.txtSearchUpdate.TextChanged += new System.EventHandler(this.txtSearchUpdate_TextChanged_1);
+            this.txtSearchUpdate.Leave += new System.EventHandler(this.txtSearchUpdate_Leave);
             // 
             // btnSearchUpdate
             // 
@@ -1636,10 +1639,10 @@
             this.sugarDataGridViewTextBoxColumn.ReadOnly = true;
             this.sugarDataGridViewTextBoxColumn.Width = 50;
             // 
-            // tblIngredientStocksBindingSource3
+            // tblIngredientStocksBindingSource4
             // 
-            this.tblIngredientStocksBindingSource3.DataMember = "tblIngredientStocks";
-            this.tblIngredientStocksBindingSource3.DataSource = this.dbGrahamShakeDataSet;
+            this.tblIngredientStocksBindingSource4.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource4.DataSource = this.dbGrahamShakeDataSet;
             // 
             // dbGrahamShakeDataSet
             // 
@@ -2037,59 +2040,59 @@
             // 
             // chartMaterials
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartMaterials.ChartAreas.Add(chartArea1);
+            chartArea9.Name = "ChartArea1";
+            this.chartMaterials.ChartAreas.Add(chartArea9);
             this.chartMaterials.Location = new System.Drawing.Point(458, 32);
             this.chartMaterials.Name = "chartMaterials";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Name = "s3";
-            this.chartMaterials.Series.Add(series1);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series9.Name = "s3";
+            this.chartMaterials.Series.Add(series9);
             this.chartMaterials.Size = new System.Drawing.Size(231, 282);
             this.chartMaterials.TabIndex = 4;
             this.chartMaterials.Text = "chart1";
-            title1.Name = "Materials";
-            title1.Text = "Materials";
-            this.chartMaterials.Titles.Add(title1);
+            title9.Name = "Materials";
+            title9.Text = "Materials";
+            this.chartMaterials.Titles.Add(title9);
             // 
             // chartSecondaryIngredients
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartSecondaryIngredients.ChartAreas.Add(chartArea2);
+            chartArea10.Name = "ChartArea1";
+            this.chartSecondaryIngredients.ChartAreas.Add(chartArea10);
             this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 32);
             this.chartSecondaryIngredients.Name = "chartSecondaryIngredients";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.Name = "s2";
-            this.chartSecondaryIngredients.Series.Add(series2);
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series10.Name = "s2";
+            this.chartSecondaryIngredients.Series.Add(series10);
             this.chartSecondaryIngredients.Size = new System.Drawing.Size(231, 282);
             this.chartSecondaryIngredients.TabIndex = 4;
             this.chartSecondaryIngredients.Text = "chart1";
-            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title2.Name = "Main Ingredients";
-            title2.Text = "Secondary Ingredients";
-            this.chartSecondaryIngredients.Titles.Add(title2);
+            title10.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title10.Name = "Main Ingredients";
+            title10.Text = "Secondary Ingredients";
+            this.chartSecondaryIngredients.Titles.Add(title10);
             // 
             // pieChartLatestInventory
             // 
-            chartArea3.Name = "ChartArea1";
-            this.pieChartLatestInventory.ChartAreas.Add(chartArea3);
+            chartArea11.Name = "ChartArea1";
+            this.pieChartLatestInventory.ChartAreas.Add(chartArea11);
             this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 32);
             this.pieChartLatestInventory.Name = "pieChartLatestInventory";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.Name = "s1";
-            this.pieChartLatestInventory.Series.Add(series3);
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series11.Name = "s1";
+            this.pieChartLatestInventory.Series.Add(series11);
             this.pieChartLatestInventory.Size = new System.Drawing.Size(231, 282);
             this.pieChartLatestInventory.TabIndex = 4;
             this.pieChartLatestInventory.Text = "chart1";
-            title3.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title3.Name = "Main Ingredients";
-            title3.Text = "Primary Ingredients";
-            this.pieChartLatestInventory.Titles.Add(title3);
+            title11.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title11.Name = "Main Ingredients";
+            title11.Text = "Primary Ingredients";
+            this.pieChartLatestInventory.Titles.Add(title11);
             // 
             // tblSalesPerformance
             // 
@@ -2114,19 +2117,24 @@
             // 
             // chartWeeklySalesPerformance
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea4);
+            chartArea12.Name = "ChartArea1";
+            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea12);
             this.chartWeeklySalesPerformance.Location = new System.Drawing.Point(3, 28);
             this.chartWeeklySalesPerformance.Name = "chartWeeklySalesPerformance";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Name = "ss";
-            this.chartWeeklySalesPerformance.Series.Add(series4);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.Name = "ss";
+            this.chartWeeklySalesPerformance.Series.Add(series12);
             this.chartWeeklySalesPerformance.Size = new System.Drawing.Size(675, 282);
             this.chartWeeklySalesPerformance.TabIndex = 0;
             this.chartWeeklySalesPerformance.Text = "chart1";
-            title4.Name = "Title1";
-            this.chartWeeklySalesPerformance.Titles.Add(title4);
+            title12.Name = "Title1";
+            this.chartWeeklySalesPerformance.Titles.Add(title12);
+            // 
+            // tblIngredientStocksBindingSource3
+            // 
+            this.tblIngredientStocksBindingSource3.DataMember = "tblIngredientStocks";
+            this.tblIngredientStocksBindingSource3.DataSource = this.dbGrahamShakeDataSet;
             // 
             // tblIngredientStocksBindingSource
             // 
@@ -2166,11 +2174,6 @@
             // tblIngredientStocksTableAdapter
             // 
             this.tblIngredientStocksTableAdapter.ClearBeforeFill = true;
-            // 
-            // tblIngredientStocksBindingSource4
-            // 
-            this.tblIngredientStocksBindingSource4.DataMember = "tblIngredientStocks";
-            this.tblIngredientStocksBindingSource4.DataSource = this.dbGrahamShakeDataSet;
             // 
             // Form1
             // 
@@ -2213,7 +2216,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModifyInventory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -2240,10 +2243,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pieChartLatestInventory)).EndInit();
             this.tblSalesPerformance.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartWeeklySalesPerformance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2446,8 +2449,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cups22ozDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn strawDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sugarDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TextBox txtSearchUpdate;
         private System.Windows.Forms.BindingSource tblIngredientStocksBindingSource4;
+        private System.Windows.Forms.TextBox txtSearchUpdate;
 
     }
 }
