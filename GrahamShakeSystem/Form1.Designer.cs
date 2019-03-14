@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabAddDailySalesRecord = new System.Windows.Forms.TabPage();
@@ -777,6 +778,7 @@
             this.txtCPBlackPearl.Name = "txtCPBlackPearl";
             this.txtCPBlackPearl.Size = new System.Drawing.Size(37, 20);
             this.txtCPBlackPearl.TabIndex = 3;
+            this.txtCPBlackPearl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPBlackPearl
             // 
@@ -845,6 +847,7 @@
             this.txtGrossSale.Name = "txtGrossSale";
             this.txtGrossSale.Size = new System.Drawing.Size(71, 20);
             this.txtGrossSale.TabIndex = 3;
+            this.txtGrossSale.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGrossSale_KeyPress);
             // 
             // label15
             // 
@@ -861,6 +864,7 @@
             this.txtCPWhippedCream.Name = "txtCPWhippedCream";
             this.txtCPWhippedCream.Size = new System.Drawing.Size(37, 20);
             this.txtCPWhippedCream.TabIndex = 3;
+            this.txtCPWhippedCream.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPWhippedCream
             // 
@@ -878,6 +882,7 @@
             this.txtCPLecheFlan.Name = "txtCPLecheFlan";
             this.txtCPLecheFlan.Size = new System.Drawing.Size(37, 20);
             this.txtCPLecheFlan.TabIndex = 3;
+            this.txtCPLecheFlan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPLecheFlan
             // 
@@ -895,6 +900,7 @@
             this.txtCPCaramel.Name = "txtCPCaramel";
             this.txtCPCaramel.Size = new System.Drawing.Size(37, 20);
             this.txtCPCaramel.TabIndex = 3;
+            this.txtCPCaramel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCaramel
             // 
@@ -912,6 +918,7 @@
             this.txtCPSugar.Name = "txtCPSugar";
             this.txtCPSugar.Size = new System.Drawing.Size(37, 20);
             this.txtCPSugar.TabIndex = 3;
+            this.txtCPSugar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPMarshmallows
             // 
@@ -919,6 +926,7 @@
             this.txtCPMarshmallows.Name = "txtCPMarshmallows";
             this.txtCPMarshmallows.Size = new System.Drawing.Size(37, 20);
             this.txtCPMarshmallows.TabIndex = 3;
+            this.txtCPMarshmallows.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPSugar
             // 
@@ -946,6 +954,7 @@
             this.txtCPStraw.Name = "txtCPStraw";
             this.txtCPStraw.Size = new System.Drawing.Size(37, 20);
             this.txtCPStraw.TabIndex = 3;
+            this.txtCPStraw.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPGrahamPowder
             // 
@@ -953,6 +962,7 @@
             this.txtCPGrahamPowder.Name = "txtCPGrahamPowder";
             this.txtCPGrahamPowder.Size = new System.Drawing.Size(37, 20);
             this.txtCPGrahamPowder.TabIndex = 3;
+            this.txtCPGrahamPowder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPStraw
             // 
@@ -980,6 +990,7 @@
             this.txtCPCups22.Name = "txtCPCups22";
             this.txtCPCups22.Size = new System.Drawing.Size(37, 20);
             this.txtCPCups22.TabIndex = 3;
+            this.txtCPCups22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPCondensedMilk
             // 
@@ -987,6 +998,7 @@
             this.txtCPCondensedMilk.Name = "txtCPCondensedMilk";
             this.txtCPCondensedMilk.Size = new System.Drawing.Size(37, 20);
             this.txtCPCondensedMilk.TabIndex = 3;
+            this.txtCPCondensedMilk.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCups22
             // 
@@ -1014,6 +1026,7 @@
             this.txtCPCups16.Name = "txtCPCups16";
             this.txtCPCups16.Size = new System.Drawing.Size(37, 20);
             this.txtCPCups16.TabIndex = 3;
+            this.txtCPCups16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPAvocado
             // 
@@ -1021,6 +1034,7 @@
             this.txtCPAvocado.Name = "txtCPAvocado";
             this.txtCPAvocado.Size = new System.Drawing.Size(37, 20);
             this.txtCPAvocado.TabIndex = 3;
+            this.txtCPAvocado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCups16
             // 
@@ -1048,6 +1062,7 @@
             this.txtCPCups12.Name = "txtCPCups12";
             this.txtCPCups12.Size = new System.Drawing.Size(37, 20);
             this.txtCPCups12.TabIndex = 3;
+            this.txtCPCups12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPMango
             // 
@@ -1055,6 +1070,7 @@
             this.txtCPMango.Name = "txtCPMango";
             this.txtCPMango.Size = new System.Drawing.Size(37, 20);
             this.txtCPMango.TabIndex = 3;
+            this.txtCPMango.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCups12
             // 
@@ -1078,10 +1094,12 @@
             // 
             // txtCPDomeLid
             // 
+            this.txtCPDomeLid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCPDomeLid.Location = new System.Drawing.Point(419, 46);
             this.txtCPDomeLid.Name = "txtCPDomeLid";
-            this.txtCPDomeLid.Size = new System.Drawing.Size(37, 20);
+            this.txtCPDomeLid.Size = new System.Drawing.Size(37, 13);
             this.txtCPDomeLid.TabIndex = 3;
+            this.txtCPDomeLid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPCrushedIce
             // 
@@ -1089,6 +1107,7 @@
             this.txtCPCrushedIce.Name = "txtCPCrushedIce";
             this.txtCPCrushedIce.Size = new System.Drawing.Size(37, 20);
             this.txtCPCrushedIce.TabIndex = 3;
+            this.txtCPCrushedIce.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // numBlackPearl
             // 
@@ -2040,59 +2059,59 @@
             // 
             // chartMaterials
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chartMaterials.ChartAreas.Add(chartArea9);
+            chartArea1.Name = "ChartArea1";
+            this.chartMaterials.ChartAreas.Add(chartArea1);
             this.chartMaterials.Location = new System.Drawing.Point(458, 32);
             this.chartMaterials.Name = "chartMaterials";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series9.Name = "s3";
-            this.chartMaterials.Series.Add(series9);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Name = "s3";
+            this.chartMaterials.Series.Add(series1);
             this.chartMaterials.Size = new System.Drawing.Size(231, 282);
             this.chartMaterials.TabIndex = 4;
             this.chartMaterials.Text = "chart1";
-            title9.Name = "Materials";
-            title9.Text = "Materials";
-            this.chartMaterials.Titles.Add(title9);
+            title1.Name = "Materials";
+            title1.Text = "Materials";
+            this.chartMaterials.Titles.Add(title1);
             // 
             // chartSecondaryIngredients
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chartSecondaryIngredients.ChartAreas.Add(chartArea10);
+            chartArea2.Name = "ChartArea1";
+            this.chartSecondaryIngredients.ChartAreas.Add(chartArea2);
             this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 32);
             this.chartSecondaryIngredients.Name = "chartSecondaryIngredients";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series10.Name = "s2";
-            this.chartSecondaryIngredients.Series.Add(series10);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Name = "s2";
+            this.chartSecondaryIngredients.Series.Add(series2);
             this.chartSecondaryIngredients.Size = new System.Drawing.Size(231, 282);
             this.chartSecondaryIngredients.TabIndex = 4;
             this.chartSecondaryIngredients.Text = "chart1";
-            title10.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title10.Name = "Main Ingredients";
-            title10.Text = "Secondary Ingredients";
-            this.chartSecondaryIngredients.Titles.Add(title10);
+            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title2.Name = "Main Ingredients";
+            title2.Text = "Secondary Ingredients";
+            this.chartSecondaryIngredients.Titles.Add(title2);
             // 
             // pieChartLatestInventory
             // 
-            chartArea11.Name = "ChartArea1";
-            this.pieChartLatestInventory.ChartAreas.Add(chartArea11);
+            chartArea3.Name = "ChartArea1";
+            this.pieChartLatestInventory.ChartAreas.Add(chartArea3);
             this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 32);
             this.pieChartLatestInventory.Name = "pieChartLatestInventory";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series11.Name = "s1";
-            this.pieChartLatestInventory.Series.Add(series11);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.Name = "s1";
+            this.pieChartLatestInventory.Series.Add(series3);
             this.pieChartLatestInventory.Size = new System.Drawing.Size(231, 282);
             this.pieChartLatestInventory.TabIndex = 4;
             this.pieChartLatestInventory.Text = "chart1";
-            title11.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title11.Name = "Main Ingredients";
-            title11.Text = "Primary Ingredients";
-            this.pieChartLatestInventory.Titles.Add(title11);
+            title3.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title3.Name = "Main Ingredients";
+            title3.Text = "Primary Ingredients";
+            this.pieChartLatestInventory.Titles.Add(title3);
             // 
             // tblSalesPerformance
             // 
@@ -2117,19 +2136,19 @@
             // 
             // chartWeeklySalesPerformance
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea12);
+            chartArea4.Name = "ChartArea1";
+            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea4);
             this.chartWeeklySalesPerformance.Location = new System.Drawing.Point(3, 28);
             this.chartWeeklySalesPerformance.Name = "chartWeeklySalesPerformance";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series12.Name = "ss";
-            this.chartWeeklySalesPerformance.Series.Add(series12);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Name = "ss";
+            this.chartWeeklySalesPerformance.Series.Add(series4);
             this.chartWeeklySalesPerformance.Size = new System.Drawing.Size(675, 282);
             this.chartWeeklySalesPerformance.TabIndex = 0;
             this.chartWeeklySalesPerformance.Text = "chart1";
-            title12.Name = "Title1";
-            this.chartWeeklySalesPerformance.Titles.Add(title12);
+            title4.Name = "Title1";
+            this.chartWeeklySalesPerformance.Titles.Add(title4);
             // 
             // tblIngredientStocksBindingSource3
             // 
@@ -2185,6 +2204,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

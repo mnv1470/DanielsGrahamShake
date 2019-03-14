@@ -30,32 +30,53 @@ namespace WindowsFormsApplication1
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Form1 frm1 = new Form1();
-            frm1.Enabled = true;
-            Hide();
-            Close();
+            try
+            {
+                Form1 frm1 = new Form1();
+                frm1.Enabled = true;
+                Hide();
+                Close();
+            }
+            catch(Exception exc)
+            {
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void txtSearchSalesRecord_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtSearchSalesRecord.Text))
+            try
             {
-                updateDataGridSalesRecord();
+                if (string.IsNullOrEmpty(txtSearchSalesRecord.Text))
+                {
+                    updateDataGridSalesRecord();
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         public void updateDataGridSalesRecord()
         {
-            con.Open();
-            OleDbCommand cmd11 = con.CreateCommand();
-            cmd11.CommandType = CommandType.Text;
-            cmd11.CommandText = "select * from tblSalesRecord";
-            cmd11.ExecuteNonQuery();
-            DataTable dt1 = new DataTable();
-            OleDbDataAdapter da1 = new OleDbDataAdapter(cmd11);
-            da1.Fill(dt1);
-            dataGridViewSalesRecord.DataSource = dt1;
-            con.Close();
+            try
+            {
+                con.Open();
+                OleDbCommand cmd11 = con.CreateCommand();
+                cmd11.CommandType = CommandType.Text;
+                cmd11.CommandText = "select * from tblSalesRecord";
+                cmd11.ExecuteNonQuery();
+                DataTable dt1 = new DataTable();
+                OleDbDataAdapter da1 = new OleDbDataAdapter(cmd11);
+                da1.Fill(dt1);
+                dataGridViewSalesRecord.DataSource = dt1;
+                con.Close();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnSearchSalesRecord_Click(object sender, EventArgs e)
@@ -92,20 +113,34 @@ namespace WindowsFormsApplication1
 
         private void txtSearchSalesRecord_Click(object sender, EventArgs e)
         {
-            if (txtSearchSalesRecord.Text == "Search by date")
+            try
             {
-                txtSearchSalesRecord.Clear();
-                txtSearchSalesRecord.ForeColor = Color.Black;
+                if (txtSearchSalesRecord.Text == "Search by date")
+                {
+                    txtSearchSalesRecord.Clear();
+                    txtSearchSalesRecord.ForeColor = Color.Black;
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void txtSearchSalesRecord_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtSearchSalesRecord.Text))
+            try
             {
-                //txt initial value
-                txtSearchSalesRecord.Text = "Search by date";
-                txtSearchSalesRecord.ForeColor = Color.FromArgb(145, 145, 145);
+                if (string.IsNullOrEmpty(txtSearchSalesRecord.Text))
+                {
+                    //txt initial value
+                    txtSearchSalesRecord.Text = "Search by date";
+                    txtSearchSalesRecord.ForeColor = Color.FromArgb(145, 145, 145);
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
