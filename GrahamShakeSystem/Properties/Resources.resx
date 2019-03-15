@@ -124,8 +124,8 @@
   <data name="LogoDanielsMangoGraham-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\LogoDanielsMangoGraham-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2202274-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\2202274-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="211651-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\211651-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2202274-201" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\2202274-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,10 +133,7 @@
   <data name="2124277-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\2124277-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\Untitled-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2202274-161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2202274-162" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\2202274-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="134221-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -151,8 +148,17 @@
   <data name="2202274-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\2202274-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2202274-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\2202274-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="103511-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\103511-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2202274-161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\2202274-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\Untitled-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoDanielsMangoGraham-012" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\LogoDanielsMangoGraham-01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +169,7 @@
   <data name="LogoDanielsMangoGraham-011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\LogoDanielsMangoGraham-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2202274-162" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Icons\2202274-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="106236-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\106236-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

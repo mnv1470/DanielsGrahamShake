@@ -988,7 +988,7 @@ namespace WindowsFormsApplication1
                 lblDateLatestInventoryReport.Text = "As of " + dateTimeLatestInventory;
 
                 //Pie chart PRIMARY INGREDIENTS
-                pieChartLatestInventory.Series["s1"].Palette = ChartColorPalette.BrightPastel;
+                pieChartLatestInventory.Series["s1"].Palette = ChartColorPalette.Chocolate;
                 //pieChartLatestInventory.Series["s1"].Color = Color.FromArgb(5, 100, 146);
                 int i;
                 //pieChartLatestInventory.Series["s1"]["PointWidth"] = "0.3";
@@ -1002,7 +1002,7 @@ namespace WindowsFormsApplication1
 
 
                 //Pie SECONDARY MATERIALS
-                chartSecondaryIngredients.Series["s2"].Palette = ChartColorPalette.BrightPastel;
+                chartSecondaryIngredients.Series["s2"].Palette = ChartColorPalette.Chocolate;
                 //chartSecondaryIngredients.Series["s2"].Color = Color.FromArgb(5, 100, 146);
                 //chartSecondaryIngredients.Series["s2"]["PointWidth"] = "0.3";
                 //chartSecondaryIngredients.Series["s2"]["PixelPointWidth"] = "4";
@@ -1015,7 +1015,7 @@ namespace WindowsFormsApplication1
 
 
                 //Pie chart MATERIALS
-                chartMaterials.Series["s3"].Palette = ChartColorPalette.BrightPastel;
+                chartMaterials.Series["s3"].Palette = ChartColorPalette.Chocolate;
                 //chartMaterials.Series["s3"].Color = Color.FromArgb(5, 100, 146);
                 //chartMaterials.Series["s3"]["PointWidth"] = "0.3";
                 //chartMaterials.Series["s3"]["PixelPointWidth"] = "4";

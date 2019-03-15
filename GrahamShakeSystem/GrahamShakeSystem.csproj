@@ -108,6 +108,8 @@
     <Content Include="dbGrahamShake.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Icons\106236-16.png" />
+    <None Include="Resources\211651-20.png" />
     <None Include="Icons\Untitled-1.png" />
     <None Include="Icons\Untitled-1.jpg" />
     <None Include="Icons\LogoDanielsMangoGraham-01.jpg" />

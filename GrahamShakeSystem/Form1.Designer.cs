@@ -239,6 +239,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
@@ -325,6 +326,7 @@
             // 
             // tabHome
             // 
+            this.tabHome.Controls.Add(this.panel2);
             this.tabHome.Controls.Add(this.label31);
             this.tabHome.Controls.Add(this.pictureBox1);
             this.tabHome.Controls.Add(this.pictureBox2);
@@ -1575,7 +1577,7 @@
             // txtSearchUpdate
             // 
             this.txtSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchUpdate.Location = new System.Drawing.Point(220, 20);
+            this.txtSearchUpdate.Location = new System.Drawing.Point(206, 20);
             this.txtSearchUpdate.Name = "txtSearchUpdate";
             this.txtSearchUpdate.Size = new System.Drawing.Size(100, 23);
             this.txtSearchUpdate.TabIndex = 7;
@@ -1586,11 +1588,13 @@
             // btnSearchUpdate
             // 
             this.btnSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchUpdate.Location = new System.Drawing.Point(326, 20);
+            this.btnSearchUpdate.Image = global::WindowsFormsApplication1.Properties.Resources._106236_16;
+            this.btnSearchUpdate.Location = new System.Drawing.Point(312, 18);
             this.btnSearchUpdate.Name = "btnSearchUpdate";
-            this.btnSearchUpdate.Size = new System.Drawing.Size(57, 23);
+            this.btnSearchUpdate.Size = new System.Drawing.Size(71, 25);
             this.btnSearchUpdate.TabIndex = 6;
             this.btnSearchUpdate.Text = "Search";
+            this.btnSearchUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSearchUpdate.UseVisualStyleBackColor = true;
             this.btnSearchUpdate.Click += new System.EventHandler(this.btnSearchUpdate_Click);
             // 
@@ -2070,6 +2074,7 @@
             this.chartMaterials.ChartAreas.Add(chartArea1);
             this.chartMaterials.Location = new System.Drawing.Point(458, 56);
             this.chartMaterials.Name = "chartMaterials";
+            this.chartMaterials.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2089,6 +2094,7 @@
             this.chartSecondaryIngredients.ChartAreas.Add(chartArea2);
             this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 56);
             this.chartSecondaryIngredients.Name = "chartSecondaryIngredients";
+            this.chartSecondaryIngredients.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2109,6 +2115,7 @@
             this.pieChartLatestInventory.ChartAreas.Add(chartArea3);
             this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 56);
             this.pieChartLatestInventory.Name = "pieChartLatestInventory";
+            this.pieChartLatestInventory.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2308,7 +2315,7 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(31)))), ((int)(((byte)(19)))));
-            this.label31.Location = new System.Drawing.Point(360, 197);
+            this.label31.Location = new System.Drawing.Point(344, 196);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(336, 58);
             this.label31.TabIndex = 1;
@@ -2330,7 +2337,7 @@
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(31)))), ((int)(((byte)(19)))));
-            this.label74.Location = new System.Drawing.Point(350, 241);
+            this.label74.Location = new System.Drawing.Point(345, 241);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(260, 58);
             this.label74.TabIndex = 1;
@@ -2348,6 +2355,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 28);
             this.panel1.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(49)))), ((int)(((byte)(30)))));
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(49)))), ((int)(((byte)(30)))));
+            this.panel2.Location = new System.Drawing.Point(348, 200);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(331, 3);
+            this.panel2.TabIndex = 2;
             // 
             // btnMinimize
             // 
@@ -2749,6 +2765,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
 
     }
 }

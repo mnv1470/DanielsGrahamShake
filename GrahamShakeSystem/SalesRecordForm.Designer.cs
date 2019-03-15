@@ -39,11 +39,11 @@
             this.profitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblSalesRecordBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dbGrahamShakeDataSet = new WindowsFormsApplication1.dbGrahamShakeDataSet();
-            this.btnClose = new System.Windows.Forms.Button();
             this.txtSearchSalesRecord = new System.Windows.Forms.TextBox();
-            this.btnSearchSalesRecord = new System.Windows.Forms.Button();
             this.tblSalesRecordBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblSalesRecordTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblSalesRecordTableAdapter();
+            this.btnSearchSalesRecord = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalesRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSalesRecordBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbGrahamShakeDataSet)).BeginInit();
@@ -87,7 +87,7 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewSalesRecord.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewSalesRecord.Size = new System.Drawing.Size(533, 364);
+            this.dataGridViewSalesRecord.Size = new System.Drawing.Size(533, 292);
             this.dataGridViewSalesRecord.TabIndex = 0;
             // 
             // dateDataGridViewTextBoxColumn
@@ -128,20 +128,9 @@
             this.dbGrahamShakeDataSet.DataSetName = "dbGrahamShakeDataSet";
             this.dbGrahamShakeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(474, 425);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(77, 32);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // txtSearchSalesRecord
             // 
-            this.txtSearchSalesRecord.Location = new System.Drawing.Point(343, 21);
+            this.txtSearchSalesRecord.Location = new System.Drawing.Point(336, 21);
             this.txtSearchSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchSalesRecord.Name = "txtSearchSalesRecord";
             this.txtSearchSalesRecord.Size = new System.Drawing.Size(133, 26);
@@ -149,17 +138,6 @@
             this.txtSearchSalesRecord.Click += new System.EventHandler(this.txtSearchSalesRecord_Click);
             this.txtSearchSalesRecord.TextChanged += new System.EventHandler(this.txtSearchSalesRecord_TextChanged);
             this.txtSearchSalesRecord.Leave += new System.EventHandler(this.txtSearchSalesRecord_Leave);
-            // 
-            // btnSearchSalesRecord
-            // 
-            this.btnSearchSalesRecord.Location = new System.Drawing.Point(485, 18);
-            this.btnSearchSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSearchSalesRecord.Name = "btnSearchSalesRecord";
-            this.btnSearchSalesRecord.Size = new System.Drawing.Size(66, 32);
-            this.btnSearchSalesRecord.TabIndex = 5;
-            this.btnSearchSalesRecord.Text = "Search";
-            this.btnSearchSalesRecord.UseVisualStyleBackColor = true;
-            this.btnSearchSalesRecord.Click += new System.EventHandler(this.btnSearchSalesRecord_Click);
             // 
             // tblSalesRecordBindingSource
             // 
@@ -170,12 +148,38 @@
             // 
             this.tblSalesRecordTableAdapter.ClearBeforeFill = true;
             // 
+            // btnSearchSalesRecord
+            // 
+            this.btnSearchSalesRecord.Image = global::WindowsFormsApplication1.Properties.Resources._106236_16;
+            this.btnSearchSalesRecord.Location = new System.Drawing.Point(475, 21);
+            this.btnSearchSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearchSalesRecord.Name = "btnSearchSalesRecord";
+            this.btnSearchSalesRecord.Size = new System.Drawing.Size(76, 26);
+            this.btnSearchSalesRecord.TabIndex = 5;
+            this.btnSearchSalesRecord.Text = "Search";
+            this.btnSearchSalesRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearchSalesRecord.UseVisualStyleBackColor = true;
+            this.btnSearchSalesRecord.Click += new System.EventHandler(this.btnSearchSalesRecord_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Image = global::WindowsFormsApplication1.Properties.Resources._211651_20;
+            this.btnClose.Location = new System.Drawing.Point(474, 353);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(77, 27);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "Close";
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // SalesRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(563, 462);
+            this.ClientSize = new System.Drawing.Size(563, 388);
             this.Controls.Add(this.txtSearchSalesRecord);
             this.Controls.Add(this.btnSearchSalesRecord);
             this.Controls.Add(this.btnClose);
