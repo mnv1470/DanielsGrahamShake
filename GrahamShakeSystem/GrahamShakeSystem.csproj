@@ -108,6 +108,18 @@
     <Content Include="dbGrahamShake.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Icons\Untitled-1.png" />
+    <None Include="Icons\Untitled-1.jpg" />
+    <None Include="Icons\LogoDanielsMangoGraham-01.jpg" />
+    <None Include="Icons\LogoDanielsMangoGraham-01.png" />
+    <None Include="Icons\134221-16.png" />
+    <None Include="Icons\2202274-16.png" />
+    <None Include="Icons\2124277-16.png" />
+    <None Include="Icons\2123899-16.png" />
+    <None Include="Icons\2202274-20.png" />
+    <None Include="Icons\2123899-20.png" />
+    <None Include="Icons\298865-20.png" />
+    <None Include="Icons\103511-20.png" />
     <None Include="Icons\2561472-20.png" />
     <None Include="Icons\2931151-20 %281%29.png" />
     <None Include="Icons\20x20 ex.png" />
