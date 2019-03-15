@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
@@ -43,9 +44,10 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabAddDailySalesRecord = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label70 = new System.Windows.Forms.Label();
@@ -161,14 +163,33 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRecord = new System.Windows.Forms.Button();
+            this.btnCompute = new System.Windows.Forms.Button();
             this.tabUpdateInventory = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtSearchUpdate = new System.Windows.Forms.TextBox();
             this.btnSearchUpdate = new System.Windows.Forms.Button();
             this.dataGridViewModifyInventory = new System.Windows.Forms.DataGridView();
+            this.Date_updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Crushed_ice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mangoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.avocadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.condensedmilkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grahampowderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marshmallowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.caramelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecheflanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.whippedcreamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.domelidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cups12ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cups16ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cups22ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.strawDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblIngredientStocksBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.dbGrahamShakeDataSet = new WindowsFormsApplication1.dbGrahamShakeDataSet();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.label89 = new System.Windows.Forms.Label();
             this.numModBlackPearl = new System.Windows.Forms.NumericUpDown();
             this.numModWhippedCream = new System.Windows.Forms.NumericUpDown();
@@ -213,44 +234,22 @@
             this.chartSecondaryIngredients = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pieChartLatestInventory = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tblSalesPerformance = new System.Windows.Forms.TabPage();
+            this.btnSalesRecord = new System.Windows.Forms.Button();
             this.chartWeeklySalesPerformance = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblIngredientStocksTableAdapter();
-            this.Date_updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Crushed_ice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mangoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.avocadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.condensedmilkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grahampowderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.marshmallowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.caramelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lecheflanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.whippedcreamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.domelidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cups12ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cups16ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cups22ozDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.strawDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sugarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label31 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnRecord = new System.Windows.Forms.Button();
-            this.btnCompute = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnSalesRecord = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabAddDailySalesRecord.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -305,8 +304,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -326,11 +323,8 @@
             // 
             // tabHome
             // 
-            this.tabHome.Controls.Add(this.panel2);
-            this.tabHome.Controls.Add(this.label31);
-            this.tabHome.Controls.Add(this.pictureBox1);
             this.tabHome.Controls.Add(this.pictureBox2);
-            this.tabHome.Controls.Add(this.label74);
+            this.tabHome.Controls.Add(this.pictureBox1);
             this.tabHome.Location = new System.Drawing.Point(4, 27);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
@@ -338,6 +332,28 @@
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_012;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(286, 272);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
+            this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources.Untitled_11;
+            this.pictureBox2.Location = new System.Drawing.Point(280, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(412, 272);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // tabAddDailySalesRecord
             // 
@@ -1551,6 +1567,39 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Crushed ice:";
             // 
+            // btnRecord
+            // 
+            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnRecord.FlatAppearance.BorderSize = 0;
+            this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecord.Image = global::WindowsFormsApplication1.Properties.Resources._103511_20;
+            this.btnRecord.Location = new System.Drawing.Point(599, 326);
+            this.btnRecord.Name = "btnRecord";
+            this.btnRecord.Size = new System.Drawing.Size(87, 28);
+            this.btnRecord.TabIndex = 2;
+            this.btnRecord.Text = "  Record";
+            this.btnRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRecord.UseVisualStyleBackColor = false;
+            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
+            // 
+            // btnCompute
+            // 
+            this.btnCompute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnCompute.FlatAppearance.BorderSize = 0;
+            this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompute.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompute.Image = global::WindowsFormsApplication1.Properties.Resources._2123899_20;
+            this.btnCompute.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompute.Location = new System.Drawing.Point(503, 325);
+            this.btnCompute.Name = "btnCompute";
+            this.btnCompute.Size = new System.Drawing.Size(93, 29);
+            this.btnCompute.TabIndex = 2;
+            this.btnCompute.Text = "  Compute";
+            this.btnCompute.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCompute.UseVisualStyleBackColor = false;
+            this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
+            // 
             // tabUpdateInventory
             // 
             this.tabUpdateInventory.Controls.Add(this.groupBox5);
@@ -1577,7 +1626,7 @@
             // txtSearchUpdate
             // 
             this.txtSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchUpdate.Location = new System.Drawing.Point(206, 20);
+            this.txtSearchUpdate.Location = new System.Drawing.Point(253, 20);
             this.txtSearchUpdate.Name = "txtSearchUpdate";
             this.txtSearchUpdate.Size = new System.Drawing.Size(100, 23);
             this.txtSearchUpdate.TabIndex = 7;
@@ -1587,15 +1636,17 @@
             // 
             // btnSearchUpdate
             // 
-            this.btnSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnSearchUpdate.FlatAppearance.BorderSize = 0;
+            this.btnSearchUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchUpdate.Image = global::WindowsFormsApplication1.Properties.Resources._106236_16;
-            this.btnSearchUpdate.Location = new System.Drawing.Point(312, 18);
+            this.btnSearchUpdate.Location = new System.Drawing.Point(359, 18);
             this.btnSearchUpdate.Name = "btnSearchUpdate";
-            this.btnSearchUpdate.Size = new System.Drawing.Size(71, 25);
+            this.btnSearchUpdate.Size = new System.Drawing.Size(24, 25);
             this.btnSearchUpdate.TabIndex = 6;
-            this.btnSearchUpdate.Text = "Search";
             this.btnSearchUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearchUpdate.UseVisualStyleBackColor = true;
+            this.btnSearchUpdate.UseVisualStyleBackColor = false;
             this.btnSearchUpdate.Click += new System.EventHandler(this.btnSearchUpdate_Click);
             // 
             // dataGridViewModifyInventory
@@ -1641,6 +1692,132 @@
             this.dataGridViewModifyInventory.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewModifyInventory.Size = new System.Drawing.Size(373, 280);
             this.dataGridViewModifyInventory.TabIndex = 5;
+            // 
+            // Date_updated
+            // 
+            this.Date_updated.DataPropertyName = "Date_updated";
+            this.Date_updated.HeaderText = "Date_updated";
+            this.Date_updated.Name = "Date_updated";
+            this.Date_updated.ReadOnly = true;
+            // 
+            // Crushed_ice
+            // 
+            this.Crushed_ice.DataPropertyName = "Crushed_ice";
+            this.Crushed_ice.HeaderText = "Crushed_ice";
+            this.Crushed_ice.Name = "Crushed_ice";
+            this.Crushed_ice.ReadOnly = true;
+            // 
+            // mangoDataGridViewTextBoxColumn
+            // 
+            this.mangoDataGridViewTextBoxColumn.DataPropertyName = "Mango";
+            this.mangoDataGridViewTextBoxColumn.HeaderText = "Mango";
+            this.mangoDataGridViewTextBoxColumn.Name = "mangoDataGridViewTextBoxColumn";
+            this.mangoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mangoDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // avocadoDataGridViewTextBoxColumn
+            // 
+            this.avocadoDataGridViewTextBoxColumn.DataPropertyName = "Avocado";
+            this.avocadoDataGridViewTextBoxColumn.HeaderText = "Avocado";
+            this.avocadoDataGridViewTextBoxColumn.Name = "avocadoDataGridViewTextBoxColumn";
+            this.avocadoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.avocadoDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // condensedmilkDataGridViewTextBoxColumn
+            // 
+            this.condensedmilkDataGridViewTextBoxColumn.DataPropertyName = "Condensed_milk";
+            this.condensedmilkDataGridViewTextBoxColumn.HeaderText = "Condensed_milk";
+            this.condensedmilkDataGridViewTextBoxColumn.Name = "condensedmilkDataGridViewTextBoxColumn";
+            this.condensedmilkDataGridViewTextBoxColumn.ReadOnly = true;
+            this.condensedmilkDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // grahampowderDataGridViewTextBoxColumn
+            // 
+            this.grahampowderDataGridViewTextBoxColumn.DataPropertyName = "Graham_powder";
+            this.grahampowderDataGridViewTextBoxColumn.HeaderText = "Graham_powder";
+            this.grahampowderDataGridViewTextBoxColumn.Name = "grahampowderDataGridViewTextBoxColumn";
+            this.grahampowderDataGridViewTextBoxColumn.ReadOnly = true;
+            this.grahampowderDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // marshmallowDataGridViewTextBoxColumn
+            // 
+            this.marshmallowDataGridViewTextBoxColumn.DataPropertyName = "Marshmallow";
+            this.marshmallowDataGridViewTextBoxColumn.HeaderText = "Marshmallow";
+            this.marshmallowDataGridViewTextBoxColumn.Name = "marshmallowDataGridViewTextBoxColumn";
+            this.marshmallowDataGridViewTextBoxColumn.ReadOnly = true;
+            this.marshmallowDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // caramelDataGridViewTextBoxColumn
+            // 
+            this.caramelDataGridViewTextBoxColumn.DataPropertyName = "Caramel";
+            this.caramelDataGridViewTextBoxColumn.HeaderText = "Caramel";
+            this.caramelDataGridViewTextBoxColumn.Name = "caramelDataGridViewTextBoxColumn";
+            this.caramelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.caramelDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // lecheflanDataGridViewTextBoxColumn
+            // 
+            this.lecheflanDataGridViewTextBoxColumn.DataPropertyName = "Leche_flan";
+            this.lecheflanDataGridViewTextBoxColumn.HeaderText = "Leche_flan";
+            this.lecheflanDataGridViewTextBoxColumn.Name = "lecheflanDataGridViewTextBoxColumn";
+            this.lecheflanDataGridViewTextBoxColumn.ReadOnly = true;
+            this.lecheflanDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // whippedcreamDataGridViewTextBoxColumn
+            // 
+            this.whippedcreamDataGridViewTextBoxColumn.DataPropertyName = "Whipped_cream";
+            this.whippedcreamDataGridViewTextBoxColumn.HeaderText = "Whipped_cream";
+            this.whippedcreamDataGridViewTextBoxColumn.Name = "whippedcreamDataGridViewTextBoxColumn";
+            this.whippedcreamDataGridViewTextBoxColumn.ReadOnly = true;
+            this.whippedcreamDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // domelidDataGridViewTextBoxColumn
+            // 
+            this.domelidDataGridViewTextBoxColumn.DataPropertyName = "Dome_lid";
+            this.domelidDataGridViewTextBoxColumn.HeaderText = "Dome_lid";
+            this.domelidDataGridViewTextBoxColumn.Name = "domelidDataGridViewTextBoxColumn";
+            this.domelidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.domelidDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // cups12ozDataGridViewTextBoxColumn
+            // 
+            this.cups12ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_12oz";
+            this.cups12ozDataGridViewTextBoxColumn.HeaderText = "Cups_12oz";
+            this.cups12ozDataGridViewTextBoxColumn.Name = "cups12ozDataGridViewTextBoxColumn";
+            this.cups12ozDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cups12ozDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // cups16ozDataGridViewTextBoxColumn
+            // 
+            this.cups16ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_16oz";
+            this.cups16ozDataGridViewTextBoxColumn.HeaderText = "Cups_16oz";
+            this.cups16ozDataGridViewTextBoxColumn.Name = "cups16ozDataGridViewTextBoxColumn";
+            this.cups16ozDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cups16ozDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // cups22ozDataGridViewTextBoxColumn
+            // 
+            this.cups22ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_22oz";
+            this.cups22ozDataGridViewTextBoxColumn.HeaderText = "Cups_22oz";
+            this.cups22ozDataGridViewTextBoxColumn.Name = "cups22ozDataGridViewTextBoxColumn";
+            this.cups22ozDataGridViewTextBoxColumn.ReadOnly = true;
+            this.cups22ozDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // strawDataGridViewTextBoxColumn
+            // 
+            this.strawDataGridViewTextBoxColumn.DataPropertyName = "Straw";
+            this.strawDataGridViewTextBoxColumn.HeaderText = "Straw";
+            this.strawDataGridViewTextBoxColumn.Name = "strawDataGridViewTextBoxColumn";
+            this.strawDataGridViewTextBoxColumn.ReadOnly = true;
+            this.strawDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // sugarDataGridViewTextBoxColumn
+            // 
+            this.sugarDataGridViewTextBoxColumn.DataPropertyName = "Sugar";
+            this.sugarDataGridViewTextBoxColumn.HeaderText = "Sugar";
+            this.sugarDataGridViewTextBoxColumn.Name = "sugarDataGridViewTextBoxColumn";
+            this.sugarDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sugarDataGridViewTextBoxColumn.Width = 50;
             // 
             // tblIngredientStocksBindingSource4
             // 
@@ -1698,6 +1875,22 @@
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update Inventory";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
+            this.btnUpdate.Location = new System.Drawing.Point(169, 312);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(87, 26);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "  Update";
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label89
             // 
@@ -2141,6 +2334,22 @@
             this.tblSalesPerformance.Text = "Sales Performance";
             this.tblSalesPerformance.UseVisualStyleBackColor = true;
             // 
+            // btnSalesRecord
+            // 
+            this.btnSalesRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnSalesRecord.FlatAppearance.BorderSize = 0;
+            this.btnSalesRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesRecord.Image = global::WindowsFormsApplication1.Properties.Resources._2202274_20;
+            this.btnSalesRecord.Location = new System.Drawing.Point(560, 321);
+            this.btnSalesRecord.Name = "btnSalesRecord";
+            this.btnSalesRecord.Size = new System.Drawing.Size(118, 28);
+            this.btnSalesRecord.TabIndex = 1;
+            this.btnSalesRecord.Text = "  Sales Record";
+            this.btnSalesRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalesRecord.UseVisualStyleBackColor = false;
+            this.btnSalesRecord.Click += new System.EventHandler(this.btnSalesRecord_Click);
+            // 
             // chartWeeklySalesPerformance
             // 
             chartArea4.Name = "ChartArea1";
@@ -2184,143 +2393,6 @@
             // 
             this.tblIngredientStocksTableAdapter.ClearBeforeFill = true;
             // 
-            // Date_updated
-            // 
-            this.Date_updated.DataPropertyName = "Date_updated";
-            this.Date_updated.HeaderText = "Date_updated";
-            this.Date_updated.Name = "Date_updated";
-            this.Date_updated.ReadOnly = true;
-            // 
-            // Crushed_ice
-            // 
-            this.Crushed_ice.DataPropertyName = "Crushed_ice";
-            this.Crushed_ice.HeaderText = "Crushed_ice";
-            this.Crushed_ice.Name = "Crushed_ice";
-            this.Crushed_ice.ReadOnly = true;
-            // 
-            // mangoDataGridViewTextBoxColumn
-            // 
-            this.mangoDataGridViewTextBoxColumn.DataPropertyName = "Mango";
-            this.mangoDataGridViewTextBoxColumn.HeaderText = "Mango";
-            this.mangoDataGridViewTextBoxColumn.Name = "mangoDataGridViewTextBoxColumn";
-            this.mangoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mangoDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // avocadoDataGridViewTextBoxColumn
-            // 
-            this.avocadoDataGridViewTextBoxColumn.DataPropertyName = "Avocado";
-            this.avocadoDataGridViewTextBoxColumn.HeaderText = "Avocado";
-            this.avocadoDataGridViewTextBoxColumn.Name = "avocadoDataGridViewTextBoxColumn";
-            this.avocadoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.avocadoDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // condensedmilkDataGridViewTextBoxColumn
-            // 
-            this.condensedmilkDataGridViewTextBoxColumn.DataPropertyName = "Condensed_milk";
-            this.condensedmilkDataGridViewTextBoxColumn.HeaderText = "Condensed_milk";
-            this.condensedmilkDataGridViewTextBoxColumn.Name = "condensedmilkDataGridViewTextBoxColumn";
-            this.condensedmilkDataGridViewTextBoxColumn.ReadOnly = true;
-            this.condensedmilkDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // grahampowderDataGridViewTextBoxColumn
-            // 
-            this.grahampowderDataGridViewTextBoxColumn.DataPropertyName = "Graham_powder";
-            this.grahampowderDataGridViewTextBoxColumn.HeaderText = "Graham_powder";
-            this.grahampowderDataGridViewTextBoxColumn.Name = "grahampowderDataGridViewTextBoxColumn";
-            this.grahampowderDataGridViewTextBoxColumn.ReadOnly = true;
-            this.grahampowderDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // marshmallowDataGridViewTextBoxColumn
-            // 
-            this.marshmallowDataGridViewTextBoxColumn.DataPropertyName = "Marshmallow";
-            this.marshmallowDataGridViewTextBoxColumn.HeaderText = "Marshmallow";
-            this.marshmallowDataGridViewTextBoxColumn.Name = "marshmallowDataGridViewTextBoxColumn";
-            this.marshmallowDataGridViewTextBoxColumn.ReadOnly = true;
-            this.marshmallowDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // caramelDataGridViewTextBoxColumn
-            // 
-            this.caramelDataGridViewTextBoxColumn.DataPropertyName = "Caramel";
-            this.caramelDataGridViewTextBoxColumn.HeaderText = "Caramel";
-            this.caramelDataGridViewTextBoxColumn.Name = "caramelDataGridViewTextBoxColumn";
-            this.caramelDataGridViewTextBoxColumn.ReadOnly = true;
-            this.caramelDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // lecheflanDataGridViewTextBoxColumn
-            // 
-            this.lecheflanDataGridViewTextBoxColumn.DataPropertyName = "Leche_flan";
-            this.lecheflanDataGridViewTextBoxColumn.HeaderText = "Leche_flan";
-            this.lecheflanDataGridViewTextBoxColumn.Name = "lecheflanDataGridViewTextBoxColumn";
-            this.lecheflanDataGridViewTextBoxColumn.ReadOnly = true;
-            this.lecheflanDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // whippedcreamDataGridViewTextBoxColumn
-            // 
-            this.whippedcreamDataGridViewTextBoxColumn.DataPropertyName = "Whipped_cream";
-            this.whippedcreamDataGridViewTextBoxColumn.HeaderText = "Whipped_cream";
-            this.whippedcreamDataGridViewTextBoxColumn.Name = "whippedcreamDataGridViewTextBoxColumn";
-            this.whippedcreamDataGridViewTextBoxColumn.ReadOnly = true;
-            this.whippedcreamDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // domelidDataGridViewTextBoxColumn
-            // 
-            this.domelidDataGridViewTextBoxColumn.DataPropertyName = "Dome_lid";
-            this.domelidDataGridViewTextBoxColumn.HeaderText = "Dome_lid";
-            this.domelidDataGridViewTextBoxColumn.Name = "domelidDataGridViewTextBoxColumn";
-            this.domelidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.domelidDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // cups12ozDataGridViewTextBoxColumn
-            // 
-            this.cups12ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_12oz";
-            this.cups12ozDataGridViewTextBoxColumn.HeaderText = "Cups_12oz";
-            this.cups12ozDataGridViewTextBoxColumn.Name = "cups12ozDataGridViewTextBoxColumn";
-            this.cups12ozDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cups12ozDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // cups16ozDataGridViewTextBoxColumn
-            // 
-            this.cups16ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_16oz";
-            this.cups16ozDataGridViewTextBoxColumn.HeaderText = "Cups_16oz";
-            this.cups16ozDataGridViewTextBoxColumn.Name = "cups16ozDataGridViewTextBoxColumn";
-            this.cups16ozDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cups16ozDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // cups22ozDataGridViewTextBoxColumn
-            // 
-            this.cups22ozDataGridViewTextBoxColumn.DataPropertyName = "Cups_22oz";
-            this.cups22ozDataGridViewTextBoxColumn.HeaderText = "Cups_22oz";
-            this.cups22ozDataGridViewTextBoxColumn.Name = "cups22ozDataGridViewTextBoxColumn";
-            this.cups22ozDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cups22ozDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // strawDataGridViewTextBoxColumn
-            // 
-            this.strawDataGridViewTextBoxColumn.DataPropertyName = "Straw";
-            this.strawDataGridViewTextBoxColumn.HeaderText = "Straw";
-            this.strawDataGridViewTextBoxColumn.Name = "strawDataGridViewTextBoxColumn";
-            this.strawDataGridViewTextBoxColumn.ReadOnly = true;
-            this.strawDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // sugarDataGridViewTextBoxColumn
-            // 
-            this.sugarDataGridViewTextBoxColumn.DataPropertyName = "Sugar";
-            this.sugarDataGridViewTextBoxColumn.HeaderText = "Sugar";
-            this.sugarDataGridViewTextBoxColumn.Name = "sugarDataGridViewTextBoxColumn";
-            this.sugarDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sugarDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(31)))), ((int)(((byte)(19)))));
-            this.label31.Location = new System.Drawing.Point(344, 196);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(336, 58);
-            this.label31.TabIndex = 1;
-            this.label31.Text = "Sales and Inventory\r\n";
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -2331,17 +2403,6 @@
             this.label34.Size = new System.Drawing.Size(383, 16);
             this.label34.TabIndex = 2;
             this.label34.Text = "Daniel\'s Mango Graham Shake Sales and Inventory Record System";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(31)))), ((int)(((byte)(19)))));
-            this.label74.Location = new System.Drawing.Point(345, 241);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(260, 58);
-            this.label74.TabIndex = 1;
-            this.label74.Text = "Record System";
             // 
             // panel1
             // 
@@ -2355,15 +2416,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 28);
             this.panel1.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(49)))), ((int)(((byte)(30)))));
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(49)))), ((int)(((byte)(30)))));
-            this.panel2.Location = new System.Drawing.Point(348, 200);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(331, 3);
-            this.panel2.TabIndex = 2;
             // 
             // btnMinimize
             // 
@@ -2399,81 +2451,6 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_012;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(286, 272);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
-            this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources.Untitled_11;
-            this.pictureBox2.Location = new System.Drawing.Point(246, 36);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(417, 185);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnRecord
-            // 
-            this.btnRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecord.Image = global::WindowsFormsApplication1.Properties.Resources._2124277_16;
-            this.btnRecord.Location = new System.Drawing.Point(611, 329);
-            this.btnRecord.Name = "btnRecord";
-            this.btnRecord.Size = new System.Drawing.Size(75, 25);
-            this.btnRecord.TabIndex = 2;
-            this.btnRecord.Text = "  Record";
-            this.btnRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRecord.UseVisualStyleBackColor = true;
-            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
-            // 
-            // btnCompute
-            // 
-            this.btnCompute.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompute.Image = global::WindowsFormsApplication1.Properties.Resources._2123899_16;
-            this.btnCompute.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompute.Location = new System.Drawing.Point(524, 329);
-            this.btnCompute.Name = "btnCompute";
-            this.btnCompute.Size = new System.Drawing.Size(81, 25);
-            this.btnCompute.TabIndex = 2;
-            this.btnCompute.Text = "  Compute";
-            this.btnCompute.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCompute.UseVisualStyleBackColor = true;
-            this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Image = global::WindowsFormsApplication1.Properties.Resources._134221_16;
-            this.btnUpdate.Location = new System.Drawing.Point(181, 315);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "  Update";
-            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnSalesRecord
-            // 
-            this.btnSalesRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalesRecord.Image = global::WindowsFormsApplication1.Properties.Resources._2202274_162;
-            this.btnSalesRecord.Location = new System.Drawing.Point(579, 326);
-            this.btnSalesRecord.Name = "btnSalesRecord";
-            this.btnSalesRecord.Size = new System.Drawing.Size(99, 23);
-            this.btnSalesRecord.TabIndex = 1;
-            this.btnSalesRecord.Text = "Sales Record";
-            this.btnSalesRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSalesRecord.UseVisualStyleBackColor = true;
-            this.btnSalesRecord.Click += new System.EventHandler(this.btnSalesRecord_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2490,7 +2467,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
-            this.tabHome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabAddDailySalesRecord.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -2552,8 +2530,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2760,12 +2736,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sugarDataGridViewTextBoxColumn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
 
     }
 }

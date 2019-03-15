@@ -129,6 +129,19 @@
   <metadata name="dbGrahamShakeDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAWFJREFUOE/V080rBVEcxvHxslBCQlIWFjYKGxsplsRCdMvOUpKXFBELsVfKwkbC
+        mv+ArCyoy4aVrEhZKEvyEt/n3DndmWPOdC3vU5/u+c2c+c2dOXOCok8J2jCIAbSGx9y0hL/eVGARD/hx
+        3GEC5VBWsZ4bJqcZV9DFzzjEApZwhFfo3AnWwrG3YRVuoEl7qIWbRhxDcyxvw01owrap8umH3p/NEL6Q
+        2rAa77hHpQ5EcouZ3NA01zzbzNtwFDq5Yap4bEMtxCTmHd34E62qGg6bKp7oPyw4WkU11CO5ucYl2k2V
+        TxdeMG0qJ2NQwxVTxaOV3ccntqD3rYxD14yYykk9vpGF/Wjd9OAUddCOOcMHapCYA+iOy6ZKzxQ0d8dU
+        njThCbqrdkcZ3JRiFm/Q1mxAajrxCN39Avos+tCLOZxD5zSnAwVFi7ALLYIujtIxndOcf0d7OQM9vmic
+        tL+LJkHwC51JWCDyKmTeAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="tblIngredientStocksBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>260, 56</value>
   </metadata>
@@ -144,7 +157,6 @@
   <metadata name="tblIngredientStocksTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>437, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

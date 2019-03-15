@@ -988,7 +988,7 @@ namespace WindowsFormsApplication1
                 lblDateLatestInventoryReport.Text = "As of " + dateTimeLatestInventory;
 
                 //Pie chart PRIMARY INGREDIENTS
-                pieChartLatestInventory.Series["s1"].Palette = ChartColorPalette.Chocolate;
+                pieChartLatestInventory.Series["s1"].Palette = ChartColorPalette.Chocolate; 
                 //pieChartLatestInventory.Series["s1"].Color = Color.FromArgb(5, 100, 146);
                 int i;
                 //pieChartLatestInventory.Series["s1"]["PointWidth"] = "0.3";
@@ -1064,13 +1064,13 @@ namespace WindowsFormsApplication1
                     chartWeeklySalesPerformance.Series["ss"].IsValueShownAsLabel = true;
                     chartWeeklySalesPerformance.Series["ss"].LabelBackColor = Color.FromArgb(255, 255, 255);
                 }
-                chartWeeklySalesPerformance.Series["ss"].Points[0].Color = Color.FromArgb(250, 234, 16);
-                chartWeeklySalesPerformance.Series["ss"].Points[1].Color = Color.FromArgb(250, 234, 16);
-                chartWeeklySalesPerformance.Series["ss"].Points[2].Color = Color.FromArgb(250, 234, 16);
-                chartWeeklySalesPerformance.Series["ss"].Points[3].Color = Color.FromArgb(250, 234, 16);
-                chartWeeklySalesPerformance.Series["ss"].Points[4].Color = Color.FromArgb(250, 234, 16);
-                chartWeeklySalesPerformance.Series["ss"].Points[5].Color = Color.FromArgb(250, 234, 16);
-                chartWeeklySalesPerformance.Series["ss"].Points[6].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].Points[0].Color = Color.FromArgb(42, 23, 15);
+                chartWeeklySalesPerformance.Series["ss"].Points[1].Color = Color.FromArgb(42, 23, 15);
+                chartWeeklySalesPerformance.Series["ss"].Points[2].Color = Color.FromArgb(42, 23, 15);
+                chartWeeklySalesPerformance.Series["ss"].Points[3].Color = Color.FromArgb(42, 23, 15);
+                chartWeeklySalesPerformance.Series["ss"].Points[4].Color = Color.FromArgb(42, 23, 15);
+                chartWeeklySalesPerformance.Series["ss"].Points[5].Color = Color.FromArgb(42, 23, 15);
+                chartWeeklySalesPerformance.Series["ss"].Points[6].Color = Color.FromArgb(42, 23, 15);
                 chartWeeklySalesPerformance.Series["ss"].BorderWidth = 3;
                
                 IsSalesRecordBelow7 = false;
