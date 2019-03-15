@@ -29,18 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title11 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title12 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
@@ -234,11 +236,11 @@
             this.chartWeeklySalesPerformance = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
             this.tblIngredientStocksBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblIngredientStocksTableAdapter();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabAddDailySalesRecord.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -301,19 +303,20 @@
             this.tabControl1.Controls.Add(this.tabUpdateInventory);
             this.tabControl1.Controls.Add(this.tabDisplayInventoryReport);
             this.tabControl1.Controls.Add(this.tblSalesPerformance);
-            this.tabControl1.Location = new System.Drawing.Point(12, 32);
+            this.tabControl1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(12, 31);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(700, 377);
+            this.tabControl1.Size = new System.Drawing.Size(700, 390);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabHome
             // 
-            this.tabHome.Location = new System.Drawing.Point(4, 22);
+            this.tabHome.Location = new System.Drawing.Point(4, 27);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHome.Size = new System.Drawing.Size(692, 351);
+            this.tabHome.Size = new System.Drawing.Size(692, 346);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
@@ -324,10 +327,10 @@
             this.tabAddDailySalesRecord.Controls.Add(this.btnRecord);
             this.tabAddDailySalesRecord.Controls.Add(this.btnCompute);
             this.tabAddDailySalesRecord.Controls.Add(this.groupBox1);
-            this.tabAddDailySalesRecord.Location = new System.Drawing.Point(4, 22);
+            this.tabAddDailySalesRecord.Location = new System.Drawing.Point(4, 27);
             this.tabAddDailySalesRecord.Name = "tabAddDailySalesRecord";
             this.tabAddDailySalesRecord.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAddDailySalesRecord.Size = new System.Drawing.Size(692, 351);
+            this.tabAddDailySalesRecord.Size = new System.Drawing.Size(692, 359);
             this.tabAddDailySalesRecord.TabIndex = 1;
             this.tabAddDailySalesRecord.Text = "Add Daily Sales Record";
             this.tabAddDailySalesRecord.UseVisualStyleBackColor = true;
@@ -368,7 +371,7 @@
             this.groupBox4.Controls.Add(this.label72);
             this.groupBox4.Location = new System.Drawing.Point(489, 6);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(197, 310);
+            this.groupBox4.Size = new System.Drawing.Size(197, 321);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Default Price List";
@@ -376,294 +379,326 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(136, 287);
+            this.label70.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(136, 301);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(44, 13);
+            this.label70.Size = new System.Drawing.Size(44, 16);
             this.label70.TabIndex = 0;
             this.label70.Text = "PHP 46";
             // 
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(136, 185);
+            this.label49.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(136, 199);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(50, 13);
+            this.label49.Size = new System.Drawing.Size(49, 16);
             this.label49.TabIndex = 0;
             this.label49.Text = "PHP 205";
             // 
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(136, 270);
+            this.label69.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(136, 284);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(50, 13);
+            this.label69.Size = new System.Drawing.Size(47, 16);
             this.label69.TabIndex = 0;
             this.label69.Text = "PHP 120";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(136, 168);
+            this.label48.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(136, 182);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(44, 13);
+            this.label48.Size = new System.Drawing.Size(43, 16);
             this.label48.TabIndex = 0;
             this.label48.Text = "PHP 50";
             // 
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(136, 253);
+            this.label68.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(136, 267);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(50, 13);
+            this.label68.Size = new System.Drawing.Size(49, 16);
             this.label68.TabIndex = 0;
             this.label68.Text = "PHP 350";
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(136, 151);
+            this.label47.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(136, 165);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(50, 13);
+            this.label47.Size = new System.Drawing.Size(45, 16);
             this.label47.TabIndex = 0;
             this.label47.Text = "PHP 115";
             // 
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(136, 235);
+            this.label67.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(136, 249);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(50, 13);
+            this.label67.Size = new System.Drawing.Size(49, 16);
             this.label67.TabIndex = 0;
             this.label67.Text = "PHP 280";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(136, 134);
+            this.label46.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(136, 148);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(44, 13);
+            this.label46.Size = new System.Drawing.Size(43, 16);
             this.label46.TabIndex = 0;
             this.label46.Text = "PHP 95";
             // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(136, 219);
+            this.label66.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(136, 233);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(44, 13);
+            this.label66.Size = new System.Drawing.Size(43, 16);
             this.label66.TabIndex = 0;
             this.label66.Text = "PHP 30";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(136, 116);
+            this.label45.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(136, 130);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(50, 13);
+            this.label45.Size = new System.Drawing.Size(47, 16);
             this.label45.TabIndex = 0;
             this.label45.Text = "PHP 170";
             // 
             // label65
             // 
             this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(136, 202);
+            this.label65.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(136, 216);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(50, 13);
+            this.label65.Size = new System.Drawing.Size(47, 16);
             this.label65.TabIndex = 0;
             this.label65.Text = "PHP 120";
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(136, 98);
+            this.label44.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(136, 112);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(44, 13);
+            this.label44.Size = new System.Drawing.Size(43, 16);
             this.label44.TabIndex = 0;
             this.label44.Text = "PHP 74";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(136, 81);
+            this.label43.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(136, 95);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(50, 13);
+            this.label43.Size = new System.Drawing.Size(45, 16);
             this.label43.TabIndex = 0;
             this.label43.Text = "PHP 110";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(136, 64);
+            this.label42.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(136, 78);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(56, 13);
+            this.label42.Size = new System.Drawing.Size(53, 16);
             this.label42.TabIndex = 0;
             this.label42.Text = "PHP 1200";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(136, 47);
+            this.label41.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(136, 61);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(50, 13);
+            this.label41.Size = new System.Drawing.Size(47, 16);
             this.label41.TabIndex = 0;
             this.label41.Text = "PHP 125";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 47);
+            this.label21.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(6, 61);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(95, 13);
+            this.label21.Size = new System.Drawing.Size(102, 16);
             this.label21.TabIndex = 0;
             this.label21.Text = "Crushed ice(sack):";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 64);
+            this.label22.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(6, 78);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(69, 13);
+            this.label22.Size = new System.Drawing.Size(73, 16);
             this.label22.TabIndex = 0;
             this.label22.Text = "Mango(kain):";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 81);
+            this.label33.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(6, 95);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(75, 13);
+            this.label33.Size = new System.Drawing.Size(80, 16);
             this.label33.TabIndex = 0;
             this.label33.Text = "Avocado(kilo):";
             // 
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(6, 202);
+            this.label64.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(6, 216);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(81, 13);
+            this.label64.Size = new System.Drawing.Size(86, 16);
             this.label64.TabIndex = 0;
             this.label64.Text = "Dome lid(pack):";
             // 
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(6, 219);
+            this.label63.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(6, 233);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(90, 13);
+            this.label63.Size = new System.Drawing.Size(92, 16);
             this.label63.TabIndex = 0;
             this.label63.Text = "Cups 12oz(pack):";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(6, 98);
+            this.label35.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(6, 112);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(109, 13);
+            this.label35.Size = new System.Drawing.Size(116, 16);
             this.label35.TabIndex = 0;
             this.label35.Text = "Condensed milk(can):";
             // 
             // label62
             // 
             this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(6, 236);
+            this.label62.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(6, 250);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(90, 13);
+            this.label62.Size = new System.Drawing.Size(92, 16);
             this.label62.TabIndex = 0;
             this.label62.Text = "Cups 16oz(pack):";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 116);
+            this.label36.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(6, 130);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(109, 13);
+            this.label36.Size = new System.Drawing.Size(117, 16);
             this.label36.TabIndex = 0;
             this.label36.Text = "Graham powder(bag):";
             // 
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(6, 253);
+            this.label61.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(6, 267);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(90, 13);
+            this.label61.Size = new System.Drawing.Size(94, 16);
             this.label61.TabIndex = 0;
             this.label61.Text = "Cups 22oz(pack):";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(6, 134);
+            this.label37.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(6, 148);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(100, 13);
+            this.label37.Size = new System.Drawing.Size(112, 16);
             this.label37.TabIndex = 0;
             this.label37.Text = "Marshmallows(bag):";
             // 
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(6, 270);
+            this.label60.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(6, 284);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(67, 13);
+            this.label60.Size = new System.Drawing.Size(74, 16);
             this.label60.TabIndex = 0;
             this.label60.Text = "Straw(pack):";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 151);
+            this.label38.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(6, 165);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(72, 13);
+            this.label38.Size = new System.Drawing.Size(80, 16);
             this.label38.TabIndex = 0;
             this.label38.Text = "Caramel(bag):";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 287);
+            this.label13.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 301);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 13);
+            this.label13.Size = new System.Drawing.Size(71, 16);
             this.label13.TabIndex = 0;
             this.label13.Text = "Asukal(kilo):";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(6, 168);
+            this.label39.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(6, 182);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(90, 13);
+            this.label39.Size = new System.Drawing.Size(94, 16);
             this.label39.TabIndex = 0;
             this.label39.Text = "Leche flan(pack):";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(6, 185);
+            this.label40.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(6, 199);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(108, 13);
+            this.label40.Size = new System.Drawing.Size(114, 16);
             this.label40.TabIndex = 0;
             this.label40.Text = "Whipped cream(box):";
             // 
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(146, 27);
+            this.label71.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(144, 38);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(31, 13);
+            this.label71.Size = new System.Drawing.Size(35, 16);
             this.label71.TabIndex = 0;
             this.label71.Text = "Price";
             // 
             // label72
             // 
             this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(17, 19);
+            this.label72.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Location = new System.Drawing.Point(20, 26);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(71, 26);
+            this.label72.Size = new System.Drawing.Size(78, 32);
             this.label72.TabIndex = 0;
             this.label72.Text = "Ingredients or\r\n   Materials";
             // 
             // btnRecord
             // 
-            this.btnRecord.Location = new System.Drawing.Point(611, 322);
+            this.btnRecord.Location = new System.Drawing.Point(611, 331);
             this.btnRecord.Name = "btnRecord";
             this.btnRecord.Size = new System.Drawing.Size(75, 23);
             this.btnRecord.TabIndex = 2;
@@ -673,7 +708,7 @@
             // 
             // btnCompute
             // 
-            this.btnCompute.Location = new System.Drawing.Point(530, 322);
+            this.btnCompute.Location = new System.Drawing.Point(530, 331);
             this.btnCompute.Name = "btnCompute";
             this.btnCompute.Size = new System.Drawing.Size(75, 23);
             this.btnCompute.TabIndex = 2;
@@ -757,9 +792,9 @@
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(17, 6);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(466, 339);
+            this.groupBox1.Size = new System.Drawing.Size(477, 350);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Expenses";
@@ -767,23 +802,24 @@
             // label59
             // 
             this.label59.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label59.Location = new System.Drawing.Point(246, 14);
+            this.label59.Location = new System.Drawing.Point(256, 28);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(2, 314);
             this.label59.TabIndex = 4;
             // 
             // txtCPBlackPearl
             // 
-            this.txtCPBlackPearl.Location = new System.Drawing.Point(190, 283);
+            this.txtCPBlackPearl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPBlackPearl.Location = new System.Drawing.Point(200, 297);
             this.txtCPBlackPearl.Name = "txtCPBlackPearl";
-            this.txtCPBlackPearl.Size = new System.Drawing.Size(37, 20);
+            this.txtCPBlackPearl.Size = new System.Drawing.Size(37, 23);
             this.txtCPBlackPearl.TabIndex = 3;
             this.txtCPBlackPearl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPBlackPearl
             // 
             this.chkCPBlackPearl.AutoSize = true;
-            this.chkCPBlackPearl.Location = new System.Drawing.Point(156, 286);
+            this.chkCPBlackPearl.Location = new System.Drawing.Point(166, 300);
             this.chkCPBlackPearl.Name = "chkCPBlackPearl";
             this.chkCPBlackPearl.Size = new System.Drawing.Size(15, 14);
             this.chkCPBlackPearl.TabIndex = 2;
@@ -798,7 +834,7 @@
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.txtGrossSale);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Location = new System.Drawing.Point(262, 212);
+            this.groupBox2.Location = new System.Drawing.Point(272, 226);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(194, 107);
             this.groupBox2.TabIndex = 1;
@@ -808,68 +844,75 @@
             // lblGrossInvestmentTotal
             // 
             this.lblGrossInvestmentTotal.AutoSize = true;
+            this.lblGrossInvestmentTotal.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGrossInvestmentTotal.Location = new System.Drawing.Point(137, 28);
             this.lblGrossInvestmentTotal.Name = "lblGrossInvestmentTotal";
-            this.lblGrossInvestmentTotal.Size = new System.Drawing.Size(19, 13);
+            this.lblGrossInvestmentTotal.Size = new System.Drawing.Size(20, 16);
             this.lblGrossInvestmentTotal.TabIndex = 0;
             this.lblGrossInvestmentTotal.Text = "00";
             // 
             // lblProfit
             // 
             this.lblProfit.AutoSize = true;
+            this.lblProfit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfit.Location = new System.Drawing.Point(137, 73);
             this.lblProfit.Name = "lblProfit";
-            this.lblProfit.Size = new System.Drawing.Size(19, 13);
+            this.lblProfit.Size = new System.Drawing.Size(20, 16);
             this.lblProfit.TabIndex = 0;
             this.lblProfit.Text = "00";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(6, 73);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(128, 13);
+            this.label17.Size = new System.Drawing.Size(131, 16);
             this.label17.TabIndex = 0;
-            this.label17.Text = "Profit:                        PHP";
+            this.label17.Text = "Profit:                                   PHP";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(6, 50);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(59, 13);
+            this.label16.Size = new System.Drawing.Size(64, 16);
             this.label16.TabIndex = 0;
             this.label16.Text = "Gross sale:";
             // 
             // txtGrossSale
             // 
+            this.txtGrossSale.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrossSale.Location = new System.Drawing.Point(110, 47);
             this.txtGrossSale.Name = "txtGrossSale";
-            this.txtGrossSale.Size = new System.Drawing.Size(71, 20);
+            this.txtGrossSale.Size = new System.Drawing.Size(71, 23);
             this.txtGrossSale.TabIndex = 3;
             this.txtGrossSale.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGrossSale_KeyPress);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(6, 28);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(129, 13);
+            this.label15.Size = new System.Drawing.Size(131, 16);
             this.label15.TabIndex = 0;
             this.label15.Text = "Gross Investment:     PHP";
             // 
             // txtCPWhippedCream
             // 
-            this.txtCPWhippedCream.Location = new System.Drawing.Point(190, 257);
+            this.txtCPWhippedCream.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPWhippedCream.Location = new System.Drawing.Point(200, 271);
             this.txtCPWhippedCream.Name = "txtCPWhippedCream";
-            this.txtCPWhippedCream.Size = new System.Drawing.Size(37, 20);
+            this.txtCPWhippedCream.Size = new System.Drawing.Size(37, 23);
             this.txtCPWhippedCream.TabIndex = 3;
             this.txtCPWhippedCream.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPWhippedCream
             // 
             this.chkCPWhippedCream.AutoSize = true;
-            this.chkCPWhippedCream.Location = new System.Drawing.Point(156, 260);
+            this.chkCPWhippedCream.Location = new System.Drawing.Point(166, 274);
             this.chkCPWhippedCream.Name = "chkCPWhippedCream";
             this.chkCPWhippedCream.Size = new System.Drawing.Size(15, 14);
             this.chkCPWhippedCream.TabIndex = 2;
@@ -878,16 +921,17 @@
             // 
             // txtCPLecheFlan
             // 
-            this.txtCPLecheFlan.Location = new System.Drawing.Point(190, 231);
+            this.txtCPLecheFlan.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPLecheFlan.Location = new System.Drawing.Point(200, 245);
             this.txtCPLecheFlan.Name = "txtCPLecheFlan";
-            this.txtCPLecheFlan.Size = new System.Drawing.Size(37, 20);
+            this.txtCPLecheFlan.Size = new System.Drawing.Size(37, 23);
             this.txtCPLecheFlan.TabIndex = 3;
             this.txtCPLecheFlan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPLecheFlan
             // 
             this.chkCPLecheFlan.AutoSize = true;
-            this.chkCPLecheFlan.Location = new System.Drawing.Point(156, 234);
+            this.chkCPLecheFlan.Location = new System.Drawing.Point(166, 248);
             this.chkCPLecheFlan.Name = "chkCPLecheFlan";
             this.chkCPLecheFlan.Size = new System.Drawing.Size(15, 14);
             this.chkCPLecheFlan.TabIndex = 2;
@@ -896,16 +940,17 @@
             // 
             // txtCPCaramel
             // 
-            this.txtCPCaramel.Location = new System.Drawing.Point(190, 205);
+            this.txtCPCaramel.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPCaramel.Location = new System.Drawing.Point(200, 219);
             this.txtCPCaramel.Name = "txtCPCaramel";
-            this.txtCPCaramel.Size = new System.Drawing.Size(37, 20);
+            this.txtCPCaramel.Size = new System.Drawing.Size(37, 23);
             this.txtCPCaramel.TabIndex = 3;
             this.txtCPCaramel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCaramel
             // 
             this.chkCPCaramel.AutoSize = true;
-            this.chkCPCaramel.Location = new System.Drawing.Point(156, 208);
+            this.chkCPCaramel.Location = new System.Drawing.Point(166, 222);
             this.chkCPCaramel.Name = "chkCPCaramel";
             this.chkCPCaramel.Size = new System.Drawing.Size(15, 14);
             this.chkCPCaramel.TabIndex = 2;
@@ -914,24 +959,26 @@
             // 
             // txtCPSugar
             // 
-            this.txtCPSugar.Location = new System.Drawing.Point(190, 309);
+            this.txtCPSugar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPSugar.Location = new System.Drawing.Point(200, 323);
             this.txtCPSugar.Name = "txtCPSugar";
-            this.txtCPSugar.Size = new System.Drawing.Size(37, 20);
+            this.txtCPSugar.Size = new System.Drawing.Size(37, 23);
             this.txtCPSugar.TabIndex = 3;
             this.txtCPSugar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPMarshmallows
             // 
-            this.txtCPMarshmallows.Location = new System.Drawing.Point(190, 179);
+            this.txtCPMarshmallows.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPMarshmallows.Location = new System.Drawing.Point(200, 193);
             this.txtCPMarshmallows.Name = "txtCPMarshmallows";
-            this.txtCPMarshmallows.Size = new System.Drawing.Size(37, 20);
+            this.txtCPMarshmallows.Size = new System.Drawing.Size(37, 23);
             this.txtCPMarshmallows.TabIndex = 3;
             this.txtCPMarshmallows.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPSugar
             // 
             this.chkCPSugar.AutoSize = true;
-            this.chkCPSugar.Location = new System.Drawing.Point(156, 312);
+            this.chkCPSugar.Location = new System.Drawing.Point(166, 326);
             this.chkCPSugar.Name = "chkCPSugar";
             this.chkCPSugar.Size = new System.Drawing.Size(15, 14);
             this.chkCPSugar.TabIndex = 2;
@@ -941,7 +988,7 @@
             // chkCPMarshmallows
             // 
             this.chkCPMarshmallows.AutoSize = true;
-            this.chkCPMarshmallows.Location = new System.Drawing.Point(156, 182);
+            this.chkCPMarshmallows.Location = new System.Drawing.Point(166, 196);
             this.chkCPMarshmallows.Name = "chkCPMarshmallows";
             this.chkCPMarshmallows.Size = new System.Drawing.Size(15, 14);
             this.chkCPMarshmallows.TabIndex = 2;
@@ -950,24 +997,26 @@
             // 
             // txtCPStraw
             // 
-            this.txtCPStraw.Location = new System.Drawing.Point(419, 150);
+            this.txtCPStraw.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPStraw.Location = new System.Drawing.Point(429, 164);
             this.txtCPStraw.Name = "txtCPStraw";
-            this.txtCPStraw.Size = new System.Drawing.Size(37, 20);
+            this.txtCPStraw.Size = new System.Drawing.Size(37, 23);
             this.txtCPStraw.TabIndex = 3;
             this.txtCPStraw.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPGrahamPowder
             // 
-            this.txtCPGrahamPowder.Location = new System.Drawing.Point(190, 153);
+            this.txtCPGrahamPowder.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPGrahamPowder.Location = new System.Drawing.Point(200, 167);
             this.txtCPGrahamPowder.Name = "txtCPGrahamPowder";
-            this.txtCPGrahamPowder.Size = new System.Drawing.Size(37, 20);
+            this.txtCPGrahamPowder.Size = new System.Drawing.Size(37, 23);
             this.txtCPGrahamPowder.TabIndex = 3;
             this.txtCPGrahamPowder.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPStraw
             // 
             this.chkCPStraw.AutoSize = true;
-            this.chkCPStraw.Location = new System.Drawing.Point(385, 153);
+            this.chkCPStraw.Location = new System.Drawing.Point(395, 167);
             this.chkCPStraw.Name = "chkCPStraw";
             this.chkCPStraw.Size = new System.Drawing.Size(15, 14);
             this.chkCPStraw.TabIndex = 2;
@@ -977,7 +1026,7 @@
             // chkCPGrahamPowder
             // 
             this.chkCPGrahamPowder.AutoSize = true;
-            this.chkCPGrahamPowder.Location = new System.Drawing.Point(156, 156);
+            this.chkCPGrahamPowder.Location = new System.Drawing.Point(166, 170);
             this.chkCPGrahamPowder.Name = "chkCPGrahamPowder";
             this.chkCPGrahamPowder.Size = new System.Drawing.Size(15, 14);
             this.chkCPGrahamPowder.TabIndex = 2;
@@ -986,24 +1035,26 @@
             // 
             // txtCPCups22
             // 
-            this.txtCPCups22.Location = new System.Drawing.Point(419, 124);
+            this.txtCPCups22.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPCups22.Location = new System.Drawing.Point(429, 138);
             this.txtCPCups22.Name = "txtCPCups22";
-            this.txtCPCups22.Size = new System.Drawing.Size(37, 20);
+            this.txtCPCups22.Size = new System.Drawing.Size(37, 23);
             this.txtCPCups22.TabIndex = 3;
             this.txtCPCups22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPCondensedMilk
             // 
-            this.txtCPCondensedMilk.Location = new System.Drawing.Point(190, 127);
+            this.txtCPCondensedMilk.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPCondensedMilk.Location = new System.Drawing.Point(200, 141);
             this.txtCPCondensedMilk.Name = "txtCPCondensedMilk";
-            this.txtCPCondensedMilk.Size = new System.Drawing.Size(37, 20);
+            this.txtCPCondensedMilk.Size = new System.Drawing.Size(37, 23);
             this.txtCPCondensedMilk.TabIndex = 3;
             this.txtCPCondensedMilk.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCups22
             // 
             this.chkCPCups22.AutoSize = true;
-            this.chkCPCups22.Location = new System.Drawing.Point(385, 127);
+            this.chkCPCups22.Location = new System.Drawing.Point(395, 141);
             this.chkCPCups22.Name = "chkCPCups22";
             this.chkCPCups22.Size = new System.Drawing.Size(15, 14);
             this.chkCPCups22.TabIndex = 2;
@@ -1013,7 +1064,7 @@
             // chkCPCondensedMilk
             // 
             this.chkCPCondensedMilk.AutoSize = true;
-            this.chkCPCondensedMilk.Location = new System.Drawing.Point(156, 130);
+            this.chkCPCondensedMilk.Location = new System.Drawing.Point(166, 144);
             this.chkCPCondensedMilk.Name = "chkCPCondensedMilk";
             this.chkCPCondensedMilk.Size = new System.Drawing.Size(15, 14);
             this.chkCPCondensedMilk.TabIndex = 2;
@@ -1022,24 +1073,26 @@
             // 
             // txtCPCups16
             // 
-            this.txtCPCups16.Location = new System.Drawing.Point(419, 98);
+            this.txtCPCups16.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPCups16.Location = new System.Drawing.Point(429, 112);
             this.txtCPCups16.Name = "txtCPCups16";
-            this.txtCPCups16.Size = new System.Drawing.Size(37, 20);
+            this.txtCPCups16.Size = new System.Drawing.Size(37, 23);
             this.txtCPCups16.TabIndex = 3;
             this.txtCPCups16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPAvocado
             // 
-            this.txtCPAvocado.Location = new System.Drawing.Point(190, 101);
+            this.txtCPAvocado.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPAvocado.Location = new System.Drawing.Point(200, 115);
             this.txtCPAvocado.Name = "txtCPAvocado";
-            this.txtCPAvocado.Size = new System.Drawing.Size(37, 20);
+            this.txtCPAvocado.Size = new System.Drawing.Size(37, 23);
             this.txtCPAvocado.TabIndex = 3;
             this.txtCPAvocado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCups16
             // 
             this.chkCPCups16.AutoSize = true;
-            this.chkCPCups16.Location = new System.Drawing.Point(385, 101);
+            this.chkCPCups16.Location = new System.Drawing.Point(395, 115);
             this.chkCPCups16.Name = "chkCPCups16";
             this.chkCPCups16.Size = new System.Drawing.Size(15, 14);
             this.chkCPCups16.TabIndex = 2;
@@ -1049,7 +1102,7 @@
             // chkCPAvocado
             // 
             this.chkCPAvocado.AutoSize = true;
-            this.chkCPAvocado.Location = new System.Drawing.Point(156, 104);
+            this.chkCPAvocado.Location = new System.Drawing.Point(166, 118);
             this.chkCPAvocado.Name = "chkCPAvocado";
             this.chkCPAvocado.Size = new System.Drawing.Size(15, 14);
             this.chkCPAvocado.TabIndex = 2;
@@ -1058,24 +1111,26 @@
             // 
             // txtCPCups12
             // 
-            this.txtCPCups12.Location = new System.Drawing.Point(419, 72);
+            this.txtCPCups12.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPCups12.Location = new System.Drawing.Point(429, 86);
             this.txtCPCups12.Name = "txtCPCups12";
-            this.txtCPCups12.Size = new System.Drawing.Size(37, 20);
+            this.txtCPCups12.Size = new System.Drawing.Size(37, 23);
             this.txtCPCups12.TabIndex = 3;
             this.txtCPCups12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPMango
             // 
-            this.txtCPMango.Location = new System.Drawing.Point(190, 75);
+            this.txtCPMango.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPMango.Location = new System.Drawing.Point(200, 89);
             this.txtCPMango.Name = "txtCPMango";
-            this.txtCPMango.Size = new System.Drawing.Size(37, 20);
+            this.txtCPMango.Size = new System.Drawing.Size(37, 23);
             this.txtCPMango.TabIndex = 3;
             this.txtCPMango.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // chkCPCups12
             // 
             this.chkCPCups12.AutoSize = true;
-            this.chkCPCups12.Location = new System.Drawing.Point(385, 75);
+            this.chkCPCups12.Location = new System.Drawing.Point(395, 89);
             this.chkCPCups12.Name = "chkCPCups12";
             this.chkCPCups12.Size = new System.Drawing.Size(15, 14);
             this.chkCPCups12.TabIndex = 2;
@@ -1085,7 +1140,7 @@
             // chkCPMango
             // 
             this.chkCPMango.AutoSize = true;
-            this.chkCPMango.Location = new System.Drawing.Point(156, 78);
+            this.chkCPMango.Location = new System.Drawing.Point(166, 92);
             this.chkCPMango.Name = "chkCPMango";
             this.chkCPMango.Size = new System.Drawing.Size(15, 14);
             this.chkCPMango.TabIndex = 2;
@@ -1094,32 +1149,34 @@
             // 
             // txtCPDomeLid
             // 
-            this.txtCPDomeLid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPDomeLid.Location = new System.Drawing.Point(419, 46);
+            this.txtCPDomeLid.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPDomeLid.Location = new System.Drawing.Point(429, 60);
             this.txtCPDomeLid.Name = "txtCPDomeLid";
-            this.txtCPDomeLid.Size = new System.Drawing.Size(37, 13);
+            this.txtCPDomeLid.Size = new System.Drawing.Size(37, 23);
             this.txtCPDomeLid.TabIndex = 3;
             this.txtCPDomeLid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // txtCPCrushedIce
             // 
-            this.txtCPCrushedIce.Location = new System.Drawing.Point(190, 49);
+            this.txtCPCrushedIce.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCPCrushedIce.Location = new System.Drawing.Point(200, 63);
             this.txtCPCrushedIce.Name = "txtCPCrushedIce";
-            this.txtCPCrushedIce.Size = new System.Drawing.Size(37, 20);
+            this.txtCPCrushedIce.Size = new System.Drawing.Size(37, 23);
             this.txtCPCrushedIce.TabIndex = 3;
             this.txtCPCrushedIce.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCPCrushedIce_KeyPress);
             // 
             // numBlackPearl
             // 
-            this.numBlackPearl.Location = new System.Drawing.Point(101, 284);
+            this.numBlackPearl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numBlackPearl.Location = new System.Drawing.Point(104, 298);
             this.numBlackPearl.Name = "numBlackPearl";
-            this.numBlackPearl.Size = new System.Drawing.Size(33, 20);
+            this.numBlackPearl.Size = new System.Drawing.Size(33, 23);
             this.numBlackPearl.TabIndex = 1;
             // 
             // chkCPDomeLid
             // 
             this.chkCPDomeLid.AutoSize = true;
-            this.chkCPDomeLid.Location = new System.Drawing.Point(385, 49);
+            this.chkCPDomeLid.Location = new System.Drawing.Point(395, 63);
             this.chkCPDomeLid.Name = "chkCPDomeLid";
             this.chkCPDomeLid.Size = new System.Drawing.Size(15, 14);
             this.chkCPDomeLid.TabIndex = 2;
@@ -1129,7 +1186,7 @@
             // chkCPCrushedIce
             // 
             this.chkCPCrushedIce.AutoSize = true;
-            this.chkCPCrushedIce.Location = new System.Drawing.Point(156, 52);
+            this.chkCPCrushedIce.Location = new System.Drawing.Point(166, 66);
             this.chkCPCrushedIce.Name = "chkCPCrushedIce";
             this.chkCPCrushedIce.Size = new System.Drawing.Size(15, 14);
             this.chkCPCrushedIce.TabIndex = 2;
@@ -1138,322 +1195,361 @@
             // 
             // numWhippedCream
             // 
-            this.numWhippedCream.Location = new System.Drawing.Point(101, 258);
+            this.numWhippedCream.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numWhippedCream.Location = new System.Drawing.Point(104, 272);
             this.numWhippedCream.Name = "numWhippedCream";
-            this.numWhippedCream.Size = new System.Drawing.Size(33, 20);
+            this.numWhippedCream.Size = new System.Drawing.Size(33, 23);
             this.numWhippedCream.TabIndex = 1;
             // 
             // numLecheFlan
             // 
-            this.numLecheFlan.Location = new System.Drawing.Point(101, 232);
+            this.numLecheFlan.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numLecheFlan.Location = new System.Drawing.Point(104, 246);
             this.numLecheFlan.Name = "numLecheFlan";
-            this.numLecheFlan.Size = new System.Drawing.Size(33, 20);
+            this.numLecheFlan.Size = new System.Drawing.Size(33, 23);
             this.numLecheFlan.TabIndex = 1;
             // 
             // numCaramel
             // 
-            this.numCaramel.Location = new System.Drawing.Point(101, 206);
+            this.numCaramel.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCaramel.Location = new System.Drawing.Point(104, 220);
             this.numCaramel.Name = "numCaramel";
-            this.numCaramel.Size = new System.Drawing.Size(33, 20);
+            this.numCaramel.Size = new System.Drawing.Size(33, 23);
             this.numCaramel.TabIndex = 1;
             // 
             // numSugar
             // 
-            this.numSugar.Location = new System.Drawing.Point(101, 310);
+            this.numSugar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSugar.Location = new System.Drawing.Point(104, 324);
             this.numSugar.Name = "numSugar";
-            this.numSugar.Size = new System.Drawing.Size(33, 20);
+            this.numSugar.Size = new System.Drawing.Size(33, 23);
             this.numSugar.TabIndex = 1;
             // 
             // numStraw
             // 
-            this.numStraw.Location = new System.Drawing.Point(330, 151);
+            this.numStraw.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numStraw.Location = new System.Drawing.Point(340, 165);
             this.numStraw.Name = "numStraw";
-            this.numStraw.Size = new System.Drawing.Size(33, 20);
+            this.numStraw.Size = new System.Drawing.Size(33, 23);
             this.numStraw.TabIndex = 1;
             // 
             // numMarshmallow
             // 
-            this.numMarshmallow.Location = new System.Drawing.Point(101, 180);
+            this.numMarshmallow.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMarshmallow.Location = new System.Drawing.Point(104, 194);
             this.numMarshmallow.Name = "numMarshmallow";
-            this.numMarshmallow.Size = new System.Drawing.Size(33, 20);
+            this.numMarshmallow.Size = new System.Drawing.Size(33, 23);
             this.numMarshmallow.TabIndex = 1;
             // 
             // numCups16
             // 
-            this.numCups16.Location = new System.Drawing.Point(330, 99);
+            this.numCups16.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCups16.Location = new System.Drawing.Point(340, 113);
             this.numCups16.Name = "numCups16";
-            this.numCups16.Size = new System.Drawing.Size(33, 20);
+            this.numCups16.Size = new System.Drawing.Size(33, 23);
             this.numCups16.TabIndex = 1;
             // 
             // numGrahamPowder
             // 
-            this.numGrahamPowder.Location = new System.Drawing.Point(101, 154);
+            this.numGrahamPowder.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numGrahamPowder.Location = new System.Drawing.Point(104, 168);
             this.numGrahamPowder.Name = "numGrahamPowder";
-            this.numGrahamPowder.Size = new System.Drawing.Size(33, 20);
+            this.numGrahamPowder.Size = new System.Drawing.Size(33, 23);
             this.numGrahamPowder.TabIndex = 1;
             // 
             // numCups22
             // 
-            this.numCups22.Location = new System.Drawing.Point(330, 125);
+            this.numCups22.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCups22.Location = new System.Drawing.Point(340, 139);
             this.numCups22.Name = "numCups22";
-            this.numCups22.Size = new System.Drawing.Size(33, 20);
+            this.numCups22.Size = new System.Drawing.Size(33, 23);
             this.numCups22.TabIndex = 1;
             // 
             // numAvocado
             // 
-            this.numAvocado.Location = new System.Drawing.Point(101, 102);
+            this.numAvocado.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numAvocado.Location = new System.Drawing.Point(104, 116);
             this.numAvocado.Name = "numAvocado";
-            this.numAvocado.Size = new System.Drawing.Size(33, 20);
+            this.numAvocado.Size = new System.Drawing.Size(33, 23);
             this.numAvocado.TabIndex = 1;
             // 
             // numCups12
             // 
-            this.numCups12.Location = new System.Drawing.Point(330, 73);
+            this.numCups12.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCups12.Location = new System.Drawing.Point(340, 87);
             this.numCups12.Name = "numCups12";
-            this.numCups12.Size = new System.Drawing.Size(33, 20);
+            this.numCups12.Size = new System.Drawing.Size(33, 23);
             this.numCups12.TabIndex = 1;
             // 
             // numCondensedMilk
             // 
-            this.numCondensedMilk.Location = new System.Drawing.Point(101, 128);
+            this.numCondensedMilk.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCondensedMilk.Location = new System.Drawing.Point(104, 142);
             this.numCondensedMilk.Name = "numCondensedMilk";
-            this.numCondensedMilk.Size = new System.Drawing.Size(33, 20);
+            this.numCondensedMilk.Size = new System.Drawing.Size(33, 23);
             this.numCondensedMilk.TabIndex = 1;
             // 
             // numDomeLid
             // 
-            this.numDomeLid.Location = new System.Drawing.Point(330, 47);
+            this.numDomeLid.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numDomeLid.Location = new System.Drawing.Point(340, 61);
             this.numDomeLid.Name = "numDomeLid";
-            this.numDomeLid.Size = new System.Drawing.Size(33, 20);
+            this.numDomeLid.Size = new System.Drawing.Size(33, 23);
             this.numDomeLid.TabIndex = 1;
             // 
             // numMango
             // 
-            this.numMango.Location = new System.Drawing.Point(101, 76);
+            this.numMango.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMango.Location = new System.Drawing.Point(104, 90);
             this.numMango.Name = "numMango";
-            this.numMango.Size = new System.Drawing.Size(33, 20);
+            this.numMango.Size = new System.Drawing.Size(33, 23);
             this.numMango.TabIndex = 1;
             // 
             // numCrushedIce
             // 
-            this.numCrushedIce.Location = new System.Drawing.Point(101, 50);
+            this.numCrushedIce.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numCrushedIce.Location = new System.Drawing.Point(104, 64);
             this.numCrushedIce.Name = "numCrushedIce";
-            this.numCrushedIce.Size = new System.Drawing.Size(33, 20);
+            this.numCrushedIce.Size = new System.Drawing.Size(33, 23);
             this.numCrushedIce.TabIndex = 1;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 285);
+            this.label14.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(8, 299);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 13);
+            this.label14.Size = new System.Drawing.Size(67, 16);
             this.label14.TabIndex = 0;
             this.label14.Text = "Black pearl:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 259);
+            this.label8.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(8, 273);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 13);
+            this.label8.Size = new System.Drawing.Size(88, 16);
             this.label8.TabIndex = 0;
             this.label8.Text = "Whipped cream:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 233);
+            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(8, 247);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.Size = new System.Drawing.Size(62, 16);
             this.label7.TabIndex = 0;
             this.label7.Text = "Leche flan:";
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(7, 312);
+            this.label58.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(8, 326);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(38, 13);
+            this.label58.Size = new System.Drawing.Size(40, 16);
             this.label58.TabIndex = 0;
             this.label58.Text = "Sugar:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 207);
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(8, 221);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(54, 16);
             this.label6.TabIndex = 0;
             this.label6.Text = "Caramel:";
             // 
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(259, 154);
+            this.label57.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(269, 168);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(37, 13);
+            this.label57.Size = new System.Drawing.Size(41, 16);
             this.label57.TabIndex = 0;
             this.label57.Text = "Straw:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 181);
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(8, 195);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 13);
+            this.label5.Size = new System.Drawing.Size(86, 16);
             this.label5.TabIndex = 0;
             this.label5.Text = "Marshmallows:";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(259, 102);
+            this.label56.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(269, 116);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(60, 13);
+            this.label56.Size = new System.Drawing.Size(60, 16);
             this.label56.TabIndex = 0;
             this.label56.Text = "Cups 16oz:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 155);
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(8, 169);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 13);
+            this.label4.Size = new System.Drawing.Size(90, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "Graham powder:";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(259, 128);
+            this.label55.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(269, 142);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(60, 13);
+            this.label55.Size = new System.Drawing.Size(62, 16);
             this.label55.TabIndex = 0;
             this.label55.Text = "Cups 22oz:";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(7, 103);
+            this.label20.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(8, 117);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 13);
+            this.label20.Size = new System.Drawing.Size(54, 16);
             this.label20.TabIndex = 0;
             this.label20.Text = "Avocado:";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(259, 76);
+            this.label54.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(269, 90);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(60, 13);
+            this.label54.Size = new System.Drawing.Size(60, 16);
             this.label54.TabIndex = 0;
             this.label54.Text = "Cups 12oz:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 129);
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.Size = new System.Drawing.Size(90, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Condensed milk:";
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(259, 16);
+            this.label53.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(269, 30);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(52, 26);
+            this.label53.Size = new System.Drawing.Size(58, 32);
             this.label53.TabIndex = 0;
             this.label53.Text = "Materials \r\n  Used";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 77);
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mango:";
             // 
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(327, 27);
+            this.label52.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(333, 41);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(43, 13);
+            this.label52.Size = new System.Drawing.Size(47, 16);
             this.label52.TabIndex = 0;
             this.label52.Text = "Amount";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 17);
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(8, 31);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 26);
+            this.label12.Size = new System.Drawing.Size(67, 32);
             this.label12.TabIndex = 0;
             this.label12.Text = "Ingredients \r\n    Used";
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(422, 27);
+            this.label51.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(432, 41);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(31, 13);
+            this.label51.Size = new System.Drawing.Size(35, 16);
             this.label51.TabIndex = 0;
             this.label51.Text = "Price";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(98, 30);
+            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(98, 44);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 13);
+            this.label11.Size = new System.Drawing.Size(47, 16);
             this.label11.TabIndex = 0;
             this.label11.Text = "Amount";
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(369, 14);
+            this.label50.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(379, 28);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(44, 26);
+            this.label50.Size = new System.Drawing.Size(45, 32);
             this.label50.TabIndex = 0;
             this.label50.Text = "Change\r\n  Price";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(193, 30);
+            this.label10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(203, 44);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 13);
+            this.label10.Size = new System.Drawing.Size(35, 16);
             this.label10.TabIndex = 0;
             this.label10.Text = "Price";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(259, 50);
+            this.label19.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(269, 64);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(51, 13);
+            this.label19.Size = new System.Drawing.Size(54, 16);
             this.label19.TabIndex = 0;
             this.label19.Text = "Dome lid:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(140, 17);
+            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(150, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 26);
+            this.label9.Size = new System.Drawing.Size(45, 32);
             this.label9.TabIndex = 0;
             this.label9.Text = "Change\r\n  Price";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 51);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Crushed ice:";
             // 
@@ -1461,9 +1557,9 @@
             // 
             this.tabUpdateInventory.Controls.Add(this.groupBox5);
             this.tabUpdateInventory.Controls.Add(this.groupBox3);
-            this.tabUpdateInventory.Location = new System.Drawing.Point(4, 22);
+            this.tabUpdateInventory.Location = new System.Drawing.Point(4, 27);
             this.tabUpdateInventory.Name = "tabUpdateInventory";
-            this.tabUpdateInventory.Size = new System.Drawing.Size(692, 351);
+            this.tabUpdateInventory.Size = new System.Drawing.Size(692, 359);
             this.tabUpdateInventory.TabIndex = 2;
             this.tabUpdateInventory.Text = "Update Inventory";
             this.tabUpdateInventory.UseVisualStyleBackColor = true;
@@ -1473,18 +1569,19 @@
             this.groupBox5.Controls.Add(this.txtSearchUpdate);
             this.groupBox5.Controls.Add(this.btnSearchUpdate);
             this.groupBox5.Controls.Add(this.dataGridViewModifyInventory);
-            this.groupBox5.Location = new System.Drawing.Point(312, 9);
+            this.groupBox5.Location = new System.Drawing.Point(296, 9);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(373, 339);
+            this.groupBox5.Size = new System.Drawing.Size(389, 344);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Display Inventory";
             // 
             // txtSearchUpdate
             // 
-            this.txtSearchUpdate.Location = new System.Drawing.Point(201, 23);
+            this.txtSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchUpdate.Location = new System.Drawing.Point(220, 20);
             this.txtSearchUpdate.Name = "txtSearchUpdate";
-            this.txtSearchUpdate.Size = new System.Drawing.Size(100, 20);
+            this.txtSearchUpdate.Size = new System.Drawing.Size(100, 23);
             this.txtSearchUpdate.TabIndex = 7;
             this.txtSearchUpdate.Click += new System.EventHandler(this.txtSearchUpdate_Click);
             this.txtSearchUpdate.TextChanged += new System.EventHandler(this.txtSearchUpdate_TextChanged_1);
@@ -1492,7 +1589,7 @@
             // 
             // btnSearchUpdate
             // 
-            this.btnSearchUpdate.Location = new System.Drawing.Point(307, 21);
+            this.btnSearchUpdate.Location = new System.Drawing.Point(326, 20);
             this.btnSearchUpdate.Name = "btnSearchUpdate";
             this.btnSearchUpdate.Size = new System.Drawing.Size(57, 23);
             this.btnSearchUpdate.TabIndex = 6;
@@ -1506,6 +1603,14 @@
             this.dataGridViewModifyInventory.AllowUserToDeleteRows = false;
             this.dataGridViewModifyInventory.AllowUserToOrderColumns = true;
             this.dataGridViewModifyInventory.AutoGenerateColumns = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewModifyInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewModifyInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewModifyInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date_updated,
@@ -1528,7 +1633,12 @@
             this.dataGridViewModifyInventory.Location = new System.Drawing.Point(10, 47);
             this.dataGridViewModifyInventory.Name = "dataGridViewModifyInventory";
             this.dataGridViewModifyInventory.ReadOnly = true;
-            this.dataGridViewModifyInventory.Size = new System.Drawing.Size(354, 280);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewModifyInventory.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewModifyInventory.Size = new System.Drawing.Size(373, 280);
             this.dataGridViewModifyInventory.TabIndex = 5;
             // 
             // Date_updated
@@ -1710,14 +1820,14 @@
             this.groupBox3.Controls.Add(this.label90);
             this.groupBox3.Location = new System.Drawing.Point(8, 9);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(282, 339);
+            this.groupBox3.Size = new System.Drawing.Size(282, 344);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update Inventory";
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(181, 308);
+            this.btnUpdate.Location = new System.Drawing.Point(181, 315);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 5;
@@ -1728,300 +1838,337 @@
             // label89
             // 
             this.label89.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label89.Location = new System.Drawing.Point(151, 20);
+            this.label89.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.Location = new System.Drawing.Point(151, 25);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(2, 308);
             this.label89.TabIndex = 4;
             // 
             // numModBlackPearl
             // 
-            this.numModBlackPearl.Location = new System.Drawing.Point(101, 285);
+            this.numModBlackPearl.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModBlackPearl.Location = new System.Drawing.Point(101, 291);
             this.numModBlackPearl.Name = "numModBlackPearl";
-            this.numModBlackPearl.Size = new System.Drawing.Size(33, 20);
+            this.numModBlackPearl.Size = new System.Drawing.Size(33, 23);
             this.numModBlackPearl.TabIndex = 1;
             // 
             // numModWhippedCream
             // 
-            this.numModWhippedCream.Location = new System.Drawing.Point(101, 259);
+            this.numModWhippedCream.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModWhippedCream.Location = new System.Drawing.Point(101, 265);
             this.numModWhippedCream.Name = "numModWhippedCream";
-            this.numModWhippedCream.Size = new System.Drawing.Size(33, 20);
+            this.numModWhippedCream.Size = new System.Drawing.Size(33, 23);
             this.numModWhippedCream.TabIndex = 1;
             // 
             // numModLecheFlan
             // 
-            this.numModLecheFlan.Location = new System.Drawing.Point(101, 233);
+            this.numModLecheFlan.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModLecheFlan.Location = new System.Drawing.Point(101, 239);
             this.numModLecheFlan.Name = "numModLecheFlan";
-            this.numModLecheFlan.Size = new System.Drawing.Size(33, 20);
+            this.numModLecheFlan.Size = new System.Drawing.Size(33, 23);
             this.numModLecheFlan.TabIndex = 1;
             // 
             // numModCaramel
             // 
-            this.numModCaramel.Location = new System.Drawing.Point(101, 207);
+            this.numModCaramel.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModCaramel.Location = new System.Drawing.Point(101, 213);
             this.numModCaramel.Name = "numModCaramel";
-            this.numModCaramel.Size = new System.Drawing.Size(33, 20);
+            this.numModCaramel.Size = new System.Drawing.Size(33, 23);
             this.numModCaramel.TabIndex = 1;
             // 
             // numModSugar
             // 
-            this.numModSugar.Location = new System.Drawing.Point(101, 311);
+            this.numModSugar.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModSugar.Location = new System.Drawing.Point(101, 317);
             this.numModSugar.Name = "numModSugar";
-            this.numModSugar.Size = new System.Drawing.Size(33, 20);
+            this.numModSugar.Size = new System.Drawing.Size(33, 23);
             this.numModSugar.TabIndex = 1;
             // 
             // numModStraw
             // 
-            this.numModStraw.Location = new System.Drawing.Point(237, 151);
+            this.numModStraw.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModStraw.Location = new System.Drawing.Point(237, 161);
             this.numModStraw.Name = "numModStraw";
-            this.numModStraw.Size = new System.Drawing.Size(33, 20);
+            this.numModStraw.Size = new System.Drawing.Size(33, 23);
             this.numModStraw.TabIndex = 1;
             // 
             // numModMarshmallows
             // 
-            this.numModMarshmallows.Location = new System.Drawing.Point(101, 181);
+            this.numModMarshmallows.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModMarshmallows.Location = new System.Drawing.Point(101, 187);
             this.numModMarshmallows.Name = "numModMarshmallows";
-            this.numModMarshmallows.Size = new System.Drawing.Size(33, 20);
+            this.numModMarshmallows.Size = new System.Drawing.Size(33, 23);
             this.numModMarshmallows.TabIndex = 1;
             // 
             // numModCups16
             // 
-            this.numModCups16.Location = new System.Drawing.Point(237, 99);
+            this.numModCups16.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModCups16.Location = new System.Drawing.Point(237, 109);
             this.numModCups16.Name = "numModCups16";
-            this.numModCups16.Size = new System.Drawing.Size(33, 20);
+            this.numModCups16.Size = new System.Drawing.Size(33, 23);
             this.numModCups16.TabIndex = 1;
             // 
             // numModGrahamPowder
             // 
-            this.numModGrahamPowder.Location = new System.Drawing.Point(101, 155);
+            this.numModGrahamPowder.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModGrahamPowder.Location = new System.Drawing.Point(101, 161);
             this.numModGrahamPowder.Name = "numModGrahamPowder";
-            this.numModGrahamPowder.Size = new System.Drawing.Size(33, 20);
+            this.numModGrahamPowder.Size = new System.Drawing.Size(33, 23);
             this.numModGrahamPowder.TabIndex = 1;
             // 
             // numModCups22
             // 
-            this.numModCups22.Location = new System.Drawing.Point(237, 125);
+            this.numModCups22.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModCups22.Location = new System.Drawing.Point(237, 135);
             this.numModCups22.Name = "numModCups22";
-            this.numModCups22.Size = new System.Drawing.Size(33, 20);
+            this.numModCups22.Size = new System.Drawing.Size(33, 23);
             this.numModCups22.TabIndex = 1;
             // 
             // numModAvocado
             // 
-            this.numModAvocado.Location = new System.Drawing.Point(101, 103);
+            this.numModAvocado.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModAvocado.Location = new System.Drawing.Point(101, 109);
             this.numModAvocado.Name = "numModAvocado";
-            this.numModAvocado.Size = new System.Drawing.Size(33, 20);
+            this.numModAvocado.Size = new System.Drawing.Size(33, 23);
             this.numModAvocado.TabIndex = 1;
             // 
             // numModCups12
             // 
-            this.numModCups12.Location = new System.Drawing.Point(237, 73);
+            this.numModCups12.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModCups12.Location = new System.Drawing.Point(237, 83);
             this.numModCups12.Name = "numModCups12";
-            this.numModCups12.Size = new System.Drawing.Size(33, 20);
+            this.numModCups12.Size = new System.Drawing.Size(33, 23);
             this.numModCups12.TabIndex = 1;
             // 
             // numModCondensedMilk
             // 
-            this.numModCondensedMilk.Location = new System.Drawing.Point(101, 129);
+            this.numModCondensedMilk.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModCondensedMilk.Location = new System.Drawing.Point(101, 135);
             this.numModCondensedMilk.Name = "numModCondensedMilk";
-            this.numModCondensedMilk.Size = new System.Drawing.Size(33, 20);
+            this.numModCondensedMilk.Size = new System.Drawing.Size(33, 23);
             this.numModCondensedMilk.TabIndex = 1;
             // 
             // numModDomeLid
             // 
-            this.numModDomeLid.Location = new System.Drawing.Point(237, 47);
+            this.numModDomeLid.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModDomeLid.Location = new System.Drawing.Point(237, 57);
             this.numModDomeLid.Name = "numModDomeLid";
-            this.numModDomeLid.Size = new System.Drawing.Size(33, 20);
+            this.numModDomeLid.Size = new System.Drawing.Size(33, 23);
             this.numModDomeLid.TabIndex = 1;
             // 
             // numModMango
             // 
-            this.numModMango.Location = new System.Drawing.Point(101, 77);
+            this.numModMango.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModMango.Location = new System.Drawing.Point(101, 83);
             this.numModMango.Name = "numModMango";
-            this.numModMango.Size = new System.Drawing.Size(33, 20);
+            this.numModMango.Size = new System.Drawing.Size(33, 23);
             this.numModMango.TabIndex = 1;
             // 
             // numModCrushedIce
             // 
-            this.numModCrushedIce.Location = new System.Drawing.Point(101, 51);
+            this.numModCrushedIce.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numModCrushedIce.Location = new System.Drawing.Point(101, 57);
             this.numModCrushedIce.Name = "numModCrushedIce";
-            this.numModCrushedIce.Size = new System.Drawing.Size(33, 20);
+            this.numModCrushedIce.Size = new System.Drawing.Size(33, 23);
             this.numModCrushedIce.TabIndex = 1;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(7, 286);
+            this.label28.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(7, 292);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(63, 13);
+            this.label28.Size = new System.Drawing.Size(67, 16);
             this.label28.TabIndex = 0;
             this.label28.Text = "Black pearl:";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(7, 260);
+            this.label29.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(7, 266);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(85, 13);
+            this.label29.Size = new System.Drawing.Size(88, 16);
             this.label29.TabIndex = 0;
             this.label29.Text = "Whipped cream:";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(7, 234);
+            this.label30.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(7, 240);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(60, 13);
+            this.label30.Size = new System.Drawing.Size(62, 16);
             this.label30.TabIndex = 0;
             this.label30.Text = "Leche flan:";
             // 
             // label87
             // 
             this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(8, 313);
+            this.label87.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.Location = new System.Drawing.Point(8, 319);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(38, 13);
+            this.label87.Size = new System.Drawing.Size(40, 16);
             this.label87.TabIndex = 0;
             this.label87.Text = "Sugar:";
             // 
             // label86
             // 
             this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(166, 154);
+            this.label86.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.Location = new System.Drawing.Point(166, 164);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(37, 13);
+            this.label86.Size = new System.Drawing.Size(41, 16);
             this.label86.TabIndex = 0;
             this.label86.Text = "Straw:";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(7, 208);
+            this.label32.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(7, 214);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(48, 13);
+            this.label32.Size = new System.Drawing.Size(54, 16);
             this.label32.TabIndex = 0;
             this.label32.Text = "Caramel:";
             // 
             // label84
             // 
             this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(166, 102);
+            this.label84.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.Location = new System.Drawing.Point(166, 112);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(60, 13);
+            this.label84.Size = new System.Drawing.Size(60, 16);
             this.label84.TabIndex = 0;
             this.label84.Text = "Cups 16oz:";
             // 
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(7, 182);
+            this.label73.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(7, 188);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(76, 13);
+            this.label73.Size = new System.Drawing.Size(86, 16);
             this.label73.TabIndex = 0;
             this.label73.Text = "Marshmallows:";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(166, 128);
+            this.label27.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(166, 138);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 13);
+            this.label27.Size = new System.Drawing.Size(62, 16);
             this.label27.TabIndex = 0;
             this.label27.Text = "Cups 22oz:";
             // 
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(7, 156);
+            this.label75.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(7, 162);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(85, 13);
+            this.label75.Size = new System.Drawing.Size(90, 16);
             this.label75.TabIndex = 0;
             this.label75.Text = "Graham powder:";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(166, 76);
+            this.label26.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(166, 86);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 13);
+            this.label26.Size = new System.Drawing.Size(60, 16);
             this.label26.TabIndex = 0;
             this.label26.Text = "Cups 12oz:";
             // 
             // label77
             // 
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(7, 104);
+            this.label77.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.Location = new System.Drawing.Point(7, 110);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(53, 13);
+            this.label77.Size = new System.Drawing.Size(54, 16);
             this.label77.TabIndex = 0;
             this.label77.Text = "Avocado:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(166, 16);
+            this.label25.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(166, 18);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(49, 26);
+            this.label25.Size = new System.Drawing.Size(56, 32);
             this.label25.TabIndex = 0;
             this.label25.Text = "  Stock\r\nMaterials";
             // 
             // label79
             // 
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(8, 130);
+            this.label79.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(8, 136);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(85, 13);
+            this.label79.Size = new System.Drawing.Size(90, 16);
             this.label79.TabIndex = 0;
             this.label79.Text = "Condensed milk:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(234, 18);
+            this.label24.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(234, 20);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(43, 26);
+            this.label24.Size = new System.Drawing.Size(47, 32);
             this.label24.TabIndex = 0;
             this.label24.Text = "Update\r\nAmount";
             // 
             // label81
             // 
             this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(7, 78);
+            this.label81.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.Location = new System.Drawing.Point(7, 84);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(43, 13);
+            this.label81.Size = new System.Drawing.Size(44, 16);
             this.label81.TabIndex = 0;
             this.label81.Text = "Mango:";
             // 
             // label83
             // 
             this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label83.Location = new System.Drawing.Point(7, 18);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(59, 26);
+            this.label83.Size = new System.Drawing.Size(65, 32);
             this.label83.TabIndex = 0;
             this.label83.Text = "   Stock\r\nIngredients";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(166, 50);
+            this.label23.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(166, 60);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 13);
+            this.label23.Size = new System.Drawing.Size(54, 16);
             this.label23.TabIndex = 0;
             this.label23.Text = "Dome lid:";
             // 
             // label85
             // 
             this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label85.Location = new System.Drawing.Point(98, 22);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(43, 26);
+            this.label85.Size = new System.Drawing.Size(47, 32);
             this.label85.TabIndex = 0;
             this.label85.Text = "Update\r\nAmount";
             // 
             // label90
             // 
             this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(7, 52);
+            this.label90.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Location = new System.Drawing.Point(7, 58);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(66, 13);
+            this.label90.Size = new System.Drawing.Size(70, 16);
             this.label90.TabIndex = 0;
             this.label90.Text = "Crushed ice:";
             // 
@@ -2032,9 +2179,9 @@
             this.tabDisplayInventoryReport.Controls.Add(this.chartMaterials);
             this.tabDisplayInventoryReport.Controls.Add(this.chartSecondaryIngredients);
             this.tabDisplayInventoryReport.Controls.Add(this.pieChartLatestInventory);
-            this.tabDisplayInventoryReport.Location = new System.Drawing.Point(4, 22);
+            this.tabDisplayInventoryReport.Location = new System.Drawing.Point(4, 27);
             this.tabDisplayInventoryReport.Name = "tabDisplayInventoryReport";
-            this.tabDisplayInventoryReport.Size = new System.Drawing.Size(692, 351);
+            this.tabDisplayInventoryReport.Size = new System.Drawing.Size(692, 359);
             this.tabDisplayInventoryReport.TabIndex = 3;
             this.tabDisplayInventoryReport.Text = "Latest Inventory Report";
             this.tabDisplayInventoryReport.UseVisualStyleBackColor = true;
@@ -2042,9 +2189,9 @@
             // lblDateLatestInventoryReport
             // 
             this.lblDateLatestInventoryReport.AutoSize = true;
-            this.lblDateLatestInventoryReport.Location = new System.Drawing.Point(289, 19);
+            this.lblDateLatestInventoryReport.Location = new System.Drawing.Point(281, 23);
             this.lblDateLatestInventoryReport.Name = "lblDateLatestInventoryReport";
-            this.lblDateLatestInventoryReport.Size = new System.Drawing.Size(30, 13);
+            this.lblDateLatestInventoryReport.Size = new System.Drawing.Size(34, 18);
             this.lblDateLatestInventoryReport.TabIndex = 5;
             this.lblDateLatestInventoryReport.Text = "Date";
             // 
@@ -2053,73 +2200,76 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(279, 6);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(162, 13);
+            this.label18.Size = new System.Drawing.Size(162, 18);
             this.label18.TabIndex = 5;
             this.label18.Text = "LATEST INVENTORY REPORT";
             // 
             // chartMaterials
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartMaterials.ChartAreas.Add(chartArea1);
-            this.chartMaterials.Location = new System.Drawing.Point(458, 32);
+            chartArea9.Name = "ChartArea1";
+            this.chartMaterials.ChartAreas.Add(chartArea9);
+            this.chartMaterials.Location = new System.Drawing.Point(458, 56);
             this.chartMaterials.Name = "chartMaterials";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Name = "s3";
-            this.chartMaterials.Series.Add(series1);
-            this.chartMaterials.Size = new System.Drawing.Size(231, 282);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series9.Name = "s3";
+            this.chartMaterials.Series.Add(series9);
+            this.chartMaterials.Size = new System.Drawing.Size(231, 300);
             this.chartMaterials.TabIndex = 4;
             this.chartMaterials.Text = "chart1";
-            title1.Name = "Materials";
-            title1.Text = "Materials";
-            this.chartMaterials.Titles.Add(title1);
+            title9.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
+            title9.Name = "Materials";
+            title9.Text = "Materials";
+            this.chartMaterials.Titles.Add(title9);
             // 
             // chartSecondaryIngredients
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartSecondaryIngredients.ChartAreas.Add(chartArea2);
-            this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 32);
+            chartArea10.Name = "ChartArea1";
+            this.chartSecondaryIngredients.ChartAreas.Add(chartArea10);
+            this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 56);
             this.chartSecondaryIngredients.Name = "chartSecondaryIngredients";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.Name = "s2";
-            this.chartSecondaryIngredients.Series.Add(series2);
-            this.chartSecondaryIngredients.Size = new System.Drawing.Size(231, 282);
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series10.Name = "s2";
+            this.chartSecondaryIngredients.Series.Add(series10);
+            this.chartSecondaryIngredients.Size = new System.Drawing.Size(231, 300);
             this.chartSecondaryIngredients.TabIndex = 4;
             this.chartSecondaryIngredients.Text = "chart1";
-            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title2.Name = "Main Ingredients";
-            title2.Text = "Secondary Ingredients";
-            this.chartSecondaryIngredients.Titles.Add(title2);
+            title10.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
+            title10.Name = "Main Ingredients";
+            title10.Text = "Secondary Ingredients";
+            this.chartSecondaryIngredients.Titles.Add(title10);
             // 
             // pieChartLatestInventory
             // 
-            chartArea3.Name = "ChartArea1";
-            this.pieChartLatestInventory.ChartAreas.Add(chartArea3);
-            this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 32);
+            chartArea11.Name = "ChartArea1";
+            this.pieChartLatestInventory.ChartAreas.Add(chartArea11);
+            this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 56);
             this.pieChartLatestInventory.Name = "pieChartLatestInventory";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.Name = "s1";
-            this.pieChartLatestInventory.Series.Add(series3);
-            this.pieChartLatestInventory.Size = new System.Drawing.Size(231, 282);
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series11.Name = "s1";
+            this.pieChartLatestInventory.Series.Add(series11);
+            this.pieChartLatestInventory.Size = new System.Drawing.Size(231, 300);
             this.pieChartLatestInventory.TabIndex = 4;
             this.pieChartLatestInventory.Text = "chart1";
-            title3.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title3.Name = "Main Ingredients";
-            title3.Text = "Primary Ingredients";
-            this.pieChartLatestInventory.Titles.Add(title3);
+            title11.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title11.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title11.Name = "Main Ingredients";
+            title11.Text = "Primary Ingredients";
+            this.pieChartLatestInventory.Titles.Add(title11);
             // 
             // tblSalesPerformance
             // 
             this.tblSalesPerformance.Controls.Add(this.btnSalesRecord);
             this.tblSalesPerformance.Controls.Add(this.chartWeeklySalesPerformance);
-            this.tblSalesPerformance.Location = new System.Drawing.Point(4, 22);
+            this.tblSalesPerformance.Location = new System.Drawing.Point(4, 27);
             this.tblSalesPerformance.Name = "tblSalesPerformance";
-            this.tblSalesPerformance.Size = new System.Drawing.Size(692, 351);
+            this.tblSalesPerformance.Size = new System.Drawing.Size(692, 359);
             this.tblSalesPerformance.TabIndex = 4;
             this.tblSalesPerformance.Text = "Weekly Sales Performance";
             this.tblSalesPerformance.UseVisualStyleBackColor = true;
@@ -2136,19 +2286,19 @@
             // 
             // chartWeeklySalesPerformance
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea4);
+            chartArea12.Name = "ChartArea1";
+            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea12);
             this.chartWeeklySalesPerformance.Location = new System.Drawing.Point(3, 28);
             this.chartWeeklySalesPerformance.Name = "chartWeeklySalesPerformance";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Name = "ss";
-            this.chartWeeklySalesPerformance.Series.Add(series4);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series12.Name = "ss";
+            this.chartWeeklySalesPerformance.Series.Add(series12);
             this.chartWeeklySalesPerformance.Size = new System.Drawing.Size(675, 282);
             this.chartWeeklySalesPerformance.TabIndex = 0;
             this.chartWeeklySalesPerformance.Text = "chart1";
-            title4.Name = "Title1";
-            this.chartWeeklySalesPerformance.Titles.Add(title4);
+            title12.Name = "Title1";
+            this.chartWeeklySalesPerformance.Titles.Add(title12);
             // 
             // tblIngredientStocksBindingSource3
             // 
@@ -2159,26 +2309,6 @@
             // 
             this.tblIngredientStocksBindingSource.DataMember = "tblIngredientStocks";
             this.tblIngredientStocksBindingSource.DataSource = this.dbGrahamShakeDataSet;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(688, 5);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(24, 23);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "button1";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Location = new System.Drawing.Point(658, 5);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(24, 23);
-            this.btnMinimize.TabIndex = 1;
-            this.btnMinimize.Text = "button1";
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            this.btnMinimize.Click += new System.EventHandler(this.button2_Click);
             // 
             // tblIngredientStocksBindingSource2
             // 
@@ -2194,12 +2324,36 @@
             // 
             this.tblIngredientStocksTableAdapter.ClearBeforeFill = true;
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Location = new System.Drawing.Point(653, 12);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(24, 23);
+            this.btnMinimize.TabIndex = 1;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(688, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(20, 20);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(724, 421);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
+            this.ClientSize = new System.Drawing.Size(724, 431);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl1);

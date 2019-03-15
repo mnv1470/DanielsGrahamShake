@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewSalesRecord = new System.Windows.Forms.DataGridView();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grosssalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +54,14 @@
             this.dataGridViewSalesRecord.AllowUserToAddRows = false;
             this.dataGridViewSalesRecord.AllowUserToDeleteRows = false;
             this.dataGridViewSalesRecord.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSalesRecord.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewSalesRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSalesRecord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dateDataGridViewTextBoxColumn,
@@ -59,10 +69,19 @@
             this.grossInvestmentDataGridViewTextBoxColumn,
             this.profitDataGridViewTextBoxColumn});
             this.dataGridViewSalesRecord.DataSource = this.tblSalesRecordBindingSource1;
-            this.dataGridViewSalesRecord.Location = new System.Drawing.Point(12, 49);
+            this.dataGridViewSalesRecord.Location = new System.Drawing.Point(14, 68);
+            this.dataGridViewSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridViewSalesRecord.Name = "dataGridViewSalesRecord";
             this.dataGridViewSalesRecord.ReadOnly = true;
-            this.dataGridViewSalesRecord.Size = new System.Drawing.Size(457, 263);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSalesRecord.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewSalesRecord.Size = new System.Drawing.Size(533, 364);
             this.dataGridViewSalesRecord.TabIndex = 0;
             // 
             // dateDataGridViewTextBoxColumn
@@ -105,9 +124,10 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(403, 318);
+            this.btnClose.Location = new System.Drawing.Point(470, 440);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(66, 23);
+            this.btnClose.Size = new System.Drawing.Size(77, 32);
             this.btnClose.TabIndex = 1;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -115,9 +135,10 @@
             // 
             // txtSearchSalesRecord
             // 
-            this.txtSearchSalesRecord.Location = new System.Drawing.Point(291, 23);
+            this.txtSearchSalesRecord.Location = new System.Drawing.Point(339, 32);
+            this.txtSearchSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchSalesRecord.Name = "txtSearchSalesRecord";
-            this.txtSearchSalesRecord.Size = new System.Drawing.Size(115, 20);
+            this.txtSearchSalesRecord.Size = new System.Drawing.Size(133, 26);
             this.txtSearchSalesRecord.TabIndex = 6;
             this.txtSearchSalesRecord.Click += new System.EventHandler(this.txtSearchSalesRecord_Click);
             this.txtSearchSalesRecord.TextChanged += new System.EventHandler(this.txtSearchSalesRecord_TextChanged);
@@ -125,9 +146,10 @@
             // 
             // btnSearchSalesRecord
             // 
-            this.btnSearchSalesRecord.Location = new System.Drawing.Point(412, 21);
+            this.btnSearchSalesRecord.Location = new System.Drawing.Point(481, 29);
+            this.btnSearchSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchSalesRecord.Name = "btnSearchSalesRecord";
-            this.btnSearchSalesRecord.Size = new System.Drawing.Size(57, 23);
+            this.btnSearchSalesRecord.Size = new System.Drawing.Size(66, 32);
             this.btnSearchSalesRecord.TabIndex = 5;
             this.btnSearchSalesRecord.Text = "Search";
             this.btnSearchSalesRecord.UseVisualStyleBackColor = true;
@@ -144,14 +166,17 @@
             // 
             // SalesRecordForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 347);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
+            this.ClientSize = new System.Drawing.Size(563, 480);
             this.Controls.Add(this.txtSearchSalesRecord);
             this.Controls.Add(this.btnSearchSalesRecord);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dataGridViewSalesRecord);
+            this.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SalesRecordForm";
             this.Text = "SalesRecordForm";
             this.TopMost = true;
