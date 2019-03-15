@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewSalesRecord = new System.Windows.Forms.DataGridView();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grosssalesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +57,7 @@
             this.dataGridViewSalesRecord.AutoGenerateColumns = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
@@ -69,18 +70,23 @@
             this.grossInvestmentDataGridViewTextBoxColumn,
             this.profitDataGridViewTextBoxColumn});
             this.dataGridViewSalesRecord.DataSource = this.tblSalesRecordBindingSource1;
-            this.dataGridViewSalesRecord.Location = new System.Drawing.Point(14, 68);
+            this.dataGridViewSalesRecord.Location = new System.Drawing.Point(18, 57);
             this.dataGridViewSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridViewSalesRecord.Name = "dataGridViewSalesRecord";
             this.dataGridViewSalesRecord.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewSalesRecord.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewSalesRecord.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewSalesRecord.Size = new System.Drawing.Size(533, 364);
             this.dataGridViewSalesRecord.TabIndex = 0;
             // 
@@ -124,7 +130,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(470, 440);
+            this.btnClose.Location = new System.Drawing.Point(474, 425);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(77, 32);
@@ -135,7 +141,7 @@
             // 
             // txtSearchSalesRecord
             // 
-            this.txtSearchSalesRecord.Location = new System.Drawing.Point(339, 32);
+            this.txtSearchSalesRecord.Location = new System.Drawing.Point(343, 21);
             this.txtSearchSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearchSalesRecord.Name = "txtSearchSalesRecord";
             this.txtSearchSalesRecord.Size = new System.Drawing.Size(133, 26);
@@ -146,7 +152,7 @@
             // 
             // btnSearchSalesRecord
             // 
-            this.btnSearchSalesRecord.Location = new System.Drawing.Point(481, 29);
+            this.btnSearchSalesRecord.Location = new System.Drawing.Point(485, 18);
             this.btnSearchSalesRecord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchSalesRecord.Name = "btnSearchSalesRecord";
             this.btnSearchSalesRecord.Size = new System.Drawing.Size(66, 32);
@@ -169,7 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(563, 480);
+            this.ClientSize = new System.Drawing.Size(563, 462);
             this.Controls.Add(this.txtSearchSalesRecord);
             this.Controls.Add(this.btnSearchSalesRecord);
             this.Controls.Add(this.btnClose);
@@ -178,6 +184,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SalesRecordForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SalesRecordForm";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.SalesRecordForm_Load);

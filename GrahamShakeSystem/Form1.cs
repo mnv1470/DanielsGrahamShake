@@ -25,6 +25,24 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            ImageList imageList1 = new ImageList();
+            //imageList1.Images.Add("key1", Image.FromFile(@"C:\path\to\file.jpg"));
+            imageList1.Images.Add("key1", Image.FromFile(@"C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\Icons\tab\home.png"));
+            imageList1.Images.Add("key2", Image.FromFile(@"C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\Icons\tab\add.png"));
+            imageList1.Images.Add("key3", Image.FromFile(@"C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\Icons\tab\update.png"));
+            imageList1.Images.Add("key4", Image.FromFile(@"C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\Icons\tab\stock.png"));
+            imageList1.Images.Add("key5", Image.FromFile(@"C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\Icons\tab\sales.png"));
+
+            //initialize the tab control
+            tabControl1.ImageList = imageList1;
+            //tabControl1.TabPages.Add("tabKey2", "TabText2", 1);      // icon using ImageIndex
+            tabControl1.TabPages[0].ImageIndex = 0;
+            tabControl1.TabPages[1].ImageIndex = 1;
+            tabControl1.TabPages[2].ImageIndex = 2;
+            tabControl1.TabPages[3].ImageIndex = 3;
+            tabControl1.TabPages[4].ImageIndex = 4;
+
+            
         }
 
         private void chkCPCrushedIce_CheckedChanged(object sender, EventArgs e)
@@ -1046,6 +1064,15 @@ namespace WindowsFormsApplication1
                     chartWeeklySalesPerformance.Series["ss"].IsValueShownAsLabel = true;
                     chartWeeklySalesPerformance.Series["ss"].LabelBackColor = Color.FromArgb(255, 255, 255);
                 }
+                chartWeeklySalesPerformance.Series["ss"].Points[0].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].Points[1].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].Points[2].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].Points[3].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].Points[4].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].Points[5].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].Points[6].Color = Color.FromArgb(250, 234, 16);
+                chartWeeklySalesPerformance.Series["ss"].BorderWidth = 3;
+               
                 IsSalesRecordBelow7 = false;
                 dateSales.Clear();
                 grossSales.Clear();
