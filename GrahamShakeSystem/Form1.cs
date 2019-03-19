@@ -19,6 +19,7 @@ namespace WindowsFormsApplication1
         bool naShowNaBaNotifOutOfStock = false;
         bool notificationFeatureAvailableDone;
         bool IsSalesRecordBelow7;
+        DateTime dateTimeLatestInventory1;
         string dateTimeLatestInventory;
         int crushedIceBawasan, mangoBawasan, avocadoBawasan, condensedMilkBawasan, grahamPowderBawasan, marshmallowBawasan, caramelBawasan, lecheFlanBawasan, whippedCreamBawasan, blackPearlBawasan , domeLidBawasan, cups12Bawasan, cups16Bawasan, cups22Bawasan, strawBawasan, sugarBawasan;  
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\dbGrahamShake.accdb");
@@ -457,16 +458,9 @@ namespace WindowsFormsApplication1
 
                 DateTime dateKo = dateNgayonFormatted();
 
-                //Insert record to sales record
-                con.Open();
-                OleDbCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into tblSalesRecord values('" + dateKo + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
-                cmd.ExecuteNonQuery();
-                con.Close();
-
                 //Retrieve value from inventory table
                 con.Open();
+                OleDbCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "select * from tblIngredientStocks order by Date_updated asc";
                 OleDbDataReader dr = cmd.ExecuteReader();
@@ -511,30 +505,52 @@ namespace WindowsFormsApplication1
                 int sugarUpdated = sugarBawasan - Convert.ToInt32(numSugar.Value);
                 int blackPearlUpdated = blackPearlBawasan - Convert.ToInt32(numBlackPearl.Value);
 
-                DateTime dateKo2 = dateNgayonFormatted();
-                con.Open();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into tblIngredientStocks values('" + dateKo2 + "','" + crushedIceUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + blackPearlUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
-                cmd.ExecuteNonQuery();
-                con.Close();
+                
 
-
-                //Set to default and notify
-
-                updateDataGridInventoryModify();
-                clearWeeklySalesPerformanceChart();
-                weeklySalesPerformance();
-                if (notificationFeatureAvailableDone == false)
+                //Test if stock is not lower than 0
+                if (!((crushedIceUpdated < 0) || (mangoUpdated < 0) || (avocadoUpdated < 0) || (condensedMilkUpdated < 0)
+                        || (grahamPowderUpdated < 0) || (marshmallowUpdated < 0) || (caramelUpdated < 0) || (lecheFlanUpdated < 0)
+                        || (whippedCreamUpdated < 0) || (blackPearlUpdated < 0) || (sugarUpdated < 0) || (domeLidUpdated < 0)
+                        || (cups12Updated < 0) || (cups16Updated < 0) || (cups22Updated < 0) || (strawUpdated < 0)))
                 {
-                    if (IsSalesRecordBelow7 == false)
+
+                    DateTime dateKo2 = dateNgayonFormatted();
+                    con.Open();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into tblIngredientStocks values('" + dateKo2 + "','" + crushedIceUpdated + "','" + mangoUpdated + "','" + avocadoUpdated + "','" + condensedMilkUpdated + "','" + grahamPowderUpdated + "','" + marshmallowUpdated + "','" + caramelUpdated + "','" + lecheFlanUpdated + "','" + whippedCreamUpdated + "','" + blackPearlUpdated + "','" + domeLidUpdated + "','" + cups12Bawasan + "','" + cups16Bawasan + "','" + cups22Bawasan + "','" + strawUpdated + "','" + sugarUpdated + "')";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+
+                    //Insert record to sales record
+                    con.Open();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into tblSalesRecord values('" + dateKo + "','" + Convert.ToInt32(txtGrossSale.Text) + "','" + Convert.ToInt32(lblGrossInvestmentTotal.Text) + "','" + Convert.ToInt32(lblProfit.Text) + "')";
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+
+                    
+                    //Set to default and notify
+                    MessageBox.Show("Successfully recorded!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    updateDataGridInventoryModify();
+                    clearWeeklySalesPerformanceChart();
+                    weeklySalesPerformance();
+                    if (notificationFeatureAvailableDone == false)
                     {
-                        ((Control)tabControl1.TabPages[4]).Enabled = true;
-                        MessageBox.Show("Take a look at your sales performance over the last 7 days, click the Sales Performance tab.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        notificationFeatureAvailableDone = true;
+                        if (IsSalesRecordBelow7 == false)
+                        {
+                            ((Control)tabControl1.TabPages[4]).Enabled = true;
+                            MessageBox.Show("Take a look at your sales performance over the last 7 days, click the Sales Performance tab.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            notificationFeatureAvailableDone = true;
+                        }
                     }
+                    
+                    setToDefault();
                 }
-                MessageBox.Show("Successfully recorded!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                setToDefault();
+                else
+                {
+                    MessageBox.Show("Error in [Amount] input. A certain stock is insufficient. Please check your inventory for your current amount of stocks and update it if there are any changes.", "Insuffecient Stock(s)", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception exc)
             {
@@ -923,7 +939,7 @@ namespace WindowsFormsApplication1
                 while (dr.Read())
                 {
                     //Retrieve value from inventory table
-                    dateTimeLatestInventory = Convert.ToString(dr["Date_updated"]);
+                    dateTimeLatestInventory = Convert.ToDateTime(dr["Date_updated"]).ToString("dddd, dd MMMM yyyy hh:mm tt");
                     crushedIceBawasan = Convert.ToInt32(dr["Crushed_ice"]);
                     mangoBawasan = Convert.ToInt32(dr["Mango"]);
                     avocadoBawasan = Convert.ToInt32(dr["Avocado"]);
@@ -944,7 +960,6 @@ namespace WindowsFormsApplication1
 
                 con.Close();
                 listOfStockAmountForStock.Clear();
-
                 //Main Ingredients
                 listOfStockAmountForStock.Add(crushedIceBawasan);
                 listOfStockAmountForStock.Add(mangoBawasan);
@@ -996,8 +1011,7 @@ namespace WindowsFormsApplication1
                 for (i = 3; i >= 0; i--)
                 {
                     pieChartLatestInventory.Series["s1"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
-                    pieChartLatestInventory.Series["s1"].IsValueShownAsLabel = true;
-                    pieChartLatestInventory.Series["s1"].LabelBackColor = Color.FromArgb(255, 255, 255);
+                    
                 }
 
 
@@ -1009,8 +1023,7 @@ namespace WindowsFormsApplication1
                 for (i = 10; i >= 4; i--)
                 {
                     chartSecondaryIngredients.Series["s2"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
-                    chartSecondaryIngredients.Series["s2"].IsValueShownAsLabel = true;
-                    chartSecondaryIngredients.Series["s2"].LabelBackColor = Color.FromArgb(255, 255, 255);
+                    
                 }
 
 
@@ -1022,8 +1035,7 @@ namespace WindowsFormsApplication1
                 for (i = 15; i >= 11; i--)
                 {
                     chartMaterials.Series["s3"].Points.AddXY(listOfStockNameForStock[i], listOfStockAmountForStock[i]);
-                    chartMaterials.Series["s3"].IsValueShownAsLabel = true;
-                    chartMaterials.Series["s3"].LabelBackColor = Color.FromArgb(255, 255, 255);
+                    
                 }
             }
             catch (Exception exc)
@@ -1047,7 +1059,7 @@ namespace WindowsFormsApplication1
                 while (dr.Read())
                 {
                     //Retrieve value from inventory table
-                    dateSales.Add(Convert.ToString(dr["Date"]));
+                    dateSales.Add(Convert.ToDateTime(dr["Date"]).ToString("dddd, dd MMMM yyyy"));
                     grossSales.Add(Convert.ToInt32(dr["Gross_sales"]));
                 }
                 con.Close();
@@ -1261,6 +1273,26 @@ namespace WindowsFormsApplication1
             {
                 e.Handled = true;
             }
+        }
+
+        private void label74_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 1;
+        }
+
+        private void label76_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
+        }
+
+        private void label78_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 3;
+        }
+
+        private void label80_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 4;
         }
 
        

@@ -46,8 +46,8 @@
             System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabAddDailySalesRecord = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label70 = new System.Windows.Forms.Label();
@@ -246,10 +246,15 @@
             this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabAddDailySalesRecord.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -318,11 +323,16 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(700, 390);
-            this.tabControl1.TabIndex = 0;
+            this.tabControl1.TabIndex = 1;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabHome
             // 
+            this.tabHome.Controls.Add(this.label80);
+            this.tabHome.Controls.Add(this.label78);
+            this.tabHome.Controls.Add(this.label76);
+            this.tabHome.Controls.Add(this.label74);
+            this.tabHome.Controls.Add(this.label31);
             this.tabHome.Controls.Add(this.pictureBox2);
             this.tabHome.Controls.Add(this.pictureBox1);
             this.tabHome.Location = new System.Drawing.Point(4, 27);
@@ -333,27 +343,27 @@
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_012;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(286, 272);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
             this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources.Untitled_11;
-            this.pictureBox2.Location = new System.Drawing.Point(280, 27);
+            this.pictureBox2.Location = new System.Drawing.Point(274, -18);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(412, 272);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_012;
+            this.pictureBox1.Location = new System.Drawing.Point(-8, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(286, 272);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // tabAddDailySalesRecord
             // 
@@ -901,7 +911,7 @@
             this.txtGrossSale.Location = new System.Drawing.Point(110, 47);
             this.txtGrossSale.Name = "txtGrossSale";
             this.txtGrossSale.Size = new System.Drawing.Size(71, 23);
-            this.txtGrossSale.TabIndex = 3;
+            this.txtGrossSale.TabIndex = 1;
             this.txtGrossSale.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGrossSale_KeyPress);
             // 
             // label15
@@ -1185,7 +1195,7 @@
             this.numBlackPearl.Location = new System.Drawing.Point(104, 298);
             this.numBlackPearl.Name = "numBlackPearl";
             this.numBlackPearl.Size = new System.Drawing.Size(33, 23);
-            this.numBlackPearl.TabIndex = 1;
+            this.numBlackPearl.TabIndex = 10;
             // 
             // chkCPDomeLid
             // 
@@ -1213,7 +1223,7 @@
             this.numWhippedCream.Location = new System.Drawing.Point(104, 272);
             this.numWhippedCream.Name = "numWhippedCream";
             this.numWhippedCream.Size = new System.Drawing.Size(33, 23);
-            this.numWhippedCream.TabIndex = 1;
+            this.numWhippedCream.TabIndex = 9;
             // 
             // numLecheFlan
             // 
@@ -1221,7 +1231,7 @@
             this.numLecheFlan.Location = new System.Drawing.Point(104, 246);
             this.numLecheFlan.Name = "numLecheFlan";
             this.numLecheFlan.Size = new System.Drawing.Size(33, 23);
-            this.numLecheFlan.TabIndex = 1;
+            this.numLecheFlan.TabIndex = 8;
             // 
             // numCaramel
             // 
@@ -1229,7 +1239,7 @@
             this.numCaramel.Location = new System.Drawing.Point(104, 220);
             this.numCaramel.Name = "numCaramel";
             this.numCaramel.Size = new System.Drawing.Size(33, 23);
-            this.numCaramel.TabIndex = 1;
+            this.numCaramel.TabIndex = 7;
             // 
             // numSugar
             // 
@@ -1237,7 +1247,7 @@
             this.numSugar.Location = new System.Drawing.Point(104, 324);
             this.numSugar.Name = "numSugar";
             this.numSugar.Size = new System.Drawing.Size(33, 23);
-            this.numSugar.TabIndex = 1;
+            this.numSugar.TabIndex = 11;
             // 
             // numStraw
             // 
@@ -1245,7 +1255,7 @@
             this.numStraw.Location = new System.Drawing.Point(340, 165);
             this.numStraw.Name = "numStraw";
             this.numStraw.Size = new System.Drawing.Size(33, 23);
-            this.numStraw.TabIndex = 1;
+            this.numStraw.TabIndex = 16;
             // 
             // numMarshmallow
             // 
@@ -1253,7 +1263,7 @@
             this.numMarshmallow.Location = new System.Drawing.Point(104, 194);
             this.numMarshmallow.Name = "numMarshmallow";
             this.numMarshmallow.Size = new System.Drawing.Size(33, 23);
-            this.numMarshmallow.TabIndex = 1;
+            this.numMarshmallow.TabIndex = 6;
             // 
             // numCups16
             // 
@@ -1261,7 +1271,7 @@
             this.numCups16.Location = new System.Drawing.Point(340, 113);
             this.numCups16.Name = "numCups16";
             this.numCups16.Size = new System.Drawing.Size(33, 23);
-            this.numCups16.TabIndex = 1;
+            this.numCups16.TabIndex = 14;
             // 
             // numGrahamPowder
             // 
@@ -1269,7 +1279,7 @@
             this.numGrahamPowder.Location = new System.Drawing.Point(104, 168);
             this.numGrahamPowder.Name = "numGrahamPowder";
             this.numGrahamPowder.Size = new System.Drawing.Size(33, 23);
-            this.numGrahamPowder.TabIndex = 1;
+            this.numGrahamPowder.TabIndex = 5;
             // 
             // numCups22
             // 
@@ -1277,7 +1287,7 @@
             this.numCups22.Location = new System.Drawing.Point(340, 139);
             this.numCups22.Name = "numCups22";
             this.numCups22.Size = new System.Drawing.Size(33, 23);
-            this.numCups22.TabIndex = 1;
+            this.numCups22.TabIndex = 15;
             // 
             // numAvocado
             // 
@@ -1285,7 +1295,7 @@
             this.numAvocado.Location = new System.Drawing.Point(104, 116);
             this.numAvocado.Name = "numAvocado";
             this.numAvocado.Size = new System.Drawing.Size(33, 23);
-            this.numAvocado.TabIndex = 1;
+            this.numAvocado.TabIndex = 3;
             // 
             // numCups12
             // 
@@ -1293,7 +1303,7 @@
             this.numCups12.Location = new System.Drawing.Point(340, 87);
             this.numCups12.Name = "numCups12";
             this.numCups12.Size = new System.Drawing.Size(33, 23);
-            this.numCups12.TabIndex = 1;
+            this.numCups12.TabIndex = 13;
             // 
             // numCondensedMilk
             // 
@@ -1301,7 +1311,7 @@
             this.numCondensedMilk.Location = new System.Drawing.Point(104, 142);
             this.numCondensedMilk.Name = "numCondensedMilk";
             this.numCondensedMilk.Size = new System.Drawing.Size(33, 23);
-            this.numCondensedMilk.TabIndex = 1;
+            this.numCondensedMilk.TabIndex = 4;
             // 
             // numDomeLid
             // 
@@ -1309,7 +1319,7 @@
             this.numDomeLid.Location = new System.Drawing.Point(340, 61);
             this.numDomeLid.Name = "numDomeLid";
             this.numDomeLid.Size = new System.Drawing.Size(33, 23);
-            this.numDomeLid.TabIndex = 1;
+            this.numDomeLid.TabIndex = 12;
             // 
             // numMango
             // 
@@ -1317,7 +1327,7 @@
             this.numMango.Location = new System.Drawing.Point(104, 90);
             this.numMango.Name = "numMango";
             this.numMango.Size = new System.Drawing.Size(33, 23);
-            this.numMango.TabIndex = 1;
+            this.numMango.TabIndex = 2;
             // 
             // numCrushedIce
             // 
@@ -1570,7 +1580,7 @@
             // btnRecord
             // 
             this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnRecord.FlatAppearance.BorderSize = 0;
+            this.btnRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
             this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecord.Image = global::WindowsFormsApplication1.Properties.Resources._103511_20;
@@ -1586,7 +1596,7 @@
             // btnCompute
             // 
             this.btnCompute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnCompute.FlatAppearance.BorderSize = 0;
+            this.btnCompute.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
             this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompute.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.Image = global::WindowsFormsApplication1.Properties.Resources._2123899_20;
@@ -1626,10 +1636,10 @@
             // txtSearchUpdate
             // 
             this.txtSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchUpdate.Location = new System.Drawing.Point(253, 20);
+            this.txtSearchUpdate.Location = new System.Drawing.Point(252, 20);
             this.txtSearchUpdate.Name = "txtSearchUpdate";
             this.txtSearchUpdate.Size = new System.Drawing.Size(100, 23);
-            this.txtSearchUpdate.TabIndex = 7;
+            this.txtSearchUpdate.TabIndex = 1;
             this.txtSearchUpdate.Click += new System.EventHandler(this.txtSearchUpdate_Click);
             this.txtSearchUpdate.TextChanged += new System.EventHandler(this.txtSearchUpdate_TextChanged_1);
             this.txtSearchUpdate.Leave += new System.EventHandler(this.txtSearchUpdate_Leave);
@@ -1637,14 +1647,14 @@
             // btnSearchUpdate
             // 
             this.btnSearchUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnSearchUpdate.FlatAppearance.BorderSize = 0;
+            this.btnSearchUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
             this.btnSearchUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchUpdate.Image = global::WindowsFormsApplication1.Properties.Resources._106236_16;
-            this.btnSearchUpdate.Location = new System.Drawing.Point(359, 18);
+            this.btnSearchUpdate.Location = new System.Drawing.Point(358, 18);
             this.btnSearchUpdate.Name = "btnSearchUpdate";
-            this.btnSearchUpdate.Size = new System.Drawing.Size(24, 25);
-            this.btnSearchUpdate.TabIndex = 6;
+            this.btnSearchUpdate.Size = new System.Drawing.Size(25, 25);
+            this.btnSearchUpdate.TabIndex = 2;
             this.btnSearchUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSearchUpdate.UseVisualStyleBackColor = false;
             this.btnSearchUpdate.Click += new System.EventHandler(this.btnSearchUpdate_Click);
@@ -1691,7 +1701,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewModifyInventory.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewModifyInventory.Size = new System.Drawing.Size(373, 280);
-            this.dataGridViewModifyInventory.TabIndex = 5;
+            this.dataGridViewModifyInventory.TabIndex = 0;
             // 
             // Date_updated
             // 
@@ -1872,21 +1882,21 @@
             this.groupBox3.Location = new System.Drawing.Point(8, 9);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(282, 344);
-            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update Inventory";
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.Location = new System.Drawing.Point(169, 312);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(87, 26);
-            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "  Update";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -1899,7 +1909,7 @@
             this.label89.Location = new System.Drawing.Point(151, 25);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(2, 308);
-            this.label89.TabIndex = 4;
+            this.label89.TabIndex = 0;
             // 
             // numModBlackPearl
             // 
@@ -1907,7 +1917,7 @@
             this.numModBlackPearl.Location = new System.Drawing.Point(101, 291);
             this.numModBlackPearl.Name = "numModBlackPearl";
             this.numModBlackPearl.Size = new System.Drawing.Size(33, 23);
-            this.numModBlackPearl.TabIndex = 1;
+            this.numModBlackPearl.TabIndex = 10;
             // 
             // numModWhippedCream
             // 
@@ -1915,7 +1925,7 @@
             this.numModWhippedCream.Location = new System.Drawing.Point(101, 265);
             this.numModWhippedCream.Name = "numModWhippedCream";
             this.numModWhippedCream.Size = new System.Drawing.Size(33, 23);
-            this.numModWhippedCream.TabIndex = 1;
+            this.numModWhippedCream.TabIndex = 9;
             // 
             // numModLecheFlan
             // 
@@ -1923,7 +1933,7 @@
             this.numModLecheFlan.Location = new System.Drawing.Point(101, 239);
             this.numModLecheFlan.Name = "numModLecheFlan";
             this.numModLecheFlan.Size = new System.Drawing.Size(33, 23);
-            this.numModLecheFlan.TabIndex = 1;
+            this.numModLecheFlan.TabIndex = 8;
             // 
             // numModCaramel
             // 
@@ -1931,7 +1941,7 @@
             this.numModCaramel.Location = new System.Drawing.Point(101, 213);
             this.numModCaramel.Name = "numModCaramel";
             this.numModCaramel.Size = new System.Drawing.Size(33, 23);
-            this.numModCaramel.TabIndex = 1;
+            this.numModCaramel.TabIndex = 7;
             // 
             // numModSugar
             // 
@@ -1939,7 +1949,7 @@
             this.numModSugar.Location = new System.Drawing.Point(101, 317);
             this.numModSugar.Name = "numModSugar";
             this.numModSugar.Size = new System.Drawing.Size(33, 23);
-            this.numModSugar.TabIndex = 1;
+            this.numModSugar.TabIndex = 11;
             // 
             // numModStraw
             // 
@@ -1947,7 +1957,7 @@
             this.numModStraw.Location = new System.Drawing.Point(237, 161);
             this.numModStraw.Name = "numModStraw";
             this.numModStraw.Size = new System.Drawing.Size(33, 23);
-            this.numModStraw.TabIndex = 1;
+            this.numModStraw.TabIndex = 16;
             // 
             // numModMarshmallows
             // 
@@ -1955,7 +1965,7 @@
             this.numModMarshmallows.Location = new System.Drawing.Point(101, 187);
             this.numModMarshmallows.Name = "numModMarshmallows";
             this.numModMarshmallows.Size = new System.Drawing.Size(33, 23);
-            this.numModMarshmallows.TabIndex = 1;
+            this.numModMarshmallows.TabIndex = 6;
             // 
             // numModCups16
             // 
@@ -1963,7 +1973,7 @@
             this.numModCups16.Location = new System.Drawing.Point(237, 109);
             this.numModCups16.Name = "numModCups16";
             this.numModCups16.Size = new System.Drawing.Size(33, 23);
-            this.numModCups16.TabIndex = 1;
+            this.numModCups16.TabIndex = 14;
             // 
             // numModGrahamPowder
             // 
@@ -1971,7 +1981,7 @@
             this.numModGrahamPowder.Location = new System.Drawing.Point(101, 161);
             this.numModGrahamPowder.Name = "numModGrahamPowder";
             this.numModGrahamPowder.Size = new System.Drawing.Size(33, 23);
-            this.numModGrahamPowder.TabIndex = 1;
+            this.numModGrahamPowder.TabIndex = 5;
             // 
             // numModCups22
             // 
@@ -1979,7 +1989,7 @@
             this.numModCups22.Location = new System.Drawing.Point(237, 135);
             this.numModCups22.Name = "numModCups22";
             this.numModCups22.Size = new System.Drawing.Size(33, 23);
-            this.numModCups22.TabIndex = 1;
+            this.numModCups22.TabIndex = 15;
             // 
             // numModAvocado
             // 
@@ -1987,7 +1997,7 @@
             this.numModAvocado.Location = new System.Drawing.Point(101, 109);
             this.numModAvocado.Name = "numModAvocado";
             this.numModAvocado.Size = new System.Drawing.Size(33, 23);
-            this.numModAvocado.TabIndex = 1;
+            this.numModAvocado.TabIndex = 3;
             // 
             // numModCups12
             // 
@@ -1995,7 +2005,7 @@
             this.numModCups12.Location = new System.Drawing.Point(237, 83);
             this.numModCups12.Name = "numModCups12";
             this.numModCups12.Size = new System.Drawing.Size(33, 23);
-            this.numModCups12.TabIndex = 1;
+            this.numModCups12.TabIndex = 13;
             // 
             // numModCondensedMilk
             // 
@@ -2003,7 +2013,7 @@
             this.numModCondensedMilk.Location = new System.Drawing.Point(101, 135);
             this.numModCondensedMilk.Name = "numModCondensedMilk";
             this.numModCondensedMilk.Size = new System.Drawing.Size(33, 23);
-            this.numModCondensedMilk.TabIndex = 1;
+            this.numModCondensedMilk.TabIndex = 4;
             // 
             // numModDomeLid
             // 
@@ -2011,7 +2021,7 @@
             this.numModDomeLid.Location = new System.Drawing.Point(237, 57);
             this.numModDomeLid.Name = "numModDomeLid";
             this.numModDomeLid.Size = new System.Drawing.Size(33, 23);
-            this.numModDomeLid.TabIndex = 1;
+            this.numModDomeLid.TabIndex = 12;
             // 
             // numModMango
             // 
@@ -2019,7 +2029,7 @@
             this.numModMango.Location = new System.Drawing.Point(101, 83);
             this.numModMango.Name = "numModMango";
             this.numModMango.Size = new System.Drawing.Size(33, 23);
-            this.numModMango.TabIndex = 1;
+            this.numModMango.TabIndex = 2;
             // 
             // numModCrushedIce
             // 
@@ -2246,7 +2256,7 @@
             // lblDateLatestInventoryReport
             // 
             this.lblDateLatestInventoryReport.AutoSize = true;
-            this.lblDateLatestInventoryReport.Location = new System.Drawing.Point(281, 23);
+            this.lblDateLatestInventoryReport.Location = new System.Drawing.Point(248, 33);
             this.lblDateLatestInventoryReport.Name = "lblDateLatestInventoryReport";
             this.lblDateLatestInventoryReport.Size = new System.Drawing.Size(34, 18);
             this.lblDateLatestInventoryReport.TabIndex = 5;
@@ -2255,9 +2265,10 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(279, 6);
+            this.label18.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(216, 8);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(162, 18);
+            this.label18.Size = new System.Drawing.Size(268, 29);
             this.label18.TabIndex = 5;
             this.label18.Text = "LATEST INVENTORY REPORT";
             // 
@@ -2337,13 +2348,13 @@
             // btnSalesRecord
             // 
             this.btnSalesRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnSalesRecord.FlatAppearance.BorderSize = 0;
+            this.btnSalesRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
             this.btnSalesRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalesRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalesRecord.Image = global::WindowsFormsApplication1.Properties.Resources._2202274_20;
-            this.btnSalesRecord.Location = new System.Drawing.Point(560, 321);
+            this.btnSalesRecord.Location = new System.Drawing.Point(555, 321);
             this.btnSalesRecord.Name = "btnSalesRecord";
-            this.btnSalesRecord.Size = new System.Drawing.Size(118, 28);
+            this.btnSalesRecord.Size = new System.Drawing.Size(123, 28);
             this.btnSalesRecord.TabIndex = 1;
             this.btnSalesRecord.Text = "  Sales Record";
             this.btnSalesRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -2364,7 +2375,7 @@
             this.chartWeeklySalesPerformance.Size = new System.Drawing.Size(675, 324);
             this.chartWeeklySalesPerformance.TabIndex = 0;
             this.chartWeeklySalesPerformance.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title4.Name = "Sales Performance for the Last 7 Days";
             title4.Text = "Sales Performance for the Last 7 Days";
             this.chartWeeklySalesPerformance.Titles.Add(title4);
@@ -2401,7 +2412,7 @@
             this.label34.Location = new System.Drawing.Point(36, 7);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(383, 16);
-            this.label34.TabIndex = 2;
+            this.label34.TabIndex = 0;
             this.label34.Text = "Daniel\'s Mango Graham Shake Sales and Inventory Record System";
             // 
             // panel1
@@ -2415,7 +2426,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 28);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 0;
             // 
             // btnMinimize
             // 
@@ -2425,7 +2436,7 @@
             this.btnMinimize.Location = new System.Drawing.Point(661, 3);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(24, 23);
-            this.btnMinimize.TabIndex = 1;
+            this.btnMinimize.TabIndex = 0;
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -2447,9 +2458,71 @@
             this.btnExit.Location = new System.Drawing.Point(696, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(20, 20);
-            this.btnExit.TabIndex = 1;
+            this.btnExit.TabIndex = 0;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(296, 231);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(126, 23);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Getting Started:";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label74.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.Blue;
+            this.label74.Location = new System.Drawing.Point(297, 257);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(115, 18);
+            this.label74.TabIndex = 1;
+            this.label74.Text = "Add a sales record";
+            this.label74.Click += new System.EventHandler(this.label74_Click);
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label76.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.Blue;
+            this.label76.Location = new System.Drawing.Point(297, 276);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(132, 18);
+            this.label76.TabIndex = 1;
+            this.label76.Text = "Update your inventory";
+            this.label76.Click += new System.EventHandler(this.label76_Click);
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label78.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.Blue;
+            this.label78.Location = new System.Drawing.Point(296, 295);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(159, 18);
+            this.label78.TabIndex = 1;
+            this.label78.Text = "See latest inventory status";
+            this.label78.Click += new System.EventHandler(this.label78_Click);
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label80.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.Blue;
+            this.label80.Location = new System.Drawing.Point(296, 313);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(142, 18);
+            this.label80.TabIndex = 1;
+            this.label80.Text = "See sales performance";
+            this.label80.Click += new System.EventHandler(this.label80_Click);
             // 
             // Form1
             // 
@@ -2467,8 +2540,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabHome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabAddDailySalesRecord.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -2739,6 +2813,11 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label31;
 
     }
 }
