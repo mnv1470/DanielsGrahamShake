@@ -93,6 +93,26 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1564520_20 {
+            get {
+                object obj = ResourceManager.GetObject("1564520-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1564520_20_YELLOW {
+            get {
+                object obj = ResourceManager.GetObject("1564520-20 YELLOW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _211651_20 {
             get {
                 object obj = ResourceManager.GetObject("211651-20", resourceCulture);
@@ -176,6 +196,36 @@ namespace WindowsFormsApplication1.Properties {
         internal static System.Drawing.Bitmap _2202274_201 {
             get {
                 object obj = ResourceManager.GetObject("2202274-201", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2203549_20 {
+            get {
+                object obj = ResourceManager.GetObject("2203549-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2203549_20_YELLOW {
+            get {
+                object obj = ResourceManager.GetObject("2203549-20 YELLOW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2203549_201 {
+            get {
+                object obj = ResourceManager.GetObject("2203549-201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

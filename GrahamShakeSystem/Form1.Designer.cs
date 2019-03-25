@@ -29,25 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.tabAddDailySalesRecord = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label70 = new System.Windows.Forms.Label();
@@ -163,12 +166,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRecord = new System.Windows.Forms.Button();
-            this.btnCompute = new System.Windows.Forms.Button();
             this.tabUpdateInventory = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.txtSearchUpdate = new System.Windows.Forms.TextBox();
-            this.btnSearchUpdate = new System.Windows.Forms.Button();
             this.dataGridViewModifyInventory = new System.Windows.Forms.DataGridView();
             this.Date_updated = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Crushed_ice = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -189,7 +189,6 @@
             this.tblIngredientStocksBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.dbGrahamShakeDataSet = new WindowsFormsApplication1.dbGrahamShakeDataSet();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.label89 = new System.Windows.Forms.Label();
             this.numModBlackPearl = new System.Windows.Forms.NumericUpDown();
             this.numModWhippedCream = new System.Windows.Forms.NumericUpDown();
@@ -234,7 +233,6 @@
             this.chartSecondaryIngredients = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pieChartLatestInventory = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tblSalesPerformance = new System.Windows.Forms.TabPage();
-            this.btnSalesRecord = new System.Windows.Forms.Button();
             this.chartWeeklySalesPerformance = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tblIngredientStocksBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.tblIngredientStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -246,15 +244,16 @@
             this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRecord = new System.Windows.Forms.Button();
+            this.btnCompute = new System.Windows.Forms.Button();
+            this.btnSearchUpdate = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnSalesRecord = new System.Windows.Forms.Button();
+            this.btnLock = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabAddDailySalesRecord.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -309,6 +308,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblIngredientStocksBindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -343,27 +344,67 @@
             this.tabHome.Text = "Home";
             this.tabHome.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // label80
             // 
-            this.pictureBox2.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
-            this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources.Untitled_11;
-            this.pictureBox2.Location = new System.Drawing.Point(274, -18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(412, 272);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.label80.AutoSize = true;
+            this.label80.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label80.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.Blue;
+            this.label80.Location = new System.Drawing.Point(296, 313);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(142, 18);
+            this.label80.TabIndex = 1;
+            this.label80.Text = "See sales performance";
+            this.label80.Click += new System.EventHandler(this.label80_Click);
             // 
-            // pictureBox1
+            // label78
             // 
-            this.pictureBox1.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_012;
-            this.pictureBox1.Location = new System.Drawing.Point(-8, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(286, 272);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label78.AutoSize = true;
+            this.label78.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label78.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.Blue;
+            this.label78.Location = new System.Drawing.Point(296, 295);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(159, 18);
+            this.label78.TabIndex = 1;
+            this.label78.Text = "See latest inventory status";
+            this.label78.Click += new System.EventHandler(this.label78_Click);
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label76.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.Blue;
+            this.label76.Location = new System.Drawing.Point(297, 276);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(132, 18);
+            this.label76.TabIndex = 1;
+            this.label76.Text = "Update your inventory";
+            this.label76.Click += new System.EventHandler(this.label76_Click);
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label74.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.Blue;
+            this.label74.Location = new System.Drawing.Point(297, 257);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(115, 18);
+            this.label74.TabIndex = 1;
+            this.label74.Text = "Add a sales record";
+            this.label74.Click += new System.EventHandler(this.label74_Click);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(296, 231);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(126, 23);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Getting Started:";
             // 
             // tabAddDailySalesRecord
             // 
@@ -1577,39 +1618,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Crushed ice:";
             // 
-            // btnRecord
-            // 
-            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
-            this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecord.Image = global::WindowsFormsApplication1.Properties.Resources._103511_20;
-            this.btnRecord.Location = new System.Drawing.Point(599, 326);
-            this.btnRecord.Name = "btnRecord";
-            this.btnRecord.Size = new System.Drawing.Size(87, 28);
-            this.btnRecord.TabIndex = 2;
-            this.btnRecord.Text = "  Record";
-            this.btnRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRecord.UseVisualStyleBackColor = false;
-            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
-            // 
-            // btnCompute
-            // 
-            this.btnCompute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnCompute.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
-            this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompute.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompute.Image = global::WindowsFormsApplication1.Properties.Resources._2123899_20;
-            this.btnCompute.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompute.Location = new System.Drawing.Point(503, 325);
-            this.btnCompute.Name = "btnCompute";
-            this.btnCompute.Size = new System.Drawing.Size(93, 29);
-            this.btnCompute.TabIndex = 2;
-            this.btnCompute.Text = "  Compute";
-            this.btnCompute.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCompute.UseVisualStyleBackColor = false;
-            this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
-            // 
             // tabUpdateInventory
             // 
             this.tabUpdateInventory.Controls.Add(this.groupBox5);
@@ -1644,35 +1652,20 @@
             this.txtSearchUpdate.TextChanged += new System.EventHandler(this.txtSearchUpdate_TextChanged_1);
             this.txtSearchUpdate.Leave += new System.EventHandler(this.txtSearchUpdate_Leave);
             // 
-            // btnSearchUpdate
-            // 
-            this.btnSearchUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnSearchUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
-            this.btnSearchUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchUpdate.Image = global::WindowsFormsApplication1.Properties.Resources._106236_16;
-            this.btnSearchUpdate.Location = new System.Drawing.Point(358, 18);
-            this.btnSearchUpdate.Name = "btnSearchUpdate";
-            this.btnSearchUpdate.Size = new System.Drawing.Size(25, 25);
-            this.btnSearchUpdate.TabIndex = 2;
-            this.btnSearchUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearchUpdate.UseVisualStyleBackColor = false;
-            this.btnSearchUpdate.Click += new System.EventHandler(this.btnSearchUpdate_Click);
-            // 
             // dataGridViewModifyInventory
             // 
             this.dataGridViewModifyInventory.AllowUserToAddRows = false;
             this.dataGridViewModifyInventory.AllowUserToDeleteRows = false;
             this.dataGridViewModifyInventory.AllowUserToOrderColumns = true;
             this.dataGridViewModifyInventory.AutoGenerateColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewModifyInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewModifyInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewModifyInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewModifyInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date_updated,
@@ -1695,11 +1688,11 @@
             this.dataGridViewModifyInventory.Location = new System.Drawing.Point(10, 47);
             this.dataGridViewModifyInventory.Name = "dataGridViewModifyInventory";
             this.dataGridViewModifyInventory.ReadOnly = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewModifyInventory.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewModifyInventory.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewModifyInventory.Size = new System.Drawing.Size(373, 280);
             this.dataGridViewModifyInventory.TabIndex = 0;
             // 
@@ -1885,22 +1878,6 @@
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update Inventory";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
-            this.btnUpdate.Location = new System.Drawing.Point(169, 312);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(87, 26);
-            this.btnUpdate.TabIndex = 17;
-            this.btnUpdate.Text = "  Update";
-            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label89
             // 
@@ -2274,65 +2251,65 @@
             // 
             // chartMaterials
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartMaterials.ChartAreas.Add(chartArea1);
+            chartArea5.Name = "ChartArea1";
+            this.chartMaterials.ChartAreas.Add(chartArea5);
             this.chartMaterials.Location = new System.Drawing.Point(458, 56);
             this.chartMaterials.Name = "chartMaterials";
             this.chartMaterials.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.Name = "s3";
-            this.chartMaterials.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series5.Name = "s3";
+            this.chartMaterials.Series.Add(series5);
             this.chartMaterials.Size = new System.Drawing.Size(231, 300);
             this.chartMaterials.TabIndex = 4;
             this.chartMaterials.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
-            title1.Name = "Materials";
-            title1.Text = "Materials";
-            this.chartMaterials.Titles.Add(title1);
+            title5.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
+            title5.Name = "Materials";
+            title5.Text = "Materials";
+            this.chartMaterials.Titles.Add(title5);
             // 
             // chartSecondaryIngredients
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartSecondaryIngredients.ChartAreas.Add(chartArea2);
+            chartArea6.Name = "ChartArea1";
+            this.chartSecondaryIngredients.ChartAreas.Add(chartArea6);
             this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 56);
             this.chartSecondaryIngredients.Name = "chartSecondaryIngredients";
             this.chartSecondaryIngredients.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series2.Name = "s2";
-            this.chartSecondaryIngredients.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series6.Name = "s2";
+            this.chartSecondaryIngredients.Series.Add(series6);
             this.chartSecondaryIngredients.Size = new System.Drawing.Size(231, 300);
             this.chartSecondaryIngredients.TabIndex = 4;
             this.chartSecondaryIngredients.Text = "chart1";
-            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
-            title2.Name = "Main Ingredients";
-            title2.Text = "Secondary Ingredients";
-            this.chartSecondaryIngredients.Titles.Add(title2);
+            title6.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
+            title6.Name = "Main Ingredients";
+            title6.Text = "Secondary Ingredients";
+            this.chartSecondaryIngredients.Titles.Add(title6);
             // 
             // pieChartLatestInventory
             // 
-            chartArea3.Name = "ChartArea1";
-            this.pieChartLatestInventory.ChartAreas.Add(chartArea3);
+            chartArea7.Name = "ChartArea1";
+            this.pieChartLatestInventory.ChartAreas.Add(chartArea7);
             this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 56);
             this.pieChartLatestInventory.Name = "pieChartLatestInventory";
             this.pieChartLatestInventory.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series3.Name = "s1";
-            this.pieChartLatestInventory.Series.Add(series3);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series7.Name = "s1";
+            this.pieChartLatestInventory.Series.Add(series7);
             this.pieChartLatestInventory.Size = new System.Drawing.Size(231, 300);
             this.pieChartLatestInventory.TabIndex = 4;
             this.pieChartLatestInventory.Text = "chart1";
-            title3.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title3.Name = "Main Ingredients";
-            title3.Text = "Primary Ingredients";
-            this.pieChartLatestInventory.Titles.Add(title3);
+            title7.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title7.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title7.Name = "Main Ingredients";
+            title7.Text = "Primary Ingredients";
+            this.pieChartLatestInventory.Titles.Add(title7);
             // 
             // tblSalesPerformance
             // 
@@ -2345,40 +2322,24 @@
             this.tblSalesPerformance.Text = "Sales Performance";
             this.tblSalesPerformance.UseVisualStyleBackColor = true;
             // 
-            // btnSalesRecord
-            // 
-            this.btnSalesRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
-            this.btnSalesRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
-            this.btnSalesRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalesRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalesRecord.Image = global::WindowsFormsApplication1.Properties.Resources._2202274_20;
-            this.btnSalesRecord.Location = new System.Drawing.Point(555, 321);
-            this.btnSalesRecord.Name = "btnSalesRecord";
-            this.btnSalesRecord.Size = new System.Drawing.Size(123, 28);
-            this.btnSalesRecord.TabIndex = 1;
-            this.btnSalesRecord.Text = "  Sales Record";
-            this.btnSalesRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSalesRecord.UseVisualStyleBackColor = false;
-            this.btnSalesRecord.Click += new System.EventHandler(this.btnSalesRecord_Click);
-            // 
             // chartWeeklySalesPerformance
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea4);
+            chartArea8.Name = "ChartArea1";
+            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea8);
             this.chartWeeklySalesPerformance.Location = new System.Drawing.Point(3, 3);
             this.chartWeeklySalesPerformance.Name = "chartWeeklySalesPerformance";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
-            series4.Name = "ss";
-            this.chartWeeklySalesPerformance.Series.Add(series4);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            series8.Name = "ss";
+            this.chartWeeklySalesPerformance.Series.Add(series8);
             this.chartWeeklySalesPerformance.Size = new System.Drawing.Size(675, 324);
             this.chartWeeklySalesPerformance.TabIndex = 0;
             this.chartWeeklySalesPerformance.Text = "chart1";
-            title4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title4.Name = "Sales Performance for the Last 7 Days";
-            title4.Text = "Sales Performance for the Last 7 Days";
-            this.chartWeeklySalesPerformance.Titles.Add(title4);
+            title8.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title8.Name = "Sales Performance for the Last 7 Days";
+            title8.Text = "Sales Performance for the Last 7 Days";
+            this.chartWeeklySalesPerformance.Titles.Add(title8);
             // 
             // tblIngredientStocksBindingSource3
             // 
@@ -2418,6 +2379,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(49)))), ((int)(((byte)(30)))));
+            this.panel1.Controls.Add(this.btnLock);
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.label34);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -2433,9 +2395,9 @@
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(661, 3);
+            this.btnMinimize.Location = new System.Drawing.Point(659, 5);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(24, 23);
+            this.btnMinimize.Size = new System.Drawing.Size(20, 20);
             this.btnMinimize.TabIndex = 0;
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.button2_Click);
@@ -2455,74 +2417,126 @@
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(696, 3);
+            this.btnExit.Location = new System.Drawing.Point(691, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(20, 20);
             this.btnExit.TabIndex = 0;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label31
+            // pictureBox2
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(296, 231);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(126, 23);
-            this.label31.TabIndex = 1;
-            this.label31.Text = "Getting Started:";
+            this.pictureBox2.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
+            this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources.Untitled_11;
+            this.pictureBox2.Location = new System.Drawing.Point(274, -18);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(412, 272);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // label74
+            // pictureBox1
             // 
-            this.label74.AutoSize = true;
-            this.label74.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label74.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.Color.Blue;
-            this.label74.Location = new System.Drawing.Point(297, 257);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(115, 18);
-            this.label74.TabIndex = 1;
-            this.label74.Text = "Add a sales record";
-            this.label74.Click += new System.EventHandler(this.label74_Click);
+            this.pictureBox1.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_011;
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.LogoDanielsMangoGraham_012;
+            this.pictureBox1.Location = new System.Drawing.Point(-8, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(286, 272);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // label76
+            // btnRecord
             // 
-            this.label76.AutoSize = true;
-            this.label76.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label76.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.ForeColor = System.Drawing.Color.Blue;
-            this.label76.Location = new System.Drawing.Point(297, 276);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(132, 18);
-            this.label76.TabIndex = 1;
-            this.label76.Text = "Update your inventory";
-            this.label76.Click += new System.EventHandler(this.label76_Click);
+            this.btnRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
+            this.btnRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecord.Image = global::WindowsFormsApplication1.Properties.Resources._103511_20;
+            this.btnRecord.Location = new System.Drawing.Point(599, 326);
+            this.btnRecord.Name = "btnRecord";
+            this.btnRecord.Size = new System.Drawing.Size(87, 28);
+            this.btnRecord.TabIndex = 2;
+            this.btnRecord.Text = "  Record";
+            this.btnRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRecord.UseVisualStyleBackColor = false;
+            this.btnRecord.Click += new System.EventHandler(this.btnRecord_Click);
             // 
-            // label78
+            // btnCompute
             // 
-            this.label78.AutoSize = true;
-            this.label78.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label78.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.ForeColor = System.Drawing.Color.Blue;
-            this.label78.Location = new System.Drawing.Point(296, 295);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(159, 18);
-            this.label78.TabIndex = 1;
-            this.label78.Text = "See latest inventory status";
-            this.label78.Click += new System.EventHandler(this.label78_Click);
+            this.btnCompute.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnCompute.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
+            this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCompute.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompute.Image = global::WindowsFormsApplication1.Properties.Resources._2123899_20;
+            this.btnCompute.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCompute.Location = new System.Drawing.Point(503, 325);
+            this.btnCompute.Name = "btnCompute";
+            this.btnCompute.Size = new System.Drawing.Size(93, 29);
+            this.btnCompute.TabIndex = 2;
+            this.btnCompute.Text = "  Compute";
+            this.btnCompute.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCompute.UseVisualStyleBackColor = false;
+            this.btnCompute.Click += new System.EventHandler(this.btnCompute_Click);
             // 
-            // label80
+            // btnSearchUpdate
             // 
-            this.label80.AutoSize = true;
-            this.label80.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label80.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.Color.Blue;
-            this.label80.Location = new System.Drawing.Point(296, 313);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(142, 18);
-            this.label80.TabIndex = 1;
-            this.label80.Text = "See sales performance";
-            this.label80.Click += new System.EventHandler(this.label80_Click);
+            this.btnSearchUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnSearchUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
+            this.btnSearchUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchUpdate.Image = global::WindowsFormsApplication1.Properties.Resources._106236_16;
+            this.btnSearchUpdate.Location = new System.Drawing.Point(358, 18);
+            this.btnSearchUpdate.Name = "btnSearchUpdate";
+            this.btnSearchUpdate.Size = new System.Drawing.Size(25, 25);
+            this.btnSearchUpdate.TabIndex = 2;
+            this.btnSearchUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearchUpdate.UseVisualStyleBackColor = false;
+            this.btnSearchUpdate.Click += new System.EventHandler(this.btnSearchUpdate_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
+            this.btnUpdate.Location = new System.Drawing.Point(169, 312);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(87, 26);
+            this.btnUpdate.TabIndex = 17;
+            this.btnUpdate.Text = "  Update";
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnSalesRecord
+            // 
+            this.btnSalesRecord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(230)))), ((int)(((byte)(0)))));
+            this.btnSalesRecord.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(23)))), ((int)(((byte)(15)))));
+            this.btnSalesRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesRecord.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesRecord.Image = global::WindowsFormsApplication1.Properties.Resources._2202274_20;
+            this.btnSalesRecord.Location = new System.Drawing.Point(555, 321);
+            this.btnSalesRecord.Name = "btnSalesRecord";
+            this.btnSalesRecord.Size = new System.Drawing.Size(123, 28);
+            this.btnSalesRecord.TabIndex = 1;
+            this.btnSalesRecord.Text = "  Sales Record";
+            this.btnSalesRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalesRecord.UseVisualStyleBackColor = false;
+            this.btnSalesRecord.Click += new System.EventHandler(this.btnSalesRecord_Click);
+            // 
+            // btnLock
+            // 
+            this.btnLock.FlatAppearance.BorderSize = 0;
+            this.btnLock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLock.Image = global::WindowsFormsApplication1.Properties.Resources._1564520_20_YELLOW;
+            this.btnLock.Location = new System.Drawing.Point(633, 4);
+            this.btnLock.Name = "btnLock";
+            this.btnLock.Size = new System.Drawing.Size(20, 20);
+            this.btnLock.TabIndex = 4;
+            this.btnLock.UseVisualStyleBackColor = true;
+            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
             // 
             // Form1
             // 
@@ -2541,8 +2555,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabAddDailySalesRecord.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -2604,6 +2616,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2818,6 +2832,7 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button btnLock;
 
     }
 }

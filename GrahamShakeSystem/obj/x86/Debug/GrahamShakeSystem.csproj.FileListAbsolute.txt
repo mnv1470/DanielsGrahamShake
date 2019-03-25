@@ -9,3 +9,4 @@ C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\Graham
 C:\Users\Victorio\documents\visual studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\bin\Debug\GrahamShakeSystem.exe.config
 C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\WindowsFormsApplication1.SalesRecordForm.resources
 C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\GrahamShakeSystem.csprojResolveAssemblyReference.cache
+C:\Users\Victorio\Documents\Visual Studio 2010\Projects\GrahamShakeSystem\GrahamShakeSystem\obj\x86\Debug\WindowsFormsApplication1.LoginForm.resources

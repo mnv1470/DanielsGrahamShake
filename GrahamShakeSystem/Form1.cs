@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Windows.Forms.DataVisualization.Charting;
-
+using System.Runtime.InteropServices;
 
 
 
@@ -16,6 +16,18 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+            int nLeftRect,     // x-coordinate of upper-left corner
+            int nTopRect,      // y-coordinate of upper-left corner
+            int nRightRect,    // x-coordinate of lower-right corner
+            int nBottomRect,   // y-coordinate of lower-right corner
+            int nWidthEllipse, // height of ellipse
+            int nHeightEllipse // width of ellipse
+        );
+
         bool naShowNaBaNotifOutOfStock = false;
         bool notificationFeatureAvailableDone;
         bool IsSalesRecordBelow7;
@@ -43,7 +55,8 @@ namespace WindowsFormsApplication1
             tabControl1.TabPages[3].ImageIndex = 3;
             tabControl1.TabPages[4].ImageIndex = 4;
 
-            
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         private void chkCPCrushedIce_CheckedChanged(object sender, EventArgs e)
@@ -455,7 +468,8 @@ namespace WindowsFormsApplication1
         {
             try
             {
-
+                if(MessageBox.Show("Are you sure you want to add this record? You will not be able to delete this record once added.", "Add Record", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)==DialogResult.Yes)
+                {
                 DateTime dateKo = dateNgayonFormatted();
 
                 //Retrieve value from inventory table
@@ -546,6 +560,7 @@ namespace WindowsFormsApplication1
                     }
                     
                     setToDefault();
+                }
                 }
                 else
                 {
@@ -661,21 +676,24 @@ namespace WindowsFormsApplication1
         {
             try
             {
-                DateTime dateKoo = dateNgayonFormatted();
-                //Update inventory
-                con.Open();
-                OleDbCommand cmd = con.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into tblIngredientStocks values('" + dateKoo + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
-                cmd.ExecuteNonQuery();
-                con.Close(); //NAKALIMUTAN MO YUNG CRUSHED ICE AYUSIN MO DB AND ALL CODES DOUBLE CHECK KUNG NAINCLUDE CRUSHED ICE
+                if (MessageBox.Show("Are you sure this update is correct? Double checking before updating is highly recommended. You will not be able to delete this record once added", "Update Inventory", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    DateTime dateKoo = dateNgayonFormatted();
+                    //Update inventory
+                    con.Open();
+                    OleDbCommand cmd = con.CreateCommand();
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into tblIngredientStocks values('" + dateKoo + "','" + numModCrushedIce.Value + "','" + numModMango.Value + "','" + numModAvocado.Value + "','" + numModCondensedMilk.Value + "','" + numModGrahamPowder.Value + "','" + numModMarshmallows.Value + "','" + numModCaramel.Value + "','" + numModLecheFlan.Value + "','" + numModWhippedCream.Value + "','" + numModBlackPearl.Value + "','" + numModDomeLid.Value + "','" + numModCups12.Value + "','" + numModCups16.Value + "','" + numModCups22.Value + "','" + numModStraw.Value + "','" + numModSugar.Value + "')";
+                    cmd.ExecuteNonQuery();
+                    con.Close(); //NAKALIMUTAN MO YUNG CRUSHED ICE AYUSIN MO DB AND ALL CODES DOUBLE CHECK KUNG NAINCLUDE CRUSHED ICE
 
-                updateDataGridInventoryModify();//Display to datagrid update inventory
-                clearChartsInLatestStockReport();
-                latestStockReportChart();
-                //set to default and notify
-                setToDefault();
-                MessageBox.Show("Successfully updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    updateDataGridInventoryModify();//Display to datagrid update inventory
+                    clearChartsInLatestStockReport();
+                    latestStockReportChart();
+                    //set to default and notify
+                    setToDefault();
+                    MessageBox.Show("Successfully updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception exc)
             {
@@ -1293,6 +1311,17 @@ namespace WindowsFormsApplication1
         private void label80_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = 4;
+        }
+
+        private void btnLock_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure you want to lock the system?", "Lock System", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)==DialogResult.Yes)
+            {
+            LoginForm frm2 = new LoginForm();
+            Hide();
+            frm2.ShowDialog();
+            Close();
+            }
         }
 
        
