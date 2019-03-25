@@ -113,6 +113,16 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1564520_20_YELLOWISH {
+            get {
+                object obj = ResourceManager.GetObject("1564520-20 YELLOWISH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _211651_20 {
             get {
                 object obj = ResourceManager.GetObject("211651-20", resourceCulture);

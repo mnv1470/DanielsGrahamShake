@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
@@ -241,6 +241,7 @@
             this.tblIngredientStocksTableAdapter = new WindowsFormsApplication1.dbGrahamShakeDataSetTableAdapters.tblIngredientStocksTableAdapter();
             this.label34 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLock = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
@@ -251,7 +252,6 @@
             this.btnSearchUpdate = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSalesRecord = new System.Windows.Forms.Button();
-            this.btnLock = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             this.tabAddDailySalesRecord.SuspendLayout();
@@ -1658,14 +1658,14 @@
             this.dataGridViewModifyInventory.AllowUserToDeleteRows = false;
             this.dataGridViewModifyInventory.AllowUserToOrderColumns = true;
             this.dataGridViewModifyInventory.AutoGenerateColumns = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewModifyInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewModifyInventory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewModifyInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewModifyInventory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date_updated,
@@ -1688,11 +1688,11 @@
             this.dataGridViewModifyInventory.Location = new System.Drawing.Point(10, 47);
             this.dataGridViewModifyInventory.Name = "dataGridViewModifyInventory";
             this.dataGridViewModifyInventory.ReadOnly = true;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewModifyInventory.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewModifyInventory.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewModifyInventory.Size = new System.Drawing.Size(373, 280);
             this.dataGridViewModifyInventory.TabIndex = 0;
             // 
@@ -2251,65 +2251,65 @@
             // 
             // chartMaterials
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartMaterials.ChartAreas.Add(chartArea5);
+            chartArea1.Name = "ChartArea1";
+            this.chartMaterials.ChartAreas.Add(chartArea1);
             this.chartMaterials.Location = new System.Drawing.Point(458, 56);
             this.chartMaterials.Name = "chartMaterials";
             this.chartMaterials.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series5.Name = "s3";
-            this.chartMaterials.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Name = "s3";
+            this.chartMaterials.Series.Add(series1);
             this.chartMaterials.Size = new System.Drawing.Size(231, 300);
             this.chartMaterials.TabIndex = 4;
             this.chartMaterials.Text = "chart1";
-            title5.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
-            title5.Name = "Materials";
-            title5.Text = "Materials";
-            this.chartMaterials.Titles.Add(title5);
+            title1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
+            title1.Name = "Materials";
+            title1.Text = "Materials";
+            this.chartMaterials.Titles.Add(title1);
             // 
             // chartSecondaryIngredients
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartSecondaryIngredients.ChartAreas.Add(chartArea6);
+            chartArea2.Name = "ChartArea1";
+            this.chartSecondaryIngredients.ChartAreas.Add(chartArea2);
             this.chartSecondaryIngredients.Location = new System.Drawing.Point(235, 56);
             this.chartSecondaryIngredients.Name = "chartSecondaryIngredients";
             this.chartSecondaryIngredients.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series6.Name = "s2";
-            this.chartSecondaryIngredients.Series.Add(series6);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Name = "s2";
+            this.chartSecondaryIngredients.Series.Add(series2);
             this.chartSecondaryIngredients.Size = new System.Drawing.Size(231, 300);
             this.chartSecondaryIngredients.TabIndex = 4;
             this.chartSecondaryIngredients.Text = "chart1";
-            title6.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
-            title6.Name = "Main Ingredients";
-            title6.Text = "Secondary Ingredients";
-            this.chartSecondaryIngredients.Titles.Add(title6);
+            title2.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold);
+            title2.Name = "Main Ingredients";
+            title2.Text = "Secondary Ingredients";
+            this.chartSecondaryIngredients.Titles.Add(title2);
             // 
             // pieChartLatestInventory
             // 
-            chartArea7.Name = "ChartArea1";
-            this.pieChartLatestInventory.ChartAreas.Add(chartArea7);
+            chartArea3.Name = "ChartArea1";
+            this.pieChartLatestInventory.ChartAreas.Add(chartArea3);
             this.pieChartLatestInventory.Location = new System.Drawing.Point(11, 56);
             this.pieChartLatestInventory.Name = "pieChartLatestInventory";
             this.pieChartLatestInventory.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series7.Name = "s1";
-            this.pieChartLatestInventory.Series.Add(series7);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.Name = "s1";
+            this.pieChartLatestInventory.Series.Add(series3);
             this.pieChartLatestInventory.Size = new System.Drawing.Size(231, 300);
             this.pieChartLatestInventory.TabIndex = 4;
             this.pieChartLatestInventory.Text = "chart1";
-            title7.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title7.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title7.Name = "Main Ingredients";
-            title7.Text = "Primary Ingredients";
-            this.pieChartLatestInventory.Titles.Add(title7);
+            title3.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.Name = "Main Ingredients";
+            title3.Text = "Primary Ingredients";
+            this.pieChartLatestInventory.Titles.Add(title3);
             // 
             // tblSalesPerformance
             // 
@@ -2324,22 +2324,22 @@
             // 
             // chartWeeklySalesPerformance
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea8);
+            chartArea4.Name = "ChartArea1";
+            this.chartWeeklySalesPerformance.ChartAreas.Add(chartArea4);
             this.chartWeeklySalesPerformance.Location = new System.Drawing.Point(3, 3);
             this.chartWeeklySalesPerformance.Name = "chartWeeklySalesPerformance";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
-            series8.Name = "ss";
-            this.chartWeeklySalesPerformance.Series.Add(series8);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(234)))), ((int)(((byte)(16)))));
+            series4.Name = "ss";
+            this.chartWeeklySalesPerformance.Series.Add(series4);
             this.chartWeeklySalesPerformance.Size = new System.Drawing.Size(675, 324);
             this.chartWeeklySalesPerformance.TabIndex = 0;
             this.chartWeeklySalesPerformance.Text = "chart1";
-            title8.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title8.Name = "Sales Performance for the Last 7 Days";
-            title8.Text = "Sales Performance for the Last 7 Days";
-            this.chartWeeklySalesPerformance.Titles.Add(title8);
+            title4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.Name = "Sales Performance for the Last 7 Days";
+            title4.Text = "Sales Performance for the Last 7 Days";
+            this.chartWeeklySalesPerformance.Titles.Add(title4);
             // 
             // tblIngredientStocksBindingSource3
             // 
@@ -2390,12 +2390,24 @@
             this.panel1.Size = new System.Drawing.Size(724, 28);
             this.panel1.TabIndex = 0;
             // 
+            // btnLock
+            // 
+            this.btnLock.FlatAppearance.BorderSize = 0;
+            this.btnLock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLock.Image = global::WindowsFormsApplication1.Properties.Resources._1564520_20_YELLOWISH;
+            this.btnLock.Location = new System.Drawing.Point(661, 4);
+            this.btnLock.Name = "btnLock";
+            this.btnLock.Size = new System.Drawing.Size(20, 20);
+            this.btnLock.TabIndex = 4;
+            this.btnLock.UseVisualStyleBackColor = true;
+            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
+            // 
             // btnMinimize
             // 
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(659, 5);
+            this.btnMinimize.Location = new System.Drawing.Point(632, 5);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 20);
             this.btnMinimize.TabIndex = 0;
@@ -2525,18 +2537,6 @@
             this.btnSalesRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSalesRecord.UseVisualStyleBackColor = false;
             this.btnSalesRecord.Click += new System.EventHandler(this.btnSalesRecord_Click);
-            // 
-            // btnLock
-            // 
-            this.btnLock.FlatAppearance.BorderSize = 0;
-            this.btnLock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLock.Image = global::WindowsFormsApplication1.Properties.Resources._1564520_20_YELLOW;
-            this.btnLock.Location = new System.Drawing.Point(633, 4);
-            this.btnLock.Name = "btnLock";
-            this.btnLock.Size = new System.Drawing.Size(20, 20);
-            this.btnLock.TabIndex = 4;
-            this.btnLock.UseVisualStyleBackColor = true;
-            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
             // 
             // Form1
             // 

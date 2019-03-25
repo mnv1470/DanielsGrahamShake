@@ -132,6 +132,7 @@
     <Content Include="dbGrahamShake.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\1564520-20 YELLOWISH.png" />
     <None Include="Resources\2203549-201.png" />
     <None Include="Resources\1564520-20.png" />
     <None Include="Resources\2203549-20 YELLOW.png" />
